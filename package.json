@@ -1,0 +1,61 @@
+{
+  "name": "typescript-node-starter",
+  "version": "0.0.0-development",
+  "private": true,
+  "description": "",
+  "homepage": "https://github.com/tksst/typescript-node-starter",
+  "repository": "github:tksst/typescript-node-starter",
+  "license": "CC0",
+  "author": {
+    "name": "Takashi Sato",
+    "email": "takashi@tks.st",
+    "url": "https://www.tks.st/"
+  },
+  "main": "dist/lib/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "bin": {
+    "typescript-node-starter": "dist/bin/index.js"
+  },
+  "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "run-p build:*",
+    "build:common": "tsc",
+    "build:esm": "tsc -p tsconfig.esm.json",
+    "prepack": "npm run build",
+    "watch": "tsc -w",
+    "fix": "run-s fix:*",
+    "fix:eslint": "npm run lint:eslint -- --fix",
+    "fix:prettier": "npm run lint:prettier -- --write",
+    "lint": "run-p lint:*",
+    "lint:eslint": "eslint --ext js,ts .",
+    "lint:prettier": "prettier -l .",
+    "lint:type": "tsc --noEmit",
+    "test": "run-s lint test:*",
+    "test:unit": "jest"
+  },
+  "devDependencies": {
+    "@tksst/prettier-config": "1.0.2",
+    "@types/jest": "27.4.1",
+    "@types/node": "14.18.13",
+    "@typescript-eslint/eslint-plugin": "5.19.0",
+    "@typescript-eslint/parser": "5.19.0",
+    "eslint": "8.13.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-simple-import-sort": "7.0.0",
+    "jest": "27.5.1",
+    "npm": "8.7.0",
+    "npm-run-all": "4.1.5",
+    "prettier": "2.6.2",
+    "rimraf": "3.0.2",
+    "ts-jest": "27.1.4",
+    "typescript": "4.6.3"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-typescript": "17.0.0",
+    "source-map-support": "0.5.21"
+  },
+  "engines": {
+    "node": ">= 14"
+  }
+}

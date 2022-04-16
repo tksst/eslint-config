@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    // >= 14       ES2020
+    // >= 16       ES2021
+    // >= 17       ES2022
+    "target": "ES2020",
+    "module": "commonjs",
+    "lib": ["ES2020"],
+    "types": ["node", "jest"],
+    "strict": true,
+    "noImplicitReturns": true,
+    "importHelpers": true,
+    "experimentalDecorators": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "sourceMap": true,
+    "outDir": "dist"
+  },
+  "include": ["src"]
+}
