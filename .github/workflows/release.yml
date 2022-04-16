@@ -1,0 +1,38 @@
+name: Release
+on:
+  workflow_run:
+    workflows:
+      - test
+    branches:
+      # according to the semantic-release default branch configuration:
+      - master
+      - next
+      - next-major
+      - alpha
+      - beta
+    types:
+      - completed
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+
+    steps:
+      - uses: actions/checkout@dcd71f646680f2efd8db4afa5ad64fdcba30e748
+        with:
+          # fetch all history
+          fetch-depth: 0
+
+      - uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854
+        with:
+          node-version: 16
+          cache: npm
+
+      - run: npx npm@8.7.0 ci
+
+      - name: Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npx npx semantic-release
