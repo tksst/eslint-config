@@ -1,6 +1,6 @@
 {
   "name": "@tksst/eslint-config",
-  "version": "0.0.1-development",
+  "version": "1.0.0",
   "description": "My personal ESLint config",
   "publishConfig": {
     "access": "public"
