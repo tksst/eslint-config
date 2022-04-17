@@ -13,7 +13,7 @@
     "email": "takashi@tks.st",
     "url": "https://www.tks.st/"
   },
-  "main": ".eslintrc.js",
+  "main": "index.js",
   "scripts": {
     "fix": "run-s fix:*",
     "fix:eslint": "npm run lint:eslint -- --fix",
