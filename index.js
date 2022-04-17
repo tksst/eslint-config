@@ -1,33 +1,20 @@
 /** @type {import('eslint').Linter.Config} */
 
-const commonRule = {
-    "no-console": "off",
-    "no-empty": ["error", { allowEmptyCatch: true }],
-    "simple-import-sort/imports": "warn",
-    "simple-import-sort/exports": "warn",
-    "sort-imports": "off",
-    "import/prefer-default-export": "off",
-};
-
 module.exports = {
     plugins: ["simple-import-sort"],
+    extends: ["eslint:recommended", "airbnb-base", "prettier"],
+    rules: {
+        "no-console": "off",
+        "no-empty": ["error", { allowEmptyCatch: true }],
+        "simple-import-sort/imports": "warn",
+        "simple-import-sort/exports": "warn",
+        "sort-imports": "off",
+        "import/prefer-default-export": "off",
+    },
     overrides: [
         {
-            files: "*.js",
-            extends: ["eslint:recommended", "airbnb-base", "prettier"],
-            rules: {
-                ...commonRule,
-            },
-        },
-        {
             files: "*.ts",
-            extends: [
-                "eslint:recommended",
-                "plugin:@typescript-eslint/recommended",
-                "airbnb-base",
-                "airbnb-typescript/base",
-                "prettier",
-            ],
+            extends: ["plugin:@typescript-eslint/recommended", "airbnb-typescript/base", "prettier"],
             parserOptions: {
                 project: "./tsconfig.json",
             },
@@ -36,7 +23,6 @@ module.exports = {
                 "@typescript-eslint/no-empty-function": "off",
                 "@typescript-eslint/no-use-before-define": "off",
                 "@typescript-eslint/no-explicit-any": "off",
-                ...commonRule,
             },
         },
     ],
