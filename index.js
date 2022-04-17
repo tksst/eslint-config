@@ -6,6 +6,14 @@ module.exports = {
     rules: {
         "no-console": "off",
         "no-empty": ["error", { allowEmptyCatch: true }],
+        "no-restricted-syntax": "off",
+        "no-plusplus": "off",
+        "no-continue": "off",
+        "no-bitwise": "off",
+        "no-param-reassign": "off",
+        "no-await-in-loop": "warn",
+        "no-empty-function": "off",
+
         "simple-import-sort/imports": "warn",
         "simple-import-sort/exports": "warn",
         "sort-imports": "off",
