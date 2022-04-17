@@ -10,7 +10,6 @@ const commonRule = {
 };
 
 module.exports = {
-    root: true,
     plugins: ["simple-import-sort"],
     overrides: [
         {
