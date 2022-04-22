@@ -1,22 +1,16 @@
-name: Release
+name: Test and Release
 on:
-  workflow_run:
-    workflows:
-      - test
+  push:
     branches:
-      # according to the semantic-release default branch configuration:
       - master
-      - next
-      - next-major
       - alpha
-      - beta
-    types:
-      - completed
 
 jobs:
+  test:
+    uses: ./.github/workflows/test.yml
   release:
+    needs: test
     runs-on: ubuntu-latest
-    if: ${{ github.event.workflow_run.conclusion == 'success' }}
 
     steps:
       - uses: actions/checkout@dcd71f646680f2efd8db4afa5ad64fdcba30e748

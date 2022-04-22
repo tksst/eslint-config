@@ -3,3 +3,4 @@
 /.gitattributes
 /.prettierignore
 /prettier.config.js
+/release.config.js

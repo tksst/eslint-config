@@ -47,16 +47,6 @@
     "eslint": "^8.13.0",
     "eslint-plugin-simple-import-sort": "^7.0.0"
   },
-  "release": {
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/changelog",
-      "@semantic-release/npm",
-      "@semantic-release/github",
-      "@semantic-release/git"
-    ]
-  },
   "engines": {
     "node": ">= 14"
   }
