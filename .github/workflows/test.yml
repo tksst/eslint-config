@@ -30,5 +30,12 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - run: npx npm@8.7.0 ci
-      - run: npx npx npm test
+
+      - name: Enable corepack
+        run: corepack enable npm
+
+      - name: Print npm version
+        run: npm --version
+
+      - run: npm ci
+      - run: npm test
