@@ -20,15 +20,22 @@ jobs:
         node-version:
           - 14
           - 16
-          - 17
+          - 18
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-      - uses: actions/checkout@dcd71f646680f2efd8db4afa5ad64fdcba30e748
+      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@56337c425554a6be30cdef71bf441f15be286854
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-      - run: npx npm@8.7.0 ci
-      - run: npx npx npm test
+
+      - name: Enable corepack
+        run: corepack enable npm
+
+      - name: Print npm version
+        run: npm --version
+
+      - run: npm ci
+      - run: npm test
