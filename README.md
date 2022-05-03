@@ -24,6 +24,22 @@ module.exports = {
     node: true,
     jest: true
   },
-  extends: "@tksst"
+  extends: "@tksst/eslint-config"
 };
 ```
+
+As above, in addition to putting this eslint-config in `extends`, you should also set `root` and `env`.
+
+# Shareable Configurations
+
+## [`@tksst/eslint-config/javascript`](./javascript.js)
+
+This is for JavaScript source code. I recommend using this if your project is JavaScript only.
+
+## [`@tksst/eslint-config/typescript`](./typescript.js)
+
+This is based on `@tksst/eslint-config/javascript` with additional settings for TypeScript source code.
+
+## [`@tksst/eslint-config`](./index.js)
+
+This setting is based on `@tksst/eslint-config/javascript`, and `@tksst/eslint-config/typescript` is applied depending on the extension of the source code.
