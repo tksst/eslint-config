@@ -22,8 +22,7 @@
     "lint:eslint": "eslint --ext js .",
     "lint:prettier": "prettier -l .",
     "test": "run-p test:* lint",
-    "test:jest": "jest",
-    "prepare": "npm run lint"
+    "test:jest": "jest"
   },
   "devDependencies": {
     "@semantic-release/changelog": "6.0.1",
