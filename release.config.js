@@ -1,4 +1,4 @@
-const branch = process.env.GITHUB_BASE_REF;
+const branch = process.env.GITHUB_REF_NAME;
 
 const pluginsRelease = [
     "@semantic-release/commit-analyzer",
