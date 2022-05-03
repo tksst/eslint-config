@@ -5,13 +5,7 @@ describe("ESLint config Snapshot", () => {
     let eslint;
 
     beforeAll(() => {
-        eslint = new ESLint({ useEslintrc: false, overrideConfigFile: "./index.js", extensions: [".js", ".ts"] });
-    });
-
-    it("for JavaScript", async () => {
-        const result = await eslint.calculateConfigForFile("./test.js");
-        relativize(result);
-        expect(result).toMatchSnapshot();
+        eslint = new ESLint({ useEslintrc: false, overrideConfigFile: "./typescript.js", extensions: [".ts"] });
     });
 
     it("for TypeScript", async () => {
