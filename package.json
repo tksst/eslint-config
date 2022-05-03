@@ -21,7 +21,8 @@
     "lint": "run-p lint:*",
     "lint:eslint": "eslint --ext js .",
     "lint:prettier": "prettier -l .",
-    "test": "npm run lint",
+    "test": "run-p test:* lint",
+    "test:jest": "jest",
     "prepare": "npm run lint"
   },
   "devDependencies": {
@@ -32,6 +33,7 @@
     "@typescript-eslint/parser": "5.21.0",
     "eslint": "8.14.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
+    "jest": "28.0.3",
     "npm-run-all": "4.1.5",
     "prettier": "2.6.2",
     "semantic-release": "19.0.2"
