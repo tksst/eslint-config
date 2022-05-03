@@ -4,3 +4,6 @@
 /.prettierignore
 /prettier.config.js
 /release.config.js
+/*.test.js
+/__snapshots__/
+/relativize.js
