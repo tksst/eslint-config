@@ -12,7 +12,7 @@ describe("ESLint config Snapshot", () => {
     let eslint;
 
     beforeAll(() => {
-        eslint = new ESLint({ extensions: [".js", ".ts"] });
+        eslint = new ESLint({ useEslintrc: false, overrideConfigFile: "./index.js", extensions: [".js", ".ts"] });
     });
 
     it("for JavaScript", async () => {

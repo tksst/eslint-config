@@ -3,9 +3,7 @@
 exports[`ESLint config Snapshot for JavaScript 1`] = `
 Object {
   "env": Object {
-    "es2020": true,
     "es6": true,
-    "jest": true,
     "node": true,
   },
   "globals": Object {},
@@ -2138,9 +2136,7 @@ Object {
 exports[`ESLint config Snapshot for TypeScript 1`] = `
 Object {
   "env": Object {
-    "es2020": true,
     "es6": true,
-    "jest": true,
     "node": true,
   },
   "globals": Object {},
