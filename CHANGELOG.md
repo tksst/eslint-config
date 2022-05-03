@@ -7,6 +7,13 @@
 * **build:** stop linting on npm install ([22f0a8f](https://github.com/tksst/eslint-config/commit/22f0a8f54a14483a6387ff95a3cbb66785bc8d9b))
 * **ci:** CHANGELOG.md is not generated automatically. ([dc4ad07](https://github.com/tksst/eslint-config/commit/dc4ad077e61d25dfec681ff969c4ba9b646397d8))
 
+# [1.2.0](https://github.com/tksst/eslint-config/compare/v1.1.0...v1.2.0) (2022-05-03)
+
+
+### Features
+
+* new language-specific shareable configs. ([01cdbc5](https://github.com/tksst/eslint-config/commit/01cdbc5d392b26d7b48a9216a20ad470524ca7b3))
+
 # [1.1.0](https://github.com/tksst/eslint-config/compare/v1.0.1...v1.1.0) (2022-04-17)
 
 
