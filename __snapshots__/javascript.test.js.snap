@@ -1433,6 +1433,7 @@ Object {
         "allowAfterThis": false,
         "allowAfterThisConstructor": false,
         "allowFunctionParams": true,
+        "enforceInClassFields": false,
         "enforceInMethodNames": true,
       },
     ],
