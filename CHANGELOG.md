@@ -1,3 +1,15 @@
+# [1.3.0](https://github.com/tksst/eslint-config/compare/v1.2.1...v1.3.0) (2022-05-21)
+
+
+### Bug Fixes
+
+* missing CHANGELOG. ([7604692](https://github.com/tksst/eslint-config/commit/76046922453644dc59ce4b0d5648da28a06f2e3b))
+
+
+### Features
+
+* relax some rules ([d5418a2](https://github.com/tksst/eslint-config/commit/d5418a2e06f10e620b117b58982524528b1217d5))
+
 ## [1.2.1](https://github.com/tksst/eslint-config/compare/v1.2.0...v1.2.1) (2022-05-03)
 
 
