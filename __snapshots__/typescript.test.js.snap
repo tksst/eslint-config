@@ -281,7 +281,7 @@ Object {
       },
     ],
     "@typescript-eslint/no-unused-vars": Array [
-      "error",
+      "warn",
       Object {
         "args": "after-used",
         "ignoreRestSiblings": true,
@@ -509,7 +509,7 @@ Object {
       "multi-line",
     ],
     "default-case": Array [
-      "error",
+      "off",
       Object {
         "commentPattern": "^no default$",
       },
@@ -1947,7 +1947,7 @@ Object {
       },
     ],
     "prefer-const": Array [
-      "error",
+      "warn",
       Object {
         "destructuring": "any",
         "ignoreReadBeforeAssign": true,
