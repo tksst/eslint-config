@@ -13,6 +13,9 @@ module.exports = {
         "no-param-reassign": "off",
         "no-await-in-loop": "warn",
         "no-empty-function": "off",
+        "no-unused-vars": "warn",
+        "default-case": "off",
+        "prefer-const": "warn",
 
         "simple-import-sort/imports": "warn",
         "simple-import-sort/exports": "warn",
