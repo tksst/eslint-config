@@ -27,7 +27,7 @@
   "devDependencies": {
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
-    "@tksst/prettier-config": "1.0.2",
+    "@tksst/prettier-config": "1.0.4",
     "@typescript-eslint/eslint-plugin": "5.25.0",
     "@typescript-eslint/parser": "5.25.0",
     "eslint": "8.16.0",
