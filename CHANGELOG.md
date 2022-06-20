@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/tksst/eslint-config/compare/v1.3.0...v1.4.0) (2022-06-20)
+
+
+### Features
+
+* disable class-methods-use ([3c7679d](https://github.com/tksst/eslint-config/commit/3c7679d995429d1cbf0fb07d8066343e33ebe1bd))
+
 # [1.3.0](https://github.com/tksst/eslint-config/compare/v1.2.1...v1.3.0) (2022-05-21)
 
 
