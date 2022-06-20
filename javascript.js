@@ -16,6 +16,7 @@ module.exports = {
         "no-unused-vars": "warn",
         "default-case": "off",
         "prefer-const": "warn",
+        "class-methods-use-this": "off",
 
         "simple-import-sort/imports": "warn",
         "simple-import-sort/exports": "warn",

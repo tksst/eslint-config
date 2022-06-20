@@ -19,8 +19,8 @@
     "fix:eslint": "npm run lint:eslint -- --fix",
     "fix:prettier": "npm run lint:prettier -- --write",
     "lint": "run-p lint:*",
-    "lint:eslint": "eslint --ext js .",
-    "lint:prettier": "prettier -l .",
+    "lint:eslint": "eslint --cache --cache-strategy content --cache-location ./node_modules/.cache/eslint/ --ext js .",
+    "lint:prettier": "prettier --cache -l .",
     "test": "run-p test:* lint",
     "test:jest": "jest"
   },
@@ -28,14 +28,14 @@
     "@semantic-release/changelog": "6.0.1",
     "@semantic-release/git": "10.0.1",
     "@tksst/prettier-config": "1.0.4",
-    "@typescript-eslint/eslint-plugin": "5.27.0",
-    "@typescript-eslint/parser": "5.27.0",
-    "eslint": "8.17.0",
+    "@typescript-eslint/eslint-plugin": "5.28.0",
+    "@typescript-eslint/parser": "5.28.0",
+    "eslint": "8.18.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
-    "jest": "28.1.0",
+    "jest": "28.1.1",
     "npm-run-all": "4.1.5",
-    "prettier": "2.6.2",
-    "semantic-release": "19.0.2"
+    "prettier": "2.7.1",
+    "semantic-release": "19.0.3"
   },
   "dependencies": {
     "eslint-config-airbnb-typescript": "17.0.0",
@@ -47,7 +47,7 @@
     "eslint": "^8.13.0",
     "eslint-plugin-simple-import-sort": "^7.0.0"
   },
-  "packageManager": "npm@8.7.0",
+  "packageManager": "npm@8.12.2",
   "engines": {
     "node": ">= 14"
   }

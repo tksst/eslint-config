@@ -173,7 +173,7 @@ Object {
       },
     ],
     "class-methods-use-this": Array [
-      "error",
+      "off",
       Object {
         "enforceForClassFields": true,
         "exceptMethods": Array [],
@@ -2579,7 +2579,7 @@ Object {
       },
     ],
     "class-methods-use-this": Array [
-      "error",
+      "off",
       Object {
         "enforceForClassFields": true,
         "exceptMethods": Array [],
