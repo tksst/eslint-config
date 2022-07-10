@@ -1,3 +1,11 @@
+# [1.5.0](https://github.com/tksst/eslint-config/compare/v1.4.0...v1.5.0) (2022-07-10)
+
+
+### Features
+
+* support extensions mts and cts. ([8ee2acc](https://github.com/tksst/eslint-config/commit/8ee2accb5ca1010e6248e549a83a5c38d4d69291))
+* support Node.js 12 ([3ca692c](https://github.com/tksst/eslint-config/commit/3ca692c18544d070d2d72ba9539ccd6c9427b8b4))
+
 # [1.4.0](https://github.com/tksst/eslint-config/compare/v1.3.0...v1.4.0) (2022-06-20)
 
 
