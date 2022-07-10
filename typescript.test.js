@@ -13,6 +13,16 @@ describe("ESLint config Snapshot", () => {
     });
 
     it("for TypeScript", async () => {
+        const result = await eslint.calculateConfigForFile("./test.ts");
+        relativize(result);
+        expect(result).toMatchSnapshot();
+    });
+    it("for TypeScript cts", async () => {
+        const result = await eslint.calculateConfigForFile("./test.cts");
+        relativize(result);
+        expect(result).toMatchSnapshot();
+    });
+    it("for TypeScript mts", async () => {
         const result = await eslint.calculateConfigForFile("./test.mts");
         relativize(result);
         expect(result).toMatchSnapshot();
