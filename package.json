@@ -49,6 +49,6 @@
   },
   "packageManager": "npm@8.13.2",
   "engines": {
-    "node": ">= 14"
+    "node": ">= 12"
   }
 }
