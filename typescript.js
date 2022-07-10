@@ -1,7 +1,12 @@
 /** @type {import('eslint').Linter.Config} */
 
 module.exports = {
-    extends: ["./javascript.js", "plugin:@typescript-eslint/recommended", "airbnb-typescript/base", "prettier"],
+    extends: [
+        "./javascript.js",
+        "plugin:@typescript-eslint/recommended",
+        "./airbnb-typescript-base-override.js",
+        "prettier",
+    ],
     parserOptions: {
         project: "./tsconfig.json",
     },
