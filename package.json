@@ -21,7 +21,7 @@
     "lint": "run-p lint:*",
     "lint:eslint": "eslint --cache --cache-strategy content --cache-location ./node_modules/.cache/eslint/ --ext js .",
     "lint:prettier": "prettier --cache -l .",
-    "test": "run-p test:* lint",
+    "test": "run-p test:*",
     "test:jest": "jest"
   },
   "devDependencies": {
