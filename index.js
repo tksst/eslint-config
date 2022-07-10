@@ -5,7 +5,7 @@ module.exports = {
 
     overrides: [
         {
-            files: "*.ts",
+            files: ["*.ts", "*.cts", "*.mts"],
             extends: ["./typescript.js"],
         },
     ],
