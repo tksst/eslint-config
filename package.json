@@ -29,7 +29,7 @@
     "@semantic-release/git": "10.0.1",
     "@tksst/prettier-config": "1.0.4",
     "@typescript-eslint/eslint-plugin": "5.30.5",
-    "@typescript-eslint/parser": "5.28.0",
+    "@typescript-eslint/parser": "5.30.6",
     "eslint": "8.19.0",
     "eslint-plugin-simple-import-sort": "7.0.0",
     "jest": "28.1.2",
