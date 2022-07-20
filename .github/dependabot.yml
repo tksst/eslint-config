@@ -4,8 +4,7 @@ updates:
     target-branch: develop
     directory: /
     schedule:
-      interval: weekly
-      day: friday
+      interval: daily
   - package-ecosystem: github-actions
     target-branch: develop
     directory: /
