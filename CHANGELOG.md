@@ -1,3 +1,15 @@
+# [1.6.0](https://github.com/tksst/eslint-config/compare/v1.5.0...v1.6.0) (2022-07-20)
+
+
+### Bug Fixes
+
+* unable to import packages in devDependencies in jest.config.cjs ([597dc7f](https://github.com/tksst/eslint-config/commit/597dc7f4cef84c401bf456958a8dbd70d4b90ecd))
+
+
+### Features
+
+* disable global-require as it is deprecated ([231bb5d](https://github.com/tksst/eslint-config/commit/231bb5dd36d056ee545616a70778b78215cee340))
+
 # [1.5.0](https://github.com/tksst/eslint-config/compare/v1.4.0...v1.5.0) (2022-07-10)
 
 
