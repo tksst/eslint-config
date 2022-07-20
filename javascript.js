@@ -17,6 +17,7 @@ module.exports = {
         "default-case": "off",
         "prefer-const": "warn",
         "class-methods-use-this": "off",
+        "global-require": "off", // this is DEPRECATED in ESLint v7.0.0
 
         "simple-import-sort/imports": "warn",
         "simple-import-sort/exports": "warn",
