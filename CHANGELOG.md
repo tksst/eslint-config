@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/tksst/eslint-config/compare/v1.6.0...v1.7.0) (2022-07-23)
+
+
+### Features
+
+* Local imports now always require the extension ([03cf4df](https://github.com/tksst/eslint-config/commit/03cf4df571f85a9fa7827edde5403798924248d8))
+
 # [1.6.0](https://github.com/tksst/eslint-config/compare/v1.5.0...v1.6.0) (2022-07-20)
 
 
