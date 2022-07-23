@@ -668,13 +668,6 @@ Object {
     "import/extensions": Array [
       "error",
       "ignorePackages",
-      Object {
-        "js": "never",
-        "jsx": "never",
-        "mjs": "never",
-        "ts": "never",
-        "tsx": "never",
-      },
     ],
     "import/first": Array [
       "error",
@@ -3109,13 +3102,6 @@ Object {
     "import/extensions": Array [
       "error",
       "ignorePackages",
-      Object {
-        "js": "never",
-        "jsx": "never",
-        "mjs": "never",
-        "ts": "never",
-        "tsx": "never",
-      },
     ],
     "import/first": Array [
       "error",
@@ -5550,13 +5536,6 @@ Object {
     "import/extensions": Array [
       "error",
       "ignorePackages",
-      Object {
-        "js": "never",
-        "jsx": "never",
-        "mjs": "never",
-        "ts": "never",
-        "tsx": "never",
-      },
     ],
     "import/first": Array [
       "error",

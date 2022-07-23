@@ -1,5 +1,5 @@
 const { ESLint } = require("eslint");
-const relativize = require("./relativize");
+const relativize = require("./relativize.js");
 
 describe("ESLint config Snapshot", () => {
     let eslint;
