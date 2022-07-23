@@ -54,5 +54,15 @@ module.exports = {
                 optionalDependencies: false,
             },
         ],
+        // https://github.com/airbnb/javascript/blob/f3d3a075cda2acc02011e71991c10bb5b4a15278/packages/eslint-config-airbnb-base/rules/imports.js#L138-L144
+        "import/extensions": [
+            "error",
+            "ignorePackages",
+            {
+                js: "never",
+                mjs: "never",
+                jsx: "never",
+            },
+        ],
     },
 };
