@@ -1,29 +1,15 @@
 const { ESLint } = require("eslint");
 const relativize = require("./relativize.js");
 
+const eslint = new ESLint({
+    useEslintrc: false,
+    overrideConfigFile: "./index.js",
+    extensions: [".js", ".ts", ".cjs", ".cts", ".mjs", ".mts"],
+});
+
 describe("ESLint config Snapshot", () => {
-    let eslint;
-
-    beforeAll(() => {
-        eslint = new ESLint({
-            useEslintrc: false,
-            overrideConfigFile: "./index.js",
-            extensions: [".js", ".ts", ".cjs", ".cts", ".mjs", ".mts"],
-        });
-    });
-
     it("for JavaScript", async () => {
         const result = await eslint.calculateConfigForFile("./test.js");
-        relativize(result);
-        expect(result).toMatchSnapshot();
-    });
-    it("for JavaScript cjs", async () => {
-        const result = await eslint.calculateConfigForFile("./test.cjs");
-        relativize(result);
-        expect(result).toMatchSnapshot();
-    });
-    it("for JavaScript mjs", async () => {
-        const result = await eslint.calculateConfigForFile("./test.mjs");
         relativize(result);
         expect(result).toMatchSnapshot();
     });
@@ -32,14 +18,30 @@ describe("ESLint config Snapshot", () => {
         relativize(result);
         expect(result).toMatchSnapshot();
     });
-    it("for TypeScript cts", async () => {
-        const result = await eslint.calculateConfigForFile("./test.cts");
-        relativize(result);
-        expect(result).toMatchSnapshot();
+});
+
+describe("config between typescript extensions", () => {
+    let tsP;
+    beforeAll(() => {
+        tsP = eslint.calculateConfigForFile("./test.ts");
     });
-    it("for TypeScript mts", async () => {
-        const result = await eslint.calculateConfigForFile("./test.mts");
-        relativize(result);
-        expect(result).toMatchSnapshot();
+    it(".cts", async () => {
+        expect(await tsP).toStrictEqual(await eslint.calculateConfigForFile("./test.cts"));
+    });
+    it(".mts", async () => {
+        expect(await tsP).toStrictEqual(await eslint.calculateConfigForFile("./test.mts"));
+    });
+});
+
+describe("config between javascript extensions", () => {
+    let jsP;
+    beforeAll(() => {
+        jsP = eslint.calculateConfigForFile("./test.js");
+    });
+    it(".cts", async () => {
+        expect(await jsP).toStrictEqual(await eslint.calculateConfigForFile("./test.cjs"));
+    });
+    it(".mts", async () => {
+        expect(await jsP).toStrictEqual(await eslint.calculateConfigForFile("./test.mjs"));
     });
 });
