@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/tksst/eslint-config/compare/v1.8.0...v2.0.0) (2022-07-30)
+
+
+### Features
+
+* introduce @typescript-eslint/recommended-requiring-type-checking ([f464a02](https://github.com/tksst/eslint-config/commit/f464a02eaed8b41326604573e9568f39501a27d4))
+
+
+### BREAKING CHANGES
+
+* This can make a lot of errors in existing code.
+
 # [1.8.0](https://github.com/tksst/eslint-config/compare/v1.7.0...v1.8.0) (2022-07-30)
 
 
