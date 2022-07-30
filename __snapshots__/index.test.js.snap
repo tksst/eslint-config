@@ -6677,19 +6677,19 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-unsafe-argument": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unsafe-assignment": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unsafe-call": Array [
       "error",
     ],
     "@typescript-eslint/no-unsafe-member-access": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unsafe-return": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unused-expressions": Array [
       "error",
@@ -9153,19 +9153,19 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-unsafe-argument": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unsafe-assignment": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unsafe-call": Array [
       "error",
     ],
     "@typescript-eslint/no-unsafe-member-access": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unsafe-return": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unused-expressions": Array [
       "error",
@@ -11629,19 +11629,19 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-unsafe-argument": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unsafe-assignment": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unsafe-call": Array [
       "error",
     ],
     "@typescript-eslint/no-unsafe-member-access": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unsafe-return": Array [
-      "warn",
+      "error",
     ],
     "@typescript-eslint/no-unused-expressions": Array [
       "error",
