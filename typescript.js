@@ -3,8 +3,8 @@
 module.exports = {
     extends: [
         "./javascript.js",
-        "plugin:@typescript-eslint/recommended",
         "./airbnb-typescript-base-override.js",
+        "plugin:@typescript-eslint/recommended",
         "prettier",
     ],
     parserOptions: {
