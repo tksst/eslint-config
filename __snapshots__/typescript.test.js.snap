@@ -228,6 +228,9 @@ Object {
     ],
     "@typescript-eslint/no-floating-promises": Array [
       "error",
+      Object {
+        "ignoreIIFE": true,
+      },
     ],
     "@typescript-eslint/no-for-in-array": Array [
       "error",
@@ -2701,6 +2704,9 @@ Object {
     ],
     "@typescript-eslint/no-floating-promises": Array [
       "error",
+      Object {
+        "ignoreIIFE": true,
+      },
     ],
     "@typescript-eslint/no-for-in-array": Array [
       "error",
@@ -5174,6 +5180,9 @@ Object {
     ],
     "@typescript-eslint/no-floating-promises": Array [
       "error",
+      Object {
+        "ignoreIIFE": true,
+      },
     ],
     "@typescript-eslint/no-for-in-array": Array [
       "error",
