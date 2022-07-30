@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/tksst/eslint-config/compare/v1.7.0...v1.8.0) (2022-07-30)
+
+
+### Features
+
+* disable max-classes-per-file ([d09288c](https://github.com/tksst/eslint-config/commit/d09288c9362a2b8143245c3e88e8cf8c20d7acd3))
+* Replace "extends" to "requires" to make it easier to customize ([cee066e](https://github.com/tksst/eslint-config/commit/cee066e010d2267e0d47e0eb9780a61dc306f4e0))
+
 # [1.7.0](https://github.com/tksst/eslint-config/compare/v1.6.0...v1.7.0) (2022-07-23)
 
 
