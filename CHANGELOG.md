@@ -1,3 +1,16 @@
+# [2.1.0](https://github.com/tksst/eslint-config/compare/v2.0.0...v2.1.0) (2022-07-30)
+
+
+### Bug Fixes
+
+* add ignoreIIFE to @typescript-eslint/no-floating-promises ([1446c9f](https://github.com/tksst/eslint-config/commit/1446c9fa1f1d4b8b6c9feff90d435f719885806c))
+* change no-unsafe-* to error ([de96926](https://github.com/tksst/eslint-config/commit/de96926c0b1660bef7fd65b9829498f0ad31082d))
+
+
+### Features
+
+* exports configs as CommonJS modules ([2dfe47c](https://github.com/tksst/eslint-config/commit/2dfe47ccf4db12edcf99943a25e32c1c7fb27cd0))
+
 # [2.0.0](https://github.com/tksst/eslint-config/compare/v1.8.0...v2.0.0) (2022-07-30)
 
 
