@@ -18,6 +18,7 @@ module.exports = {
         "prefer-const": "warn",
         "class-methods-use-this": "off",
         "global-require": "off", // this is DEPRECATED in ESLint v7.0.0
+        "max-classes-per-file": "off",
 
         "simple-import-sort/imports": "warn",
         "simple-import-sort/exports": "warn",

@@ -691,7 +691,7 @@ Object {
       },
     ],
     "max-classes-per-file": Array [
-      "error",
+      "off",
       1,
     ],
     "max-depth": Array [
@@ -2820,7 +2820,7 @@ Object {
       },
     ],
     "max-classes-per-file": Array [
-      "error",
+      "off",
       1,
     ],
     "max-depth": Array [
@@ -4949,7 +4949,7 @@ Object {
       },
     ],
     "max-classes-per-file": Array [
-      "error",
+      "off",
       1,
     ],
     "max-depth": Array [
@@ -7367,7 +7367,7 @@ Object {
       },
     ],
     "max-classes-per-file": Array [
-      "error",
+      "off",
       1,
     ],
     "max-depth": Array [
@@ -9801,7 +9801,7 @@ Object {
       },
     ],
     "max-classes-per-file": Array [
-      "error",
+      "off",
       1,
     ],
     "max-depth": Array [
@@ -12235,7 +12235,7 @@ Object {
       },
     ],
     "max-classes-per-file": Array [
-      "error",
+      "off",
       1,
     ],
     "max-depth": Array [
