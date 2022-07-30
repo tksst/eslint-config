@@ -6422,6 +6422,9 @@ Object {
     "@typescript-eslint/adjacent-overload-signatures": Array [
       "error",
     ],
+    "@typescript-eslint/await-thenable": Array [
+      "error",
+    ],
     "@typescript-eslint/ban-ts-comment": Array [
       "error",
     ],
@@ -6591,7 +6594,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-explicit-any": Array [
-      "off",
+      "warn",
     ],
     "@typescript-eslint/no-extra-non-null-assertion": Array [
       "error",
@@ -6609,6 +6612,12 @@ Object {
     ],
     "@typescript-eslint/no-extra-semi": Array [
       "off",
+    ],
+    "@typescript-eslint/no-floating-promises": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-for-in-array": Array [
+      "error",
     ],
     "@typescript-eslint/no-implied-eval": Array [
       "error",
@@ -6634,6 +6643,9 @@ Object {
     "@typescript-eslint/no-misused-new": Array [
       "error",
     ],
+    "@typescript-eslint/no-misused-promises": Array [
+      "error",
+    ],
     "@typescript-eslint/no-namespace": Array [
       "error",
     ],
@@ -6655,8 +6667,26 @@ Object {
     "@typescript-eslint/no-throw-literal": Array [
       "error",
     ],
+    "@typescript-eslint/no-unnecessary-type-assertion": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unnecessary-type-constraint": Array [
       "error",
+    ],
+    "@typescript-eslint/no-unsafe-argument": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-unsafe-assignment": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-unsafe-call": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unsafe-member-access": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-unsafe-return": Array [
+      "warn",
     ],
     "@typescript-eslint/no-unused-expressions": Array [
       "error",
@@ -6707,7 +6737,13 @@ Object {
       },
     ],
     "@typescript-eslint/require-await": Array [
-      "off",
+      "error",
+    ],
+    "@typescript-eslint/restrict-plus-operands": Array [
+      "error",
+    ],
+    "@typescript-eslint/restrict-template-expressions": Array [
+      "error",
     ],
     "@typescript-eslint/return-await": Array [
       "error",
@@ -6736,6 +6772,9 @@ Object {
     ],
     "@typescript-eslint/type-annotation-spacing": Array [
       "off",
+    ],
+    "@typescript-eslint/unbound-method": Array [
+      "error",
     ],
     "accessor-pairs": Array [
       "off",
@@ -8856,6 +8895,9 @@ Object {
     "@typescript-eslint/adjacent-overload-signatures": Array [
       "error",
     ],
+    "@typescript-eslint/await-thenable": Array [
+      "error",
+    ],
     "@typescript-eslint/ban-ts-comment": Array [
       "error",
     ],
@@ -9025,7 +9067,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-explicit-any": Array [
-      "off",
+      "warn",
     ],
     "@typescript-eslint/no-extra-non-null-assertion": Array [
       "error",
@@ -9043,6 +9085,12 @@ Object {
     ],
     "@typescript-eslint/no-extra-semi": Array [
       "off",
+    ],
+    "@typescript-eslint/no-floating-promises": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-for-in-array": Array [
+      "error",
     ],
     "@typescript-eslint/no-implied-eval": Array [
       "error",
@@ -9068,6 +9116,9 @@ Object {
     "@typescript-eslint/no-misused-new": Array [
       "error",
     ],
+    "@typescript-eslint/no-misused-promises": Array [
+      "error",
+    ],
     "@typescript-eslint/no-namespace": Array [
       "error",
     ],
@@ -9089,8 +9140,26 @@ Object {
     "@typescript-eslint/no-throw-literal": Array [
       "error",
     ],
+    "@typescript-eslint/no-unnecessary-type-assertion": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unnecessary-type-constraint": Array [
       "error",
+    ],
+    "@typescript-eslint/no-unsafe-argument": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-unsafe-assignment": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-unsafe-call": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unsafe-member-access": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-unsafe-return": Array [
+      "warn",
     ],
     "@typescript-eslint/no-unused-expressions": Array [
       "error",
@@ -9141,7 +9210,13 @@ Object {
       },
     ],
     "@typescript-eslint/require-await": Array [
-      "off",
+      "error",
+    ],
+    "@typescript-eslint/restrict-plus-operands": Array [
+      "error",
+    ],
+    "@typescript-eslint/restrict-template-expressions": Array [
+      "error",
     ],
     "@typescript-eslint/return-await": Array [
       "error",
@@ -9170,6 +9245,9 @@ Object {
     ],
     "@typescript-eslint/type-annotation-spacing": Array [
       "off",
+    ],
+    "@typescript-eslint/unbound-method": Array [
+      "error",
     ],
     "accessor-pairs": Array [
       "off",
@@ -11290,6 +11368,9 @@ Object {
     "@typescript-eslint/adjacent-overload-signatures": Array [
       "error",
     ],
+    "@typescript-eslint/await-thenable": Array [
+      "error",
+    ],
     "@typescript-eslint/ban-ts-comment": Array [
       "error",
     ],
@@ -11459,7 +11540,7 @@ Object {
       "error",
     ],
     "@typescript-eslint/no-explicit-any": Array [
-      "off",
+      "warn",
     ],
     "@typescript-eslint/no-extra-non-null-assertion": Array [
       "error",
@@ -11477,6 +11558,12 @@ Object {
     ],
     "@typescript-eslint/no-extra-semi": Array [
       "off",
+    ],
+    "@typescript-eslint/no-floating-promises": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-for-in-array": Array [
+      "error",
     ],
     "@typescript-eslint/no-implied-eval": Array [
       "error",
@@ -11502,6 +11589,9 @@ Object {
     "@typescript-eslint/no-misused-new": Array [
       "error",
     ],
+    "@typescript-eslint/no-misused-promises": Array [
+      "error",
+    ],
     "@typescript-eslint/no-namespace": Array [
       "error",
     ],
@@ -11523,8 +11613,26 @@ Object {
     "@typescript-eslint/no-throw-literal": Array [
       "error",
     ],
+    "@typescript-eslint/no-unnecessary-type-assertion": Array [
+      "error",
+    ],
     "@typescript-eslint/no-unnecessary-type-constraint": Array [
       "error",
+    ],
+    "@typescript-eslint/no-unsafe-argument": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-unsafe-assignment": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-unsafe-call": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unsafe-member-access": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-unsafe-return": Array [
+      "warn",
     ],
     "@typescript-eslint/no-unused-expressions": Array [
       "error",
@@ -11575,7 +11683,13 @@ Object {
       },
     ],
     "@typescript-eslint/require-await": Array [
-      "off",
+      "error",
+    ],
+    "@typescript-eslint/restrict-plus-operands": Array [
+      "error",
+    ],
+    "@typescript-eslint/restrict-template-expressions": Array [
+      "error",
     ],
     "@typescript-eslint/return-await": Array [
       "error",
@@ -11604,6 +11718,9 @@ Object {
     ],
     "@typescript-eslint/type-annotation-spacing": Array [
       "off",
+    ],
+    "@typescript-eslint/unbound-method": Array [
+      "error",
     ],
     "accessor-pairs": Array [
       "off",
