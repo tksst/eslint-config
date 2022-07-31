@@ -4,7 +4,6 @@ const relativize = require("./relativize.js");
 const eslint = new ESLint({
     useEslintrc: false,
     overrideConfigFile: "./dist/javascript.json",
-    extensions: [".js", ".cjs", ".mjs"],
 });
 
 describe("ESLint config Snapshot", () => {
@@ -12,18 +11,5 @@ describe("ESLint config Snapshot", () => {
         const result = await eslint.calculateConfigForFile("./test.js");
         relativize(result);
         expect(result).toMatchSnapshot();
-    });
-});
-
-describe("config between extensions", () => {
-    let jsP;
-    beforeAll(() => {
-        jsP = eslint.calculateConfigForFile("./test.js");
-    });
-    it(".cts", async () => {
-        expect(await jsP).toStrictEqual(await eslint.calculateConfigForFile("./test.cjs"));
-    });
-    it(".mts", async () => {
-        expect(await jsP).toStrictEqual(await eslint.calculateConfigForFile("./test.mjs"));
     });
 });
