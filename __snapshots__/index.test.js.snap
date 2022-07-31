@@ -19,8 +19,8 @@ Object {
     "sourceType": "module",
   },
   "plugins": Array [
-    "import",
     "simple-import-sort",
+    "import",
   ],
   "reportUnusedDisableDirectives": undefined,
   "rules": Object {
@@ -255,11 +255,8 @@ Object {
     "dot-notation": Array [
       "error",
       Object {
-        "allowIndexSignaturePropertyAccess": false,
         "allowKeywords": true,
         "allowPattern": "",
-        "allowPrivateClassPropertyAccess": false,
-        "allowProtectedClassPropertyAccess": false,
       },
     ],
     "eol-last": Array [
@@ -2149,9 +2146,9 @@ Object {
     "sourceType": "module",
   },
   "plugins": Array [
-    "import",
-    "simple-import-sort",
     "@typescript-eslint",
+    "simple-import-sort",
+    "import",
   ],
   "reportUnusedDisableDirectives": undefined,
   "rules": Object {

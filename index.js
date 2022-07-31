@@ -4,11 +4,11 @@ module.exports = {
     overrides: [
         {
             files: ["*.js", "*.cjs", "*.mjs"],
-            ...require("./javascript.js"),
+            ...require("./dist/javascript.json"),
         },
         {
             files: ["*.ts", "*.cts", "*.mts"],
-            ...require("./typescript.js"),
+            ...require("./dist/typescript.json"),
         },
     ],
 };
