@@ -1,3 +1,10 @@
+# [2.2.0](https://github.com/tksst/eslint-config/compare/v2.1.0...v2.2.0) (2022-07-31)
+
+
+### Features
+
+* separate settings for javascript and typescript. ([667ebf8](https://github.com/tksst/eslint-config/commit/667ebf8710bbdccc8bc523123ba42006e87a1660))
+
 # [2.1.0](https://github.com/tksst/eslint-config/compare/v2.0.0...v2.1.0) (2022-07-30)
 
 
