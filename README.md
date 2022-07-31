@@ -24,6 +24,14 @@ module.exports = {
     node: true,
     jest: true
   },
+  parserOptions: {
+    // Your project environment settings here.
+    // See ESLint document of "Specifying Parser Options":
+    // https://eslint.org/docs/latest/user-guide/configuring/language-options#specifying-parser-options
+
+    // example:
+    sourceType: "module",
+  }
   extends: "@tksst/eslint-config"
 };
 ```
@@ -32,13 +40,17 @@ As above, in addition to putting this eslint-config in `extends`, you should als
 
 # Shareable Configurations
 
-## [`@tksst/eslint-config/javascript`](./javascript.js)
+## `@tksst/eslint-config/javascript`
 
 This is for JavaScript source code. I recommend using this if your project is JavaScript only.
 
-## [`@tksst/eslint-config/typescript`](./typescript.js)
+Generated from [`src/javascript.js`](./src/javascript.js).
+
+## `@tksst/eslint-config/typescript`
 
 This is based on `@tksst/eslint-config/javascript` with additional settings for TypeScript source code.
+
+Generated from [`src/typescript.js`](./src/typescript.js).
 
 ## [`@tksst/eslint-config`](./index.js)
 

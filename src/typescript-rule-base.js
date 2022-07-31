@@ -2,8 +2,8 @@
 
 module.exports = {
     extends: [
-        "./javascript.js",
-        "./airbnb-typescript-base-override.js",
+        "./javascript-rule-base.js",
+        "eslint-config-airbnb-typescript/base",
         "plugin:@typescript-eslint/recommended",
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "prettier",
