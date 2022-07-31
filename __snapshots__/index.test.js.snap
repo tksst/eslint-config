@@ -2,22 +2,12 @@
 
 exports[`ESLint config Snapshot for JavaScript 1`] = `
 Object {
-  "env": Object {
-    "es6": true,
-    "node": true,
-  },
+  "env": Object {},
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
   "parser": null,
-  "parserOptions": Object {
-    "ecmaFeatures": Object {
-      "generators": false,
-      "objectLiteralDuplicateProperties": false,
-    },
-    "ecmaVersion": 2018,
-    "sourceType": "module",
-  },
+  "parserOptions": Object {},
   "plugins": Array [
     "simple-import-sort",
     "import",
@@ -903,22 +893,13 @@ Object {
 
 exports[`ESLint config Snapshot for TypeScript 1`] = `
 Object {
-  "env": Object {
-    "es6": true,
-    "node": true,
-  },
+  "env": Object {},
   "globals": Object {},
   "ignorePatterns": Array [],
   "noInlineConfig": undefined,
   "parser": "node_modules/@typescript-eslint/parser/dist/index.js",
   "parserOptions": Object {
-    "ecmaFeatures": Object {
-      "generators": false,
-      "objectLiteralDuplicateProperties": false,
-    },
-    "ecmaVersion": 2018,
     "project": "./tsconfig.json",
-    "sourceType": "module",
   },
   "plugins": Array [
     "@typescript-eslint",

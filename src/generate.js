@@ -24,6 +24,8 @@ function trimRules(conf) {
     const result = await eslint.calculateConfigForFile("./test.js");
     trimRules(result);
     result.ignorePatterns = undefined;
+    result.parserOptions = undefined;
+    result.env = undefined;
     await fs.writeFile("./dist/javascript.json", JSON.stringify(result));
 })();
 
@@ -36,6 +38,10 @@ function trimRules(conf) {
     const result = await eslint.calculateConfigForFile("./test.ts");
     trimRules(result);
     result.ignorePatterns = undefined;
+    result.parserOptions.ecmaVersion = undefined;
+    result.parserOptions.ecmaFeatures = undefined;
+    result.parserOptions.sourceType = undefined;
+    result.env = undefined;
     result.parser = "@typescript-eslint/parser";
     await fs.writeFile("./dist/typescript.json", JSON.stringify(result));
 })();
