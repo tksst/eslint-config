@@ -1,12 +1,12 @@
 /** @type {import('eslint').Linter.Config} */
 
 module.exports = {
-    ...require("./javascript.js"),
+    ...require("./dist/javascript.json"),
 
     overrides: [
         {
             files: ["*.ts", "*.cts", "*.mts"],
-            ...require("./typescript.js"),
+            ...require("./dist/typescript.json"),
         },
     ],
 };

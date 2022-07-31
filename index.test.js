@@ -1,5 +1,5 @@
 const { ESLint } = require("eslint");
-const relativize = require("./relativize.js");
+const relativize = require("./src/relativize.js");
 
 const eslint = new ESLint({
     useEslintrc: false,
