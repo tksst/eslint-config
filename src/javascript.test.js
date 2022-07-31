@@ -3,7 +3,7 @@ const relativize = require("./relativize.js");
 
 const eslint = new ESLint({
     useEslintrc: false,
-    overrideConfigFile: "./javascript.js",
+    overrideConfigFile: "./dist/javascript.json",
     extensions: [".js", ".cjs", ".mjs"],
 });
 

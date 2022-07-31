@@ -1,0 +1,976 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ESLint config Snapshot for TypeScript 1`] = `
+Object {
+  "env": Object {
+    "es6": true,
+    "node": true,
+  },
+  "globals": Object {},
+  "ignorePatterns": Array [],
+  "noInlineConfig": undefined,
+  "parser": "node_modules/@typescript-eslint/parser/dist/index.js",
+  "parserOptions": Object {
+    "ecmaFeatures": Object {
+      "generators": false,
+      "objectLiteralDuplicateProperties": false,
+    },
+    "ecmaVersion": 2018,
+    "project": "./tsconfig.json",
+    "sourceType": "module",
+  },
+  "plugins": Array [
+    "@typescript-eslint",
+    "simple-import-sort",
+    "import",
+  ],
+  "reportUnusedDisableDirectives": undefined,
+  "rules": Object {
+    "@typescript-eslint/adjacent-overload-signatures": Array [
+      "error",
+    ],
+    "@typescript-eslint/await-thenable": Array [
+      "error",
+    ],
+    "@typescript-eslint/ban-ts-comment": Array [
+      "error",
+    ],
+    "@typescript-eslint/ban-types": Array [
+      "error",
+    ],
+    "@typescript-eslint/default-param-last": Array [
+      "error",
+    ],
+    "@typescript-eslint/dot-notation": Array [
+      "error",
+      Object {
+        "allowIndexSignaturePropertyAccess": false,
+        "allowKeywords": true,
+        "allowPattern": "",
+        "allowPrivateClassPropertyAccess": false,
+        "allowProtectedClassPropertyAccess": false,
+      },
+    ],
+    "@typescript-eslint/lines-between-class-members": Array [
+      "error",
+      "always",
+      Object {
+        "exceptAfterSingleLine": false,
+      },
+    ],
+    "@typescript-eslint/naming-convention": Array [
+      "error",
+      Object {
+        "format": Array [
+          "camelCase",
+          "PascalCase",
+          "UPPER_CASE",
+        ],
+        "selector": "variable",
+      },
+      Object {
+        "format": Array [
+          "camelCase",
+          "PascalCase",
+        ],
+        "selector": "function",
+      },
+      Object {
+        "format": Array [
+          "PascalCase",
+        ],
+        "selector": "typeLike",
+      },
+    ],
+    "@typescript-eslint/no-array-constructor": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-dupe-class-members": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-empty-interface": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-explicit-any": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-extra-non-null-assertion": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-floating-promises": Array [
+      "error",
+      Object {
+        "ignoreIIFE": true,
+      },
+    ],
+    "@typescript-eslint/no-for-in-array": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-implied-eval": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-inferrable-types": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-loop-func": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-loss-of-precision": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-misused-new": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-misused-promises": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-namespace": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-non-null-asserted-optional-chain": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-non-null-assertion": Array [
+      "warn",
+    ],
+    "@typescript-eslint/no-redeclare": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-shadow": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-this-alias": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-throw-literal": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unnecessary-type-assertion": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unnecessary-type-constraint": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unsafe-argument": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unsafe-assignment": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unsafe-call": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unsafe-member-access": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unsafe-return": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-unused-expressions": Array [
+      "error",
+      Object {
+        "allowShortCircuit": false,
+        "allowTaggedTemplates": false,
+        "allowTernary": false,
+        "enforceForJSX": false,
+      },
+    ],
+    "@typescript-eslint/no-unused-vars": Array [
+      "warn",
+      Object {
+        "args": "after-used",
+        "ignoreRestSiblings": true,
+        "vars": "all",
+      },
+    ],
+    "@typescript-eslint/no-useless-constructor": Array [
+      "error",
+    ],
+    "@typescript-eslint/no-var-requires": Array [
+      "error",
+    ],
+    "@typescript-eslint/prefer-as-const": Array [
+      "error",
+    ],
+    "@typescript-eslint/prefer-namespace-keyword": Array [
+      "error",
+    ],
+    "@typescript-eslint/require-await": Array [
+      "error",
+    ],
+    "@typescript-eslint/restrict-plus-operands": Array [
+      "error",
+    ],
+    "@typescript-eslint/restrict-template-expressions": Array [
+      "error",
+    ],
+    "@typescript-eslint/return-await": Array [
+      "error",
+      "in-try-catch",
+    ],
+    "@typescript-eslint/triple-slash-reference": Array [
+      "error",
+    ],
+    "@typescript-eslint/unbound-method": Array [
+      "error",
+    ],
+    "array-callback-return": Array [
+      "error",
+      Object {
+        "allowImplicit": true,
+        "checkForEach": false,
+      },
+    ],
+    "arrow-body-style": Array [
+      "error",
+      "as-needed",
+      Object {
+        "requireReturnForObjectLiteral": false,
+      },
+    ],
+    "block-scoped-var": Array [
+      "error",
+    ],
+    "consistent-return": Array [
+      "error",
+    ],
+    "default-case-last": Array [
+      "error",
+    ],
+    "eqeqeq": Array [
+      "error",
+      "always",
+      Object {
+        "null": "ignore",
+      },
+    ],
+    "for-direction": Array [
+      "error",
+    ],
+    "func-names": Array [
+      "warn",
+    ],
+    "grouped-accessor-pairs": Array [
+      "error",
+    ],
+    "guard-for-in": Array [
+      "error",
+    ],
+    "import/export": Array [
+      "error",
+    ],
+    "import/extensions": Array [
+      "error",
+      "ignorePackages",
+    ],
+    "import/first": Array [
+      "error",
+    ],
+    "import/newline-after-import": Array [
+      "error",
+    ],
+    "import/no-absolute-path": Array [
+      "error",
+    ],
+    "import/no-amd": Array [
+      "error",
+    ],
+    "import/no-cycle": Array [
+      "error",
+      Object {
+        "ignoreExternal": false,
+        "maxDepth": "∞",
+      },
+    ],
+    "import/no-duplicates": Array [
+      "error",
+    ],
+    "import/no-dynamic-require": Array [
+      "error",
+    ],
+    "import/no-extraneous-dependencies": Array [
+      "error",
+      Object {
+        "devDependencies": Array [
+          "test/**",
+          "tests/**",
+          "spec/**",
+          "**/__tests__/**",
+          "**/__mocks__/**",
+          "test.{js,jsx}",
+          "test.{ts,tsx}",
+          "test-*.{js,jsx}",
+          "test-*.{ts,tsx}",
+          "**/*{.,_}{test,spec}.{js,jsx}",
+          "**/*{.,_}{test,spec}.{ts,tsx}",
+          "**/jest.config.js",
+          "**/jest.config.ts",
+          "**/jest.setup.js",
+          "**/jest.setup.ts",
+          "**/vue.config.js",
+          "**/vue.config.ts",
+          "**/webpack.config.js",
+          "**/webpack.config.ts",
+          "**/webpack.config.*.js",
+          "**/webpack.config.*.ts",
+          "**/rollup.config.js",
+          "**/rollup.config.ts",
+          "**/rollup.config.*.js",
+          "**/rollup.config.*.ts",
+          "**/gulpfile.js",
+          "**/gulpfile.ts",
+          "**/gulpfile.*.js",
+          "**/gulpfile.*.ts",
+          "**/Gruntfile{,.js}",
+          "**/Gruntfile{,.ts}",
+          "**/protractor.conf.js",
+          "**/protractor.conf.ts",
+          "**/protractor.conf.*.js",
+          "**/protractor.conf.*.ts",
+          "**/karma.conf.js",
+          "**/karma.conf.ts",
+          "**/.eslintrc.js",
+          "**/.eslintrc.ts",
+        ],
+        "optionalDependencies": false,
+      },
+    ],
+    "import/no-import-module-exports": Array [
+      "error",
+      Object {
+        "exceptions": Array [],
+      },
+    ],
+    "import/no-mutable-exports": Array [
+      "error",
+    ],
+    "import/no-named-as-default": Array [
+      "error",
+    ],
+    "import/no-named-default": Array [
+      "error",
+    ],
+    "import/no-relative-packages": Array [
+      "error",
+    ],
+    "import/no-self-import": Array [
+      "error",
+    ],
+    "import/no-useless-path-segments": Array [
+      "error",
+      Object {
+        "commonjs": true,
+      },
+    ],
+    "import/no-webpack-loader-syntax": Array [
+      "error",
+    ],
+    "import/order": Array [
+      "error",
+      Object {
+        "groups": Array [
+          Array [
+            "builtin",
+            "external",
+            "internal",
+          ],
+        ],
+        "warnOnUnassignedImports": false,
+      },
+    ],
+    "lines-around-directive": Array [
+      "error",
+      Object {
+        "after": "always",
+        "before": "always",
+      },
+    ],
+    "new-cap": Array [
+      "error",
+      Object {
+        "capIsNew": false,
+        "capIsNewExceptions": Array [
+          "Immutable.Map",
+          "Immutable.Set",
+          "Immutable.List",
+        ],
+        "newIsCap": true,
+        "newIsCapExceptions": Array [],
+        "properties": true,
+      },
+    ],
+    "no-alert": Array [
+      "warn",
+    ],
+    "no-async-promise-executor": Array [
+      "error",
+    ],
+    "no-await-in-loop": Array [
+      "warn",
+    ],
+    "no-buffer-constructor": Array [
+      "error",
+    ],
+    "no-caller": Array [
+      "error",
+    ],
+    "no-case-declarations": Array [
+      "error",
+    ],
+    "no-class-assign": Array [
+      "error",
+    ],
+    "no-compare-neg-zero": Array [
+      "error",
+    ],
+    "no-cond-assign": Array [
+      "error",
+      "always",
+    ],
+    "no-constant-condition": Array [
+      "warn",
+    ],
+    "no-constructor-return": Array [
+      "error",
+    ],
+    "no-control-regex": Array [
+      "error",
+    ],
+    "no-debugger": Array [
+      "error",
+    ],
+    "no-delete-var": Array [
+      "error",
+    ],
+    "no-dupe-else-if": Array [
+      "error",
+    ],
+    "no-duplicate-case": Array [
+      "error",
+    ],
+    "no-else-return": Array [
+      "error",
+      Object {
+        "allowElseIf": false,
+      },
+    ],
+    "no-empty": Array [
+      "error",
+      Object {
+        "allowEmptyCatch": true,
+      },
+    ],
+    "no-empty-character-class": Array [
+      "error",
+    ],
+    "no-empty-pattern": Array [
+      "error",
+    ],
+    "no-eval": Array [
+      "error",
+    ],
+    "no-ex-assign": Array [
+      "error",
+    ],
+    "no-extend-native": Array [
+      "error",
+    ],
+    "no-extra-bind": Array [
+      "error",
+    ],
+    "no-extra-boolean-cast": Array [
+      "error",
+    ],
+    "no-extra-label": Array [
+      "error",
+    ],
+    "no-fallthrough": Array [
+      "error",
+    ],
+    "no-global-assign": Array [
+      "error",
+      Object {
+        "exceptions": Array [],
+      },
+    ],
+    "no-inner-declarations": Array [
+      "error",
+    ],
+    "no-invalid-regexp": Array [
+      "error",
+    ],
+    "no-irregular-whitespace": Array [
+      "error",
+    ],
+    "no-iterator": Array [
+      "error",
+    ],
+    "no-label-var": Array [
+      "error",
+    ],
+    "no-labels": Array [
+      "error",
+      Object {
+        "allowLoop": false,
+        "allowSwitch": false,
+      },
+    ],
+    "no-lone-blocks": Array [
+      "error",
+    ],
+    "no-lonely-if": Array [
+      "error",
+    ],
+    "no-misleading-character-class": Array [
+      "error",
+    ],
+    "no-multi-assign": Array [
+      "error",
+    ],
+    "no-multi-str": Array [
+      "error",
+    ],
+    "no-nested-ternary": Array [
+      "error",
+    ],
+    "no-new": Array [
+      "error",
+    ],
+    "no-new-object": Array [
+      "error",
+    ],
+    "no-new-require": Array [
+      "error",
+    ],
+    "no-new-wrappers": Array [
+      "error",
+    ],
+    "no-nonoctal-decimal-escape": Array [
+      "error",
+    ],
+    "no-octal": Array [
+      "error",
+    ],
+    "no-octal-escape": Array [
+      "error",
+    ],
+    "no-path-concat": Array [
+      "error",
+    ],
+    "no-promise-executor-return": Array [
+      "error",
+    ],
+    "no-proto": Array [
+      "error",
+    ],
+    "no-prototype-builtins": Array [
+      "error",
+    ],
+    "no-regex-spaces": Array [
+      "error",
+    ],
+    "no-restricted-exports": Array [
+      "error",
+      Object {
+        "restrictedNamedExports": Array [
+          "default",
+          "then",
+        ],
+      },
+    ],
+    "no-restricted-globals": Array [
+      "error",
+      Object {
+        "message": "Use Number.isFinite instead https://github.com/airbnb/javascript#standard-library--isfinite",
+        "name": "isFinite",
+      },
+      Object {
+        "message": "Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan",
+        "name": "isNaN",
+      },
+      "addEventListener",
+      "blur",
+      "close",
+      "closed",
+      "confirm",
+      "defaultStatus",
+      "defaultstatus",
+      "event",
+      "external",
+      "find",
+      "focus",
+      "frameElement",
+      "frames",
+      "history",
+      "innerHeight",
+      "innerWidth",
+      "length",
+      "location",
+      "locationbar",
+      "menubar",
+      "moveBy",
+      "moveTo",
+      "name",
+      "onblur",
+      "onerror",
+      "onfocus",
+      "onload",
+      "onresize",
+      "onunload",
+      "open",
+      "opener",
+      "opera",
+      "outerHeight",
+      "outerWidth",
+      "pageXOffset",
+      "pageYOffset",
+      "parent",
+      "print",
+      "removeEventListener",
+      "resizeBy",
+      "resizeTo",
+      "screen",
+      "screenLeft",
+      "screenTop",
+      "screenX",
+      "screenY",
+      "scroll",
+      "scrollbars",
+      "scrollBy",
+      "scrollTo",
+      "scrollX",
+      "scrollY",
+      "self",
+      "status",
+      "statusbar",
+      "stop",
+      "toolbar",
+      "top",
+    ],
+    "no-restricted-properties": Array [
+      "error",
+      Object {
+        "message": "arguments.callee is deprecated",
+        "object": "arguments",
+        "property": "callee",
+      },
+      Object {
+        "message": "Please use Number.isFinite instead",
+        "object": "global",
+        "property": "isFinite",
+      },
+      Object {
+        "message": "Please use Number.isFinite instead",
+        "object": "self",
+        "property": "isFinite",
+      },
+      Object {
+        "message": "Please use Number.isFinite instead",
+        "object": "window",
+        "property": "isFinite",
+      },
+      Object {
+        "message": "Please use Number.isNaN instead",
+        "object": "global",
+        "property": "isNaN",
+      },
+      Object {
+        "message": "Please use Number.isNaN instead",
+        "object": "self",
+        "property": "isNaN",
+      },
+      Object {
+        "message": "Please use Number.isNaN instead",
+        "object": "window",
+        "property": "isNaN",
+      },
+      Object {
+        "message": "Please use Object.defineProperty instead.",
+        "property": "__defineGetter__",
+      },
+      Object {
+        "message": "Please use Object.defineProperty instead.",
+        "property": "__defineSetter__",
+      },
+      Object {
+        "message": "Use the exponentiation operator (**) instead.",
+        "object": "Math",
+        "property": "pow",
+      },
+    ],
+    "no-return-assign": Array [
+      "error",
+      "always",
+    ],
+    "no-script-url": Array [
+      "error",
+    ],
+    "no-self-assign": Array [
+      "error",
+      Object {
+        "props": true,
+      },
+    ],
+    "no-self-compare": Array [
+      "error",
+    ],
+    "no-sequences": Array [
+      "error",
+    ],
+    "no-shadow-restricted-names": Array [
+      "error",
+    ],
+    "no-sparse-arrays": Array [
+      "error",
+    ],
+    "no-template-curly-in-string": Array [
+      "error",
+    ],
+    "no-undef-init": Array [
+      "error",
+    ],
+    "no-underscore-dangle": Array [
+      "error",
+      Object {
+        "allow": Array [],
+        "allowAfterSuper": false,
+        "allowAfterThis": false,
+        "allowAfterThisConstructor": false,
+        "allowFunctionParams": true,
+        "enforceInClassFields": false,
+        "enforceInMethodNames": true,
+      },
+    ],
+    "no-unneeded-ternary": Array [
+      "error",
+      Object {
+        "defaultAssignment": false,
+      },
+    ],
+    "no-unreachable-loop": Array [
+      "error",
+      Object {
+        "ignore": Array [],
+      },
+    ],
+    "no-unsafe-finally": Array [
+      "error",
+    ],
+    "no-unsafe-optional-chaining": Array [
+      "error",
+      Object {
+        "disallowArithmeticOperators": true,
+      },
+    ],
+    "no-unused-labels": Array [
+      "error",
+    ],
+    "no-useless-backreference": Array [
+      "error",
+    ],
+    "no-useless-catch": Array [
+      "error",
+    ],
+    "no-useless-computed-key": Array [
+      "error",
+    ],
+    "no-useless-concat": Array [
+      "error",
+    ],
+    "no-useless-escape": Array [
+      "error",
+    ],
+    "no-useless-rename": Array [
+      "error",
+      Object {
+        "ignoreDestructuring": false,
+        "ignoreExport": false,
+        "ignoreImport": false,
+      },
+    ],
+    "no-useless-return": Array [
+      "error",
+    ],
+    "no-var": Array [
+      "error",
+    ],
+    "no-void": Array [
+      "error",
+    ],
+    "no-with": Array [
+      "error",
+    ],
+    "object-shorthand": Array [
+      "error",
+      "always",
+      Object {
+        "avoidQuotes": true,
+        "ignoreConstructors": false,
+      },
+    ],
+    "one-var": Array [
+      "error",
+      "never",
+    ],
+    "operator-assignment": Array [
+      "error",
+      "always",
+    ],
+    "prefer-arrow-callback": Array [
+      "error",
+      Object {
+        "allowNamedFunctions": false,
+        "allowUnboundThis": true,
+      },
+    ],
+    "prefer-const": Array [
+      "warn",
+      Object {
+        "destructuring": "any",
+        "ignoreReadBeforeAssign": true,
+      },
+    ],
+    "prefer-destructuring": Array [
+      "error",
+      Object {
+        "AssignmentExpression": Object {
+          "array": true,
+          "object": false,
+        },
+        "VariableDeclarator": Object {
+          "array": false,
+          "object": true,
+        },
+      },
+      Object {
+        "enforceForRenamedProperties": false,
+      },
+    ],
+    "prefer-exponentiation-operator": Array [
+      "error",
+    ],
+    "prefer-numeric-literals": Array [
+      "error",
+    ],
+    "prefer-object-spread": Array [
+      "error",
+    ],
+    "prefer-promise-reject-errors": Array [
+      "error",
+      Object {
+        "allowEmptyReject": true,
+      },
+    ],
+    "prefer-regex-literals": Array [
+      "error",
+      Object {
+        "disallowRedundantWrapping": true,
+      },
+    ],
+    "prefer-rest-params": Array [
+      "error",
+    ],
+    "prefer-spread": Array [
+      "error",
+    ],
+    "prefer-template": Array [
+      "error",
+    ],
+    "radix": Array [
+      "error",
+    ],
+    "require-yield": Array [
+      "error",
+    ],
+    "simple-import-sort/exports": Array [
+      "warn",
+    ],
+    "simple-import-sort/imports": Array [
+      "warn",
+    ],
+    "spaced-comment": Array [
+      "error",
+      "always",
+      Object {
+        "block": Object {
+          "balanced": true,
+          "exceptions": Array [
+            "-",
+            "+",
+          ],
+          "markers": Array [
+            "=",
+            "!",
+            ":",
+            "::",
+          ],
+        },
+        "line": Object {
+          "exceptions": Array [
+            "-",
+            "+",
+          ],
+          "markers": Array [
+            "=",
+            "!",
+            "/",
+          ],
+        },
+      },
+    ],
+    "strict": Array [
+      "error",
+      "never",
+    ],
+    "symbol-description": Array [
+      "error",
+    ],
+    "use-isnan": Array [
+      "error",
+    ],
+    "vars-on-top": Array [
+      "error",
+    ],
+    "yoda": Array [
+      "error",
+    ],
+  },
+  "settings": Object {
+    "import/core-modules": Array [],
+    "import/extensions": Array [
+      ".js",
+      ".mjs",
+      ".jsx",
+      ".ts",
+      ".tsx",
+      ".d.ts",
+    ],
+    "import/external-module-folders": Array [
+      "node_modules",
+      "node_modules/@types",
+    ],
+    "import/ignore": Array [
+      "node_modules",
+      "\\\\.(coffee|scss|css|less|hbs|svg|json)$",
+    ],
+    "import/parsers": Object {
+      "@typescript-eslint/parser": Array [
+        ".ts",
+        ".tsx",
+        ".d.ts",
+      ],
+    },
+    "import/resolver": Object {
+      "node": Object {
+        "extensions": Array [
+          ".mjs",
+          ".js",
+          ".json",
+          ".ts",
+          ".d.ts",
+        ],
+      },
+    },
+  },
+}
+`;

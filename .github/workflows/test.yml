@@ -18,7 +18,6 @@ jobs:
     strategy:
       matrix:
         node-version:
-          - 12
           - 14
           - 16
           - 18
@@ -31,10 +30,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: "npm"
-
-      - name: Install corepack
-        if: ${{ matrix.node-version == '12' }}
-        run: npm uninstall -g yarn pnpm && npm i -g corepack@0.10.0
 
       - name: Enable corepack
         run: corepack enable npm
