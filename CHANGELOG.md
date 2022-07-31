@@ -1,3 +1,16 @@
+# [2.3.0](https://github.com/tksst/eslint-config/compare/v2.2.0...v2.3.0) (2022-07-31)
+
+
+### Bug Fixes
+
+* remove project-specific settings ([ee36d39](https://github.com/tksst/eslint-config/commit/ee36d39c53dfebb4e401568e9bc911d1e901276b))
+
+
+### Features
+
+* provide the merged ESLint configuration to users to clarify what settisngs are provided. ([c82549b](https://github.com/tksst/eslint-config/commit/c82549b7351f6dbc3ad4d2303d945f95e9d7c6e7))
+* trim the rules ([5a43611](https://github.com/tksst/eslint-config/commit/5a4361102cf22809b49d6ca6967652f2bfafa4dc))
+
 # [2.2.0](https://github.com/tksst/eslint-config/compare/v2.1.0...v2.2.0) (2022-07-31)
 
 
