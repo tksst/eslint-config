@@ -11,4 +11,13 @@ describe("ESLint config Snapshot", () => {
         relativize(result);
         expect(result).toMatchSnapshot();
     });
+    it("dist/javascript.json", async () => {
+        const eslint = new ESLint({
+            useEslintrc: false,
+            overrideConfigFile: "./dist/javascript.json",
+        });
+        const result = await eslint.calculateConfigForFile("./test.js");
+        relativize(result);
+        expect(result).toMatchSnapshot();
+    });
 });
