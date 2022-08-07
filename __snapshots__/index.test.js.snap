@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`ESLint config Snapshot for JavaScript 1`] = `
+exports[`ESLint config Snapshot index.js for JavaScript 1`] = `
 Object {
   "env": Object {},
   "globals": Object {},
@@ -891,7 +891,7 @@ Object {
 }
 `;
 
-exports[`ESLint config Snapshot for TypeScript 1`] = `
+exports[`ESLint config Snapshot index.js for TypeScript 1`] = `
 Object {
   "env": Object {},
   "globals": Object {},
