@@ -1,3 +1,10 @@
+## [2.3.1](https://github.com/tksst/eslint-config/compare/v2.3.0...v2.3.1) (2022-08-15)
+
+
+### Bug Fixes
+
+* change license from MPL to Apache ([5ff3e26](https://github.com/tksst/eslint-config/commit/5ff3e26101a6885c5d07e9dd797af246e4fe32d0))
+
 # [2.3.0](https://github.com/tksst/eslint-config/compare/v2.2.0...v2.3.0) (2022-07-31)
 
 
