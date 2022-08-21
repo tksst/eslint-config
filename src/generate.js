@@ -43,20 +43,18 @@ async function createRuleResultJson(configFile, targetFileForRule, resultJsonFil
 }
 
 (async () => {
-    await fs.mkdir("./dist", { recursive: true});
-})();
+    await fs.mkdir("./dist", { recursive: true });
 
-(async () => {
-    await createRuleResultJson("./src/javascript-rule-base.js", "./test.js", "./dist/javascript.json", (conf) => {
+    const x = createRuleResultJson("./src/javascript-rule-base.js", "./test.js", "./dist/javascript.json", (conf) => {
         delete conf.parserOptions;
     });
-})();
 
-(async () => {
-    await createRuleResultJson("./src/typescript-rule-base.js", "./test.ts", "./dist/typescript.json", (conf) => {
+    const y = createRuleResultJson("./src/typescript-rule-base.js", "./test.ts", "./dist/typescript.json", (conf) => {
         delete conf.parserOptions.ecmaVersion;
         delete conf.parserOptions.ecmaFeatures;
         delete conf.parserOptions.sourceType;
         conf.parser = "@typescript-eslint/parser";
     });
+
+    await Promise.all([x, y]);
 })();
