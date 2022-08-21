@@ -43,7 +43,7 @@ async function createRuleResultJson(configFile, targetFileForRule, resultJsonFil
 }
 
 (async () => {
-    await fs.mkdir("./dist");
+    await fs.mkdir("./dist", { recursive: true});
 })();
 
 (async () => {
