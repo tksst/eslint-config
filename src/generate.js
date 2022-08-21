@@ -11,37 +11,35 @@ function trimRules(conf) {
         });
 }
 
+async function createRuleResultJson(configFile, targetFileForRule, resultJsonFile, func) {
+    const eslint = new ESLint({
+        useEslintrc: false,
+        overrideConfigFile: configFile,
+    });
+
+    const config = await eslint.calculateConfigForFile(targetFileForRule);
+    trimRules(config);
+    delete config.ignorePatterns;
+    delete config.env;
+    func(config);
+    await fs.writeFile(resultJsonFile, JSON.stringify(config));
+}
+
 (async () => {
     await fs.mkdir("./dist");
 })();
 
 (async () => {
-    const eslint = new ESLint({
-        useEslintrc: false,
-        overrideConfigFile: "./src/javascript-rule-base.js",
+    await createRuleResultJson("./src/javascript-rule-base.js", "./test.js", "./dist/javascript.json", (conf) => {
+        delete conf.parserOptions;
     });
-
-    const result = await eslint.calculateConfigForFile("./test.js");
-    trimRules(result);
-    result.ignorePatterns = undefined;
-    result.parserOptions = undefined;
-    result.env = undefined;
-    await fs.writeFile("./dist/javascript.json", JSON.stringify(result));
 })();
 
 (async () => {
-    const eslint = new ESLint({
-        useEslintrc: false,
-        overrideConfigFile: "./src/typescript-rule-base.js",
+    await createRuleResultJson("./src/typescript-rule-base.js", "./test.ts", "./dist/typescript.json", (conf) => {
+        delete conf.parserOptions.ecmaVersion;
+        delete conf.parserOptions.ecmaFeatures;
+        delete conf.parserOptions.sourceType;
+        conf.parser = "@typescript-eslint/parser";
     });
-
-    const result = await eslint.calculateConfigForFile("./test.ts");
-    trimRules(result);
-    result.ignorePatterns = undefined;
-    result.parserOptions.ecmaVersion = undefined;
-    result.parserOptions.ecmaFeatures = undefined;
-    result.parserOptions.sourceType = undefined;
-    result.env = undefined;
-    result.parser = "@typescript-eslint/parser";
-    await fs.writeFile("./dist/typescript.json", JSON.stringify(result));
 })();
