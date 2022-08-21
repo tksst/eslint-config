@@ -1,5 +1,7 @@
 const { ESLint } = require("eslint");
 const fs = require("fs/promises");
+const path = require("path");
+const { randomBytes } = require("crypto");
 
 function trimRules(conf) {
     Object.entries(conf.rules)
@@ -9,6 +11,21 @@ function trimRules(conf) {
         .forEach(([key, value]) => {
             conf.rules[key] = undefined;
         });
+}
+
+async function safeWriteFile(file, str) {
+    const tmpfile = path.join(path.dirname(file), `temp-${randomBytes(8).toString("base64url")}`);
+    const handle = await fs.open(tmpfile, "w");
+    try {
+        await handle.writeFile(str);
+        await handle.datasync();
+        await fs.rename(tmpfile, file);
+    } catch (e) {
+        await fs.rm(tmpfile, { force: true });
+        throw e;
+    } finally {
+        await handle.close();
+    }
 }
 
 async function createRuleResultJson(configFile, targetFileForRule, resultJsonFile, func) {
@@ -22,7 +39,7 @@ async function createRuleResultJson(configFile, targetFileForRule, resultJsonFil
     delete config.ignorePatterns;
     delete config.env;
     func(config);
-    await fs.writeFile(resultJsonFile, JSON.stringify(config));
+    safeWriteFile(resultJsonFile, JSON.stringify(config));
 }
 
 (async () => {
