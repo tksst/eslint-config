@@ -21,12 +21,13 @@
   "scripts": {
     "prebuild": "rimraf ./dist/",
     "build": "node ./src/generate.js",
-    "fix": "npm-run-all build fix:*",
-    "fix:eslint": "npm run lint:eslint -- --fix",
+    "fix": "run-s --continue-on-error fix:*",
     "fix:prettier": "npm run lint:prettier -- --write",
-    "lint": "npm-run-all build --parallel lint:*",
+    "fix:eslint": "npm run lint:eslint -- --fix",
+    "lint": "run-p --continue-on-error --print-label lint:*",
+    "lint:prettier": "prettier --check .",
+    "prelint:eslint": "npm run build",
     "lint:eslint": "eslint --cache --cache-strategy content --cache-location ./node_modules/.cache/eslint/ --ext js .",
-    "lint:prettier": "prettier --cache -l .",
     "pretest": "npm run build",
     "test": "run-p test:*",
     "test:jest": "jest"
