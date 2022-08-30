@@ -1,5 +1,7 @@
 const { ESLint } = require("eslint");
 const fs = require("fs/promises");
+const path = require("path");
+const { randomBytes } = require("crypto");
 
 function trimRules(conf) {
     Object.entries(conf.rules)
@@ -11,37 +13,48 @@ function trimRules(conf) {
         });
 }
 
-(async () => {
-    await fs.mkdir("./dist");
-})();
+async function safeWriteFile(file, str) {
+    const tmpfile = path.join(path.dirname(file), `temp-${randomBytes(8).toString("base64url")}`);
+    const handle = await fs.open(tmpfile, "w");
+    try {
+        await handle.writeFile(str);
+        await handle.datasync();
+        await fs.rename(tmpfile, file);
+    } catch (e) {
+        await fs.rm(tmpfile, { force: true });
+        throw e;
+    } finally {
+        await handle.close();
+    }
+}
 
-(async () => {
+async function createRuleResultJson(configFile, targetFileForRule, resultJsonFile, func) {
     const eslint = new ESLint({
         useEslintrc: false,
-        overrideConfigFile: "./src/javascript-rule-base.js",
+        overrideConfigFile: configFile,
     });
 
-    const result = await eslint.calculateConfigForFile("./test.js");
-    trimRules(result);
-    result.ignorePatterns = undefined;
-    result.parserOptions = undefined;
-    result.env = undefined;
-    await fs.writeFile("./dist/javascript.json", JSON.stringify(result));
-})();
+    const config = await eslint.calculateConfigForFile(targetFileForRule);
+    trimRules(config);
+    delete config.ignorePatterns;
+    delete config.env;
+    func(config);
+    safeWriteFile(resultJsonFile, JSON.stringify(config));
+}
 
 (async () => {
-    const eslint = new ESLint({
-        useEslintrc: false,
-        overrideConfigFile: "./src/typescript-rule-base.js",
+    await fs.mkdir("./dist", { recursive: true });
+
+    const x = createRuleResultJson("./src/javascript-rule-base.js", "./test.js", "./dist/javascript.json", (conf) => {
+        delete conf.parserOptions;
     });
 
-    const result = await eslint.calculateConfigForFile("./test.ts");
-    trimRules(result);
-    result.ignorePatterns = undefined;
-    result.parserOptions.ecmaVersion = undefined;
-    result.parserOptions.ecmaFeatures = undefined;
-    result.parserOptions.sourceType = undefined;
-    result.env = undefined;
-    result.parser = "@typescript-eslint/parser";
-    await fs.writeFile("./dist/typescript.json", JSON.stringify(result));
+    const y = createRuleResultJson("./src/typescript-rule-base.js", "./test.ts", "./dist/typescript.json", (conf) => {
+        delete conf.parserOptions.ecmaVersion;
+        delete conf.parserOptions.ecmaFeatures;
+        delete conf.parserOptions.sourceType;
+        conf.parser = "@typescript-eslint/parser";
+    });
+
+    await Promise.all([x, y]);
 })();
