@@ -10,6 +10,7 @@ exports[`ESLint config Snapshot index.js for JavaScript 1`] = `
   "parserOptions": {},
   "plugins": [
     "simple-import-sort",
+    "jest",
     "import",
   ],
   "reportUnusedDisableDirectives": undefined,
@@ -202,6 +203,72 @@ exports[`ESLint config Snapshot index.js for JavaScript 1`] = `
         ],
         "warnOnUnassignedImports": false,
       },
+    ],
+    "jest/expect-expect": [
+      "warn",
+    ],
+    "jest/no-alias-methods": [
+      "error",
+    ],
+    "jest/no-commented-out-tests": [
+      "warn",
+    ],
+    "jest/no-conditional-expect": [
+      "error",
+    ],
+    "jest/no-deprecated-functions": [
+      "error",
+    ],
+    "jest/no-disabled-tests": [
+      "warn",
+    ],
+    "jest/no-done-callback": [
+      "error",
+    ],
+    "jest/no-export": [
+      "error",
+    ],
+    "jest/no-focused-tests": [
+      "error",
+    ],
+    "jest/no-identical-title": [
+      "error",
+    ],
+    "jest/no-interpolation-in-snapshots": [
+      "error",
+    ],
+    "jest/no-jasmine-globals": [
+      "error",
+    ],
+    "jest/no-mocks-import": [
+      "error",
+    ],
+    "jest/no-standalone-expect": [
+      "error",
+    ],
+    "jest/no-test-prefixes": [
+      "error",
+    ],
+    "jest/prefer-to-be": [
+      "error",
+    ],
+    "jest/prefer-to-contain": [
+      "error",
+    ],
+    "jest/prefer-to-have-length": [
+      "error",
+    ],
+    "jest/valid-describe-callback": [
+      "error",
+    ],
+    "jest/valid-expect": [
+      "error",
+    ],
+    "jest/valid-expect-in-promise": [
+      "error",
+    ],
+    "jest/valid-title": [
+      "error",
     ],
     "lines-around-directive": [
       "error",
@@ -904,6 +971,7 @@ exports[`ESLint config Snapshot index.js for TypeScript 1`] = `
   "plugins": [
     "@typescript-eslint",
     "simple-import-sort",
+    "jest",
     "import",
   ],
   "reportUnusedDisableDirectives": undefined,
@@ -1259,6 +1327,72 @@ exports[`ESLint config Snapshot index.js for TypeScript 1`] = `
         ],
         "warnOnUnassignedImports": false,
       },
+    ],
+    "jest/expect-expect": [
+      "warn",
+    ],
+    "jest/no-alias-methods": [
+      "error",
+    ],
+    "jest/no-commented-out-tests": [
+      "warn",
+    ],
+    "jest/no-conditional-expect": [
+      "error",
+    ],
+    "jest/no-deprecated-functions": [
+      "error",
+    ],
+    "jest/no-disabled-tests": [
+      "warn",
+    ],
+    "jest/no-done-callback": [
+      "error",
+    ],
+    "jest/no-export": [
+      "error",
+    ],
+    "jest/no-focused-tests": [
+      "error",
+    ],
+    "jest/no-identical-title": [
+      "error",
+    ],
+    "jest/no-interpolation-in-snapshots": [
+      "error",
+    ],
+    "jest/no-jasmine-globals": [
+      "error",
+    ],
+    "jest/no-mocks-import": [
+      "error",
+    ],
+    "jest/no-standalone-expect": [
+      "error",
+    ],
+    "jest/no-test-prefixes": [
+      "error",
+    ],
+    "jest/prefer-to-be": [
+      "error",
+    ],
+    "jest/prefer-to-contain": [
+      "error",
+    ],
+    "jest/prefer-to-have-length": [
+      "error",
+    ],
+    "jest/valid-describe-callback": [
+      "error",
+    ],
+    "jest/valid-expect": [
+      "error",
+    ],
+    "jest/valid-expect-in-promise": [
+      "error",
+    ],
+    "jest/valid-title": [
+      "error",
     ],
     "lines-around-directive": [
       "error",

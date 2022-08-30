@@ -1,8 +1,8 @@
 /** @type {import('eslint').Linter.Config} */
 
 module.exports = {
-    plugins: ["simple-import-sort"],
-    extends: ["eslint:recommended", "airbnb-base", "prettier"],
+    plugins: ["simple-import-sort", "jest"],
+    extends: ["eslint:recommended", "airbnb-base", "plugin:jest/style", "plugin:jest/recommended", "prettier"],
     rules: {
         "no-console": "off",
         "no-empty": ["error", { allowEmptyCatch: true }],
