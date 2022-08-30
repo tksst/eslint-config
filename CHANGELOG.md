@@ -1,3 +1,15 @@
+# [3.0.0](https://github.com/tksst/eslint-config/compare/v2.3.1...v3.0.0) (2022-08-30)
+
+
+### Features
+
+* introduce eslint-plugin-jest ([d587207](https://github.com/tksst/eslint-config/commit/d587207e5f89feaf68c11ad4639533dd1f75c6c0))
+
+
+### BREAKING CHANGES
+
+* This can cause errors in the test code in jest.
+
 ## [2.3.1](https://github.com/tksst/eslint-config/compare/v2.3.0...v2.3.1) (2022-08-15)
 
 
