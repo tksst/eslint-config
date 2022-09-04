@@ -1,3 +1,10 @@
+## [3.0.1](https://github.com/tksst/eslint-config/compare/v3.0.0...v3.0.1) (2022-09-04)
+
+
+### Bug Fixes
+
+* support eslint-plugin-simple-import-sort v8 ([1142f31](https://github.com/tksst/eslint-config/commit/1142f312cce1444e00aaf7ccc2c3a2aeafd8b972))
+
 # [3.0.0](https://github.com/tksst/eslint-config/compare/v2.3.1...v3.0.0) (2022-08-30)
 
 
