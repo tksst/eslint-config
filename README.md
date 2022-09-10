@@ -30,8 +30,8 @@ module.exports = {
     // https://eslint.org/docs/latest/user-guide/configuring/language-options#specifying-parser-options
 
     // example:
-    sourceType: "module",
-  }
+    sourceType: "module"
+  },
   extends: "@tksst/eslint-config"
 };
 ```
