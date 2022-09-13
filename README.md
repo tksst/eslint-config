@@ -44,13 +44,13 @@ As above, in addition to putting this eslint-config in `extends`, you should als
 
 This is for JavaScript source code. I recommend using this if your project is JavaScript only.
 
-Generated from [`src/javascript.js`](./src/javascript.js).
+Generated from [`src/javascript-rule-base.js`](./src/javascript-rule-base.js).
 
 ## `@tksst/eslint-config/typescript`
 
 This is based on `@tksst/eslint-config/javascript` with additional settings for TypeScript source code.
 
-Generated from [`src/typescript.js`](./src/typescript.js).
+Generated from [`src/typescript-rule-base.js`](./src/typescript-rule-base.js).
 
 ## [`@tksst/eslint-config`](./index.js)
 
