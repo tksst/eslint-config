@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/tksst/eslint-config/compare/v3.0.1...v4.0.0) (2022-09-13)
+
+
+### Features
+
+* enable typescript-eslint-strict rules and also add some rules for better code. ([890afce](https://github.com/tksst/eslint-config/commit/890afce22cefed6653e96978d0dc53fd183a1296))
+
+
+### BREAKING CHANGES
+
+* This change may cause errors in the current code.
+
 ## [3.0.1](https://github.com/tksst/eslint-config/compare/v3.0.0...v3.0.1) (2022-09-04)
 
 
