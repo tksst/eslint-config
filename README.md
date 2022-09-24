@@ -20,7 +20,7 @@ module.exports = {
     // https://eslint.org/docs/user-guide/configuring/language-options#specifying-environments
 
     // example:
-    es2020: true,
+    es2022: true,
     node: true,
     jest: true
   },
@@ -30,13 +30,14 @@ module.exports = {
     // https://eslint.org/docs/latest/user-guide/configuring/language-options#specifying-parser-options
 
     // example:
-    sourceType: "module"
+    sourceType: "module",
+    ecmaVersion: "latest"
   },
   extends: "@tksst/eslint-config"
 };
 ```
 
-As above, in addition to putting this eslint-config in `extends`, you should also set `root` and `env`.
+As above, in addition to putting this eslint-config in `extends`, you should also set `root`, `env` and `parserOptions`.
 
 # Shareable Configurations
 
