@@ -827,7 +827,7 @@ exports[`ESLint config Snapshot dist/javascript.json 1`] = `
       "error",
       {
         "AssignmentExpression": {
-          "array": true,
+          "array": false,
           "object": false,
         },
         "VariableDeclarator": {
@@ -852,12 +852,6 @@ exports[`ESLint config Snapshot dist/javascript.json 1`] = `
       "error",
       {
         "allowEmptyReject": true,
-      },
-    ],
-    "prefer-regex-literals": [
-      "error",
-      {
-        "disallowRedundantWrapping": true,
       },
     ],
     "prefer-rest-params": [
@@ -1958,7 +1952,7 @@ exports[`ESLint config Snapshot dist/typescript.json 1`] = `
       "error",
       {
         "AssignmentExpression": {
-          "array": true,
+          "array": false,
           "object": false,
         },
         "VariableDeclarator": {
@@ -1983,12 +1977,6 @@ exports[`ESLint config Snapshot dist/typescript.json 1`] = `
       "error",
       {
         "allowEmptyReject": true,
-      },
-    ],
-    "prefer-regex-literals": [
-      "error",
-      {
-        "disallowRedundantWrapping": true,
       },
     ],
     "prefer-rest-params": [

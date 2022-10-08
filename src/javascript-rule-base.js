@@ -16,6 +16,23 @@ module.exports = {
         "no-unused-vars": "warn",
         "default-case": "off",
         "prefer-const": "warn",
+        "prefer-destructuring": [
+            "error",
+            {
+                AssignmentExpression: {
+                    array: false,
+                    object: false,
+                },
+                VariableDeclarator: {
+                    array: false,
+                    object: true,
+                },
+            },
+            {
+                enforceForRenamedProperties: false,
+            },
+        ],
+        "prefer-regex-literals": "off",
         "class-methods-use-this": "off",
         "global-require": "off", // this is DEPRECATED in ESLint v7.0.0
         "max-classes-per-file": "off",
