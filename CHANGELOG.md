@@ -1,3 +1,10 @@
+# [4.1.0](https://github.com/tksst/eslint-config/compare/v4.0.0...v4.1.0) (2022-10-08)
+
+
+### Features
+
+* disable some rules ([03e627d](https://github.com/tksst/eslint-config/commit/03e627d04ac81eb12d7c4510fe60a521e2951bf9))
+
 # [4.0.0](https://github.com/tksst/eslint-config/compare/v3.0.1...v4.0.0) (2022-09-13)
 
 
