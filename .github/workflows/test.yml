@@ -25,18 +25,18 @@ jobs:
 
     steps:
       - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3.0.2
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@10693b3829bf86eb2572aef5f3571dcf5ca9287d # tag=v2.2.2
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@eeb10cff27034e7acf239c5d29f62154018672fd # tag=v3.3.0
         with:
           node-version: ${{ matrix.node-version }}
-          cache: "npm"
+          cache: "pnpm"
 
-      - name: Enable corepack
-        run: corepack enable npm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
-      - name: Print npm version
-        run: npm --version
-
-      - run: npm ci
-      - run: npm run lint
-      - run: npm test
+      - run: pnpm lint
+      - run: pnpm test

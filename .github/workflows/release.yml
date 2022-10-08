@@ -18,23 +18,21 @@ jobs:
           # fetch all history
           fetch-depth: 0
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@10693b3829bf86eb2572aef5f3571dcf5ca9287d # tag=v2.2.2
+
       - uses: actions/setup-node@eeb10cff27034e7acf239c5d29f62154018672fd # tag=v3.3.0
         with:
           node-version: 16
-          cache: npm
+          cache: pnpm
 
-      - name: Enable corepack
-        run: corepack enable npm
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
 
-      - name: Print npm version
-        run: npm --version
-
-      - run: npm ci
-
-      - run: npm run build
+      - run: pnpm build
 
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: npx semantic-release
+        run: pnpm exec semantic-release
