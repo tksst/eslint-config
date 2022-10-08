@@ -1,5 +1,5 @@
 const { ESLint } = require("eslint");
-const relativize = require("./src/relativize.js");
+const normalizeParserForTest = require("./src/normalizeParserForTest.js");
 
 const eslintIndexJs = new ESLint({
     useEslintrc: false,
@@ -10,12 +10,12 @@ const eslintIndexJs = new ESLint({
 describe("ESLint config Snapshot", () => {
     it("index.js for JavaScript", async () => {
         const result = await eslintIndexJs.calculateConfigForFile("./test.js");
-        relativize(result);
+        normalizeParserForTest(result);
         expect(result).toMatchSnapshot();
     });
     it("index.js for TypeScript", async () => {
         const result = await eslintIndexJs.calculateConfigForFile("./test.ts");
-        relativize(result);
+        normalizeParserForTest(result);
         expect(result).toMatchSnapshot();
     });
 });
