@@ -1,5 +1,5 @@
 const { ESLint } = require("eslint");
-const relativize = require("./src/relativize.js");
+const relativize = require("./src/normalizeParserForTest.js");
 
 const eslintIndexJs = new ESLint({
     useEslintrc: false,

@@ -1,5 +1,5 @@
 const { ESLint } = require("eslint");
-const relativize = require("./relativize.js");
+const relativize = require("./normalizeParserForTest.js");
 
 describe("ESLint config Snapshot", () => {
     it("dist/typescript.json", async () => {
