@@ -1,5 +1,5 @@
 const { ESLint } = require("eslint");
-const relativize = require("./normalizeParserForTest.js");
+const normalizeParserForTest = require("./normalizeParserForTest.js");
 
 describe("ESLint config Snapshot", () => {
     it("dist/typescript.json", async () => {
@@ -8,7 +8,7 @@ describe("ESLint config Snapshot", () => {
             overrideConfigFile: "./dist/typescript.json",
         });
         const result = await eslint.calculateConfigForFile("./test.ts");
-        relativize(result);
+        normalizeParserForTest(result);
         expect(result).toMatchSnapshot();
     });
     it("dist/javascript.json", async () => {
@@ -17,7 +17,7 @@ describe("ESLint config Snapshot", () => {
             overrideConfigFile: "./dist/javascript.json",
         });
         const result = await eslint.calculateConfigForFile("./test.js");
-        relativize(result);
+        normalizeParserForTest(result);
         expect(result).toMatchSnapshot();
     });
 });
