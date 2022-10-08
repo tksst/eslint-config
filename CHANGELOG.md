@@ -1,3 +1,41 @@
+# [4.0.0](https://github.com/tksst/eslint-config/compare/v3.0.1...v4.0.0) (2022-09-13)
+
+
+### Features
+
+* enable typescript-eslint-strict rules and also add some rules for better code. ([890afce](https://github.com/tksst/eslint-config/commit/890afce22cefed6653e96978d0dc53fd183a1296))
+
+
+### BREAKING CHANGES
+
+* This change may cause errors in the current code.
+
+## [3.0.1](https://github.com/tksst/eslint-config/compare/v3.0.0...v3.0.1) (2022-09-04)
+
+
+### Bug Fixes
+
+* support eslint-plugin-simple-import-sort v8 ([1142f31](https://github.com/tksst/eslint-config/commit/1142f312cce1444e00aaf7ccc2c3a2aeafd8b972))
+
+# [3.0.0](https://github.com/tksst/eslint-config/compare/v2.3.1...v3.0.0) (2022-08-30)
+
+
+### Features
+
+* introduce eslint-plugin-jest ([d587207](https://github.com/tksst/eslint-config/commit/d587207e5f89feaf68c11ad4639533dd1f75c6c0))
+
+
+### BREAKING CHANGES
+
+* This can cause errors in the test code in jest.
+
+## [2.3.1](https://github.com/tksst/eslint-config/compare/v2.3.0...v2.3.1) (2022-08-15)
+
+
+### Bug Fixes
+
+* change license from MPL to Apache ([5ff3e26](https://github.com/tksst/eslint-config/commit/5ff3e26101a6885c5d07e9dd797af246e4fe32d0))
+
 # [2.3.0](https://github.com/tksst/eslint-config/compare/v2.2.0...v2.3.0) (2022-07-31)
 
 
