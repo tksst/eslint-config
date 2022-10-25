@@ -1167,6 +1167,9 @@ exports[`ESLint config Snapshot dist/typescript.json 1`] = `
     "@typescript-eslint/no-unsafe-call": [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-declaration-merging": [
+      "warn",
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       "error",
     ],
