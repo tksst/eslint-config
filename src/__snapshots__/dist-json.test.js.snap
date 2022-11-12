@@ -380,6 +380,9 @@ exports[`ESLint config Snapshot dist/javascript.json 1`] = `
     "no-empty-pattern": [
       "error",
     ],
+    "no-empty-static-block": [
+      "warn",
+    ],
     "no-eval": [
       "error",
     ],
@@ -1167,6 +1170,9 @@ exports[`ESLint config Snapshot dist/typescript.json 1`] = `
     "@typescript-eslint/no-unsafe-call": [
       "error",
     ],
+    "@typescript-eslint/no-unsafe-declaration-merging": [
+      "warn",
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       "error",
     ],
@@ -1583,6 +1589,9 @@ exports[`ESLint config Snapshot dist/typescript.json 1`] = `
     ],
     "no-empty-pattern": [
       "error",
+    ],
+    "no-empty-static-block": [
+      "warn",
     ],
     "no-eval": [
       "error",

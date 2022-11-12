@@ -13,30 +13,7 @@ on:
       - alpha
 
 jobs:
-  test:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version:
-          - 14
-          - 16
-          - 18
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
-    steps:
-      - uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3.0.2
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@10693b3829bf86eb2572aef5f3571dcf5ca9287d # tag=v2.2.2
-
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@eeb10cff27034e7acf239c5d29f62154018672fd # tag=v3.3.0
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: "pnpm"
-
-      - name: Install dependencies
-        run: pnpm install --frozen-lockfile
-
-      - run: pnpm lint
-      - run: pnpm test
+  build-test:
+    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@4fbb5a02fac424d5059494d03d2871eba7605189
+    with:
+      os: '["ubuntu-latest"]'
