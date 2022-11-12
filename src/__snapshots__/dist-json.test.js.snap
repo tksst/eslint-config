@@ -380,6 +380,9 @@ exports[`ESLint config Snapshot dist/javascript.json 1`] = `
     "no-empty-pattern": [
       "error",
     ],
+    "no-empty-static-block": [
+      "warn",
+    ],
     "no-eval": [
       "error",
     ],
@@ -1586,6 +1589,9 @@ exports[`ESLint config Snapshot dist/typescript.json 1`] = `
     ],
     "no-empty-pattern": [
       "error",
+    ],
+    "no-empty-static-block": [
+      "warn",
     ],
     "no-eval": [
       "error",
