@@ -1,3 +1,10 @@
+# [4.2.0](https://github.com/tksst/eslint-config/compare/v4.1.0...v4.2.0) (2022-11-12)
+
+
+### Features
+
+* enable a new rule `no-empty-static-block` ([16afe8c](https://github.com/tksst/eslint-config/commit/16afe8c051e0bad7fbeb24a7505a2b74a71b3c1c))
+
 # [4.1.0](https://github.com/tksst/eslint-config/compare/v4.0.0...v4.1.0) (2022-10-08)
 
 
