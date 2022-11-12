@@ -6,6 +6,7 @@ module.exports = {
     rules: {
         "no-console": "off",
         "no-empty": ["error", { allowEmptyCatch: true }],
+        "no-empty-static-block": "warn",
         "no-restricted-syntax": "off",
         "no-plusplus": "off",
         "no-continue": "off",
