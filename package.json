@@ -39,7 +39,7 @@
     "@tksst/prettier-config": "1.1.0",
     "@typescript-eslint/eslint-plugin": "5.44.0",
     "@typescript-eslint/parser": "5.44.0",
-    "eslint": "8.28.0",
+    "eslint": "8.31.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jest": "27.1.6",
     "eslint-plugin-simple-import-sort": "8.0.0",
