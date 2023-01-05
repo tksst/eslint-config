@@ -14,6 +14,6 @@ on:
 
 jobs:
   build-test:
-    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@60c5a837e7d460d37847306dd77c8df8ab7d06c6
+    uses: tksst/github-actions-workflows/.github/workflows/nodejs-pnpm.yml@0f645193c3859845220712632b5106c7f152432f
     with:
       os: '["ubuntu-latest"]'
