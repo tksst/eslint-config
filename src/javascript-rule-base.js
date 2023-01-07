@@ -41,6 +41,7 @@ module.exports = {
         "simple-import-sort/imports": "warn",
         "simple-import-sort/exports": "warn",
         "sort-imports": "off",
+        "import/order": "off",
         "import/prefer-default-export": "off",
         // almost all are from https://github.com/airbnb/javascript/blob/f3d3a075cda2acc02011e71991c10bb5b4a15278/packages/eslint-config-airbnb-base/rules/imports.js#L71-L94
         "import/no-extraneous-dependencies": [
