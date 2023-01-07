@@ -13,6 +13,40 @@ function trimRules(conf) {
         });
 }
 
+function split(str) {
+    return str.includes("/") ? str.split("/", 2) : [undefined, str];
+}
+
+function compareStr(a, b) {
+    if (a !== undefined && b !== undefined) {
+        // eslint-disable-next-line no-nested-ternary
+        return a > b ? 1 : a < b ? -1 : 0;
+    }
+    if (a === b) {
+        return 0;
+    }
+    if (a === undefined) {
+        // undefined is after string
+        return 1;
+    }
+    return -1;
+}
+
+function sortRules(conf) {
+    const ar = Object.entries(conf.rules);
+    ar.sort(([a], [b]) => {
+        const an = split(a);
+        const bn = split(b);
+
+        if (an[0] === bn[0]) {
+            return compareStr(an[1], bn[1]);
+        }
+
+        return compareStr(an[0], bn[0]);
+    });
+    conf.rules = Object.fromEntries(ar);
+}
+
 async function safeWriteFile(file, str) {
     const tmpfile = path.join(path.dirname(file), `temp-${randomBytes(8).toString("base64url")}`);
     const handle = await fs.open(tmpfile, "w");
@@ -36,6 +70,7 @@ async function createRuleResultJson(configFile, targetFileForRule, resultJsonFil
 
     const config = await eslint.calculateConfigForFile(targetFileForRule);
     trimRules(config);
+    sortRules(config);
     delete config.ignorePatterns;
     delete config.env;
     func(config);
