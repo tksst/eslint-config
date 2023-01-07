@@ -1,3 +1,11 @@
+## [4.3.1](https://github.com/tksst/eslint-config/compare/v4.3.0...v4.3.1) (2023-01-07)
+
+
+### Bug Fixes
+
+* add eslint-plugin-import to peerDependencies to fix the plugin not found error (regression of b70ef30) ([0344f98](https://github.com/tksst/eslint-config/commit/0344f98bee939e9485ba98eb1b47f9b36e1c6d27))
+* disable import/order, which duplicates the role of simple-import-sort ([e3d251c](https://github.com/tksst/eslint-config/commit/e3d251c251b95988accb032d9faa48c6fda49453))
+
 # [4.3.0](https://github.com/tksst/eslint-config/compare/v4.2.0...v4.3.0) (2023-01-07)
 
 
