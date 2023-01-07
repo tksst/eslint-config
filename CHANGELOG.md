@@ -1,3 +1,15 @@
+# [4.3.0](https://github.com/tksst/eslint-config/compare/v4.2.0...v4.3.0) (2023-01-07)
+
+
+### Bug Fixes
+
+* Eliminate the need for users to install eslint-config-airbnb-typescript and eslint-config-prettier ([b70ef30](https://github.com/tksst/eslint-config/commit/b70ef30920ddb59233fd4d36f0baa79e7a659f1d))
+
+
+### Features
+
+* sort the rules for easy reference ([86e08fc](https://github.com/tksst/eslint-config/commit/86e08fc487158ee4b113544bd4fe883f11882f01))
+
 # [4.2.0](https://github.com/tksst/eslint-config/compare/v4.1.0...v4.2.0) (2022-11-12)
 
 
