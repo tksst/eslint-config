@@ -59,7 +59,7 @@
   "peerDependencies": {
     "eslint": "^8.27.0"
   },
-  "packageManager": "pnpm@7.22.0",
+  "packageManager": "pnpm@7.25.1",
   "engines": {
     "node": ">= 12"
   }
