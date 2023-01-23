@@ -1,9 +1,9 @@
 /.github/
-/.eslintrc.json
+/eslint.config.js
 /.gitattributes
 /.prettierignore
 /prettier.config.cjs
 /release.config.cjs
 /index.test.js
 /__snapshots__/
-/src/
+/src/**/*.test.js
