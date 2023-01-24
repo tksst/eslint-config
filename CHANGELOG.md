@@ -1,3 +1,22 @@
+# [5.0.0](https://github.com/tksst/eslint-config/compare/v4.3.1...v5.0.0) (2023-01-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-simple-import-sort to v9 ([23c5dc0](https://github.com/tksst/eslint-config/commit/23c5dc0d91bd59d13432e27fbb4506af8447d244))
+* **deps:** update npm dependencies to v5.49.0 ([6918f9c](https://github.com/tksst/eslint-config/commit/6918f9c2736d631af94f638894bbba814e1744af))
+
+
+### Features
+
+* migrate to "flat config" of ESLint ([9e16008](https://github.com/tksst/eslint-config/commit/9e16008ff2d3493fb117ff152acf2ee7c4060858))
+
+
+### BREAKING CHANGES
+
+* This package now provides "flat config" and the entry point has changed, so users will need to migrate to it.
+* This package no longer provides eslint-plugin-import rules.
+
 ## [4.3.1](https://github.com/tksst/eslint-config/compare/v4.3.0...v4.3.1) (2023-01-07)
 
 
