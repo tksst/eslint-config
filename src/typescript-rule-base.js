@@ -1,17 +1,6 @@
 /** @type {import('eslint').Linter.Config} */
 
-module.exports = {
-    extends: [
-        "./javascript-rule-base.js",
-        "eslint-config-airbnb-typescript/base",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:@typescript-eslint/recommended-requiring-type-checking",
-        "plugin:@typescript-eslint/strict",
-        "prettier",
-    ],
-    parserOptions: {
-        project: "./tsconfig.json",
-    },
+export default {
     rules: {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-empty-function": "off",
@@ -24,7 +13,5 @@ module.exports = {
         "@typescript-eslint/no-redundant-type-constituents": "warn",
         "@typescript-eslint/no-useless-empty-export": "warn",
         "prefer-const": "warn",
-        // from https://github.com/iamturns/eslint-config-airbnb-typescript/blob/4aec5702be5b4e74e0e2f40bc78b4bc961681de1/lib/shared.js#L230-L240
-        "import/extensions": ["error", "ignorePackages"],
     },
 };

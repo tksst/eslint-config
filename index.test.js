@@ -1,47 +1,31 @@
-const { ESLint } = require("eslint");
-const normalizeParserForTest = require("./src/normalizeParserForTest.js");
+import * as config from "./index.js";
 
-const eslintIndexJs = new ESLint({
-    useEslintrc: false,
-    overrideConfigFile: "./index.js",
-    extensions: [".js", ".ts", ".cjs", ".cts", ".mjs", ".mts"],
-});
+function removePlugin(c) {
+    return c.map((it) => {
+        if (it.plugins !== undefined) {
+            delete it.plugins;
+        }
+        return it;
+    });
+}
+
+function removeParser(c) {
+    return c.map((it) => {
+        if (it.languageOptions?.parser !== undefined) {
+            delete it.languageOptions?.parser;
+        }
+        return it;
+    });
+}
 
 describe("ESLint config Snapshot", () => {
-    it("index.js for JavaScript", async () => {
-        const result = await eslintIndexJs.calculateConfigForFile("./test.js");
-        normalizeParserForTest(result);
-        expect(result).toMatchSnapshot();
+    it("config for default", async () => {
+        expect(removeParser(removePlugin(config.default))).toMatchSnapshot();
     });
-    it("index.js for TypeScript", async () => {
-        const result = await eslintIndexJs.calculateConfigForFile("./test.ts");
-        normalizeParserForTest(result);
-        expect(result).toMatchSnapshot();
+    it("config for JavaScript", async () => {
+        expect(removeParser(removePlugin(config.javaScript))).toMatchSnapshot();
     });
-});
-
-describe("config between typescript extensions", () => {
-    let tsP;
-    beforeAll(() => {
-        tsP = eslintIndexJs.calculateConfigForFile("./test.ts");
-    });
-    it(".cts", async () => {
-        expect(await tsP).toStrictEqual(await eslintIndexJs.calculateConfigForFile("./test.cts"));
-    });
-    it(".mts", async () => {
-        expect(await tsP).toStrictEqual(await eslintIndexJs.calculateConfigForFile("./test.mts"));
-    });
-});
-
-describe("config between javascript extensions", () => {
-    let jsP;
-    beforeAll(() => {
-        jsP = eslintIndexJs.calculateConfigForFile("./test.js");
-    });
-    it(".cts", async () => {
-        expect(await jsP).toStrictEqual(await eslintIndexJs.calculateConfigForFile("./test.cjs"));
-    });
-    it(".mts", async () => {
-        expect(await jsP).toStrictEqual(await eslintIndexJs.calculateConfigForFile("./test.mjs"));
+    it("config for TypeScript", async () => {
+        expect(removeParser(removePlugin(config.typeScript))).toMatchSnapshot();
     });
 });
