@@ -3,13 +3,14 @@ import tsEslintParser from "@typescript-eslint/parser";
 import configPrettier from "eslint-config-prettier";
 import pluginJest from "eslint-plugin-jest";
 import pluginSimpleImportSort from "eslint-plugin-simple-import-sort";
+import globals from "globals";
 
 import airBnbBase from "./src/airbnbBase.js";
 import airBnbTsBase from "./src/airbnbTSBase.js";
 import javascriptRule from "./src/javascript-rule-base.js";
 import typescriptRule from "./src/typescript-rule-base.js";
 
-export const javaScript = [
+const javaScript = [
     "eslint:recommended",
     ...airBnbBase,
     {
@@ -28,7 +29,7 @@ export const javaScript = [
     },
 ];
 
-const pureTypeScript = [
+const typeScriptOnly = [
     ...airBnbTsBase,
     {
         plugins: {
@@ -53,16 +54,56 @@ const pureTypeScript = [
     },
 ];
 
-export const typeScript = [...javaScript, ...pureTypeScript];
+function addCore(config, something, propertyName, append) {
+    console.assert(Array.isArray(something));
 
-function addFilesProperty(config, files) {
     return config.map((it) => {
         // typeof it === string for "eslint:recommended"
         if (typeof it !== "string") {
-            it.files = files;
+            if (!append || it[propertyName] === undefined) {
+                it[propertyName] = something;
+            } else {
+                it[propertyName] = it[propertyName].concat(something);
+            }
         }
         return it;
     });
 }
 
-export default [...javaScript, ...addFilesProperty(pureTypeScript, ["**/*.ts", "**/*.mts", "**/*.cts"])];
+function addFilesToConfigs(config, files, append = false) {
+    return addCore(config, files, "files", append);
+}
+
+export const rules = {
+    javaScript,
+    typeScriptOnly,
+    typeScript: [...javaScript, ...typeScriptOnly],
+};
+
+export const util = {
+    addFilesToConfigs,
+};
+
+export const preset = {
+    typeScript: (option) => [
+        {
+            ignores: ["dist/**", "coverage/**"],
+        },
+        {
+            files: ["**/*.js", "**/*.jsx"],
+            languageOptions: {
+                sourceType: option?.jsIsCjs === true ? "commonjs" : "module",
+            },
+        },
+        {
+            files: ["**/*.js", "**/*.cjs", "**/*.mjs", "**/*.jsx", "**/*.cjsx", "**/*.mjsx"],
+            languageOptions: {
+                globals: {
+                    ...globals.node,
+                },
+            },
+        },
+        ...javaScript,
+        ...addFilesToConfigs(typeScriptOnly, ["**/*.ts", "**/*.mts", "**/*.cts", "**/*.tsx", "**/*.mtsx", "**/*.ctsx"]),
+    ],
+};

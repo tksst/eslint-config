@@ -1,6 +1,6 @@
 import globals from "globals";
 
-import * as config from "./index.js";
+import { rules } from "./index.js";
 
 export default [
     {
@@ -21,5 +21,5 @@ export default [
             },
         },
     },
-    ...config.javaScript,
+    ...rules.javaScript,
 ];
