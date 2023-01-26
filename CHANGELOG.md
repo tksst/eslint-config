@@ -1,3 +1,15 @@
+# [6.0.0](https://github.com/tksst/eslint-config/compare/v5.0.0...v6.0.0) (2023-01-26)
+
+
+### Features
+
+* provides a preset for TypeScript projects ([e362c56](https://github.com/tksst/eslint-config/commit/e362c56c2bc6804e24b0f4842b444b5b8c9e258b))
+
+
+### BREAKING CHANGES
+
+* The configuration files have been moved to the `rules` with some changes.
+
 # [5.0.0](https://github.com/tksst/eslint-config/compare/v4.3.1...v5.0.0) (2023-01-24)
 
 
