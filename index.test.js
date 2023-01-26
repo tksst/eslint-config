@@ -19,13 +19,10 @@ function removeParser(c) {
 }
 
 describe("ESLint config Snapshot", () => {
-    it("config for default", async () => {
-        expect(removeParser(removePlugin(config.default))).toMatchSnapshot();
+    it("preset.typeScript", async () => {
+        expect(removeParser(removePlugin(config.preset.typeScript()))).toMatchSnapshot();
     });
-    it("config for JavaScript", async () => {
-        expect(removeParser(removePlugin(config.javaScript))).toMatchSnapshot();
-    });
-    it("config for TypeScript", async () => {
-        expect(removeParser(removePlugin(config.typeScript))).toMatchSnapshot();
+    it("rules.typeScript", async () => {
+        expect(removeParser(removePlugin(config.rules.typeScript))).toMatchSnapshot();
     });
 });
