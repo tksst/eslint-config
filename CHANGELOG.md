@@ -1,3 +1,15 @@
+# [7.0.0](https://github.com/tksst/eslint-config/compare/v6.0.0...v7.0.0) (2023-01-28)
+
+
+### Features
+
+* **deps:** update dependency eslint-plugin-simple-import-sort to v10 ([#143](https://github.com/tksst/eslint-config/issues/143)) ([d864fbd](https://github.com/tksst/eslint-config/commit/d864fbd831a0c71abbfbcb2d0e30f06fcfd338a8))
+
+
+### BREAKING CHANGES
+
+* **deps:** This release might move some imported items with `type` around. This is a breaking formatting change (that only affects TypeScript and Flow), but only in the form of that you need to autofix your files. https://github.com/lydell/eslint-plugin-simple-import-sort/blob/7d4947ad55a446e0a26ac6db8be19ce6fddd4d19/CHANGELOG.md#version-1000-2023-01-27
+
 # [6.0.0](https://github.com/tksst/eslint-config/compare/v5.0.0...v6.0.0) (2023-01-26)
 
 
