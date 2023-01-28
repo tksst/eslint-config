@@ -13,7 +13,7 @@ specifiers:
   eslint-config-airbnb-typescript: 17.0.0
   eslint-config-prettier: 8.6.0
   eslint-plugin-jest: 27.2.1
-  eslint-plugin-simple-import-sort: 9.0.0
+  eslint-plugin-simple-import-sort: 10.0.0
   globals: 13.19.0
   jest: 29.4.1
   npm-run-all: 4.1.5
@@ -29,7 +29,7 @@ dependencies:
   eslint-config-airbnb-typescript: 17.0.0_tzxlramtd2qgckkjl46sjrqv3m
   eslint-config-prettier: 8.6.0_eslint@8.32.0
   eslint-plugin-jest: 27.2.1_wl3grtzdhpdbdokams7wq4d444
-  eslint-plugin-simple-import-sort: 9.0.0_eslint@8.32.0
+  eslint-plugin-simple-import-sort: 10.0.0_eslint@8.32.0
   globals: 13.19.0
 
 devDependencies:
@@ -2105,8 +2105,8 @@ packages:
       - typescript
     dev: false
 
-  /eslint-plugin-simple-import-sort/9.0.0_eslint@8.32.0:
-    resolution: {integrity: sha512-PtrLjyXP8kjRneWT1n0b99y/2Fyup37we7FVoWsI61/O7x4ztLohzhep/pxI/cYlECr/cQ2j6utckdvWpVwXNA==}
+  /eslint-plugin-simple-import-sort/10.0.0_eslint@8.32.0:
+    resolution: {integrity: sha512-AeTvO9UCMSNzIHRkg8S6c3RPy5YEwKWSQPx3DYghLedo2ZQxowPFLGDN1AZ2evfg6r6mjBSZSLxLFsWSu3acsw==}
     peerDependencies:
       eslint: '>=5.0.0'
     dependencies:
