@@ -1,3 +1,4 @@
+import js from "@eslint/js";
 import tsEslintPlugin from "@typescript-eslint/eslint-plugin";
 import tsEslintParser from "@typescript-eslint/parser";
 import configPrettier from "eslint-config-prettier";
@@ -11,7 +12,7 @@ import javascriptRule from "./src/javascript-rule-base.js";
 import typescriptRule from "./src/typescript-rule-base.js";
 
 const javaScript = [
-    "eslint:recommended",
+    js.configs.recommended,
     ...airBnbBase,
     {
         plugins: {
