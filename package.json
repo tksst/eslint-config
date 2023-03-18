@@ -33,11 +33,12 @@
     "test:jest": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "5.54.0",
-    "@typescript-eslint/parser": "5.54.0",
+    "@eslint/js": "8.36.0",
+    "@typescript-eslint/eslint-plugin": "5.55.0",
+    "@typescript-eslint/parser": "5.55.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "17.0.0",
-    "eslint-config-prettier": "8.6.0",
+    "eslint-config-prettier": "8.7.0",
     "eslint-plugin-jest": "27.2.1",
     "eslint-plugin-simple-import-sort": "10.0.0",
     "globals": "13.20.0"
@@ -47,19 +48,19 @@
     "@semantic-release/git": "10.0.1",
     "@tksst/prettier-config": "1.1.0",
     "cross-env": "7.0.3",
-    "esbuild": "0.17.11",
-    "eslint": "8.35.0",
-    "jest": "29.4.3",
+    "esbuild": "0.17.12",
+    "eslint": "8.36.0",
+    "jest": "29.5.0",
     "npm-run-all": "4.1.5",
     "prettier": "2.8.4",
-    "rimraf": "4.3.0",
-    "semantic-release": "20.1.1",
-    "typescript": "4.9.5"
+    "rimraf": "4.4.0",
+    "semantic-release": "20.1.3",
+    "typescript": "5.0.2"
   },
   "peerDependencies": {
     "eslint": "^8.27.0"
   },
-  "packageManager": "pnpm@7.26.3",
+  "packageManager": "pnpm@7.29.3",
   "engines": {
     "node": ">= 12"
   }
