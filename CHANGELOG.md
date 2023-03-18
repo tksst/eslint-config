@@ -1,3 +1,11 @@
+## [7.0.4](https://github.com/tksst/eslint-config/compare/v7.0.3...v7.0.4) (2023-03-18)
+
+
+### Bug Fixes
+
+* **deps:** update npm dependencies ([256c212](https://github.com/tksst/eslint-config/commit/256c21244da7f471b107c55229fef57b370654cc))
+* remove the deprecated warning about "eslint:recommended" ([ef50830](https://github.com/tksst/eslint-config/commit/ef5083067bcf9fca1cbc5a311a549b84b2e4849b))
+
 ## [7.0.3](https://github.com/tksst/eslint-config/compare/v7.0.2...v7.0.3) (2023-03-04)
 
 
