@@ -1,3 +1,10 @@
+## [7.0.6](https://github.com/tksst/eslint-config/compare/v7.0.5...v7.0.6) (2023-04-01)
+
+
+### Bug Fixes
+
+* **deps:** update npm dependencies ([7aa7ddd](https://github.com/tksst/eslint-config/commit/7aa7ddd8799222cfb13960c1d682d3ec2256df00))
+
 ## [7.0.5](https://github.com/tksst/eslint-config/compare/v7.0.4...v7.0.5) (2023-03-21)
 
 
