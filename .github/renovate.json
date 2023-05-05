@@ -1,5 +1,4 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": ["github>tksst/renovate-config"],
-  "baseBranches": ["develop"]
+  "extends": ["github>tksst/renovate-config"]
 }
