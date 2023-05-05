@@ -1,3 +1,137 @@
+## [7.0.8](https://github.com/tksst/eslint-config/compare/v7.0.7...v7.0.8) (2023-04-20)
+
+
+### Bug Fixes
+
+* **deps:** update npm dependencies to v5.59.0 ([79f7a63](https://github.com/tksst/eslint-config/commit/79f7a63c92f5e2c6f33f7fbbd64d33fa12ebf9df))
+
+## [7.0.7](https://github.com/tksst/eslint-config/compare/v7.0.6...v7.0.7) (2023-04-14)
+
+
+### Bug Fixes
+
+* **deps:** update npm dependencies ([5ba6690](https://github.com/tksst/eslint-config/commit/5ba6690385271cf027840d6b98c51c8ac585b0c9))
+
+## [7.0.6](https://github.com/tksst/eslint-config/compare/v7.0.5...v7.0.6) (2023-04-01)
+
+
+### Bug Fixes
+
+* **deps:** update npm dependencies ([7aa7ddd](https://github.com/tksst/eslint-config/commit/7aa7ddd8799222cfb13960c1d682d3ec2256df00))
+
+## [7.0.5](https://github.com/tksst/eslint-config/compare/v7.0.4...v7.0.5) (2023-03-21)
+
+
+### Bug Fixes
+
+* **deps:** update npm dependencies ([7058e0b](https://github.com/tksst/eslint-config/commit/7058e0b1c61ac1aa62bc6c4ebf51e99128e097ec))
+
+## [7.0.4](https://github.com/tksst/eslint-config/compare/v7.0.3...v7.0.4) (2023-03-18)
+
+
+### Bug Fixes
+
+* **deps:** update npm dependencies ([256c212](https://github.com/tksst/eslint-config/commit/256c21244da7f471b107c55229fef57b370654cc))
+* remove the deprecated warning about "eslint:recommended" ([ef50830](https://github.com/tksst/eslint-config/commit/ef5083067bcf9fca1cbc5a311a549b84b2e4849b))
+
+## [7.0.3](https://github.com/tksst/eslint-config/compare/v7.0.2...v7.0.3) (2023-03-04)
+
+
+### Bug Fixes
+
+* **deps:** update npm dependencies to v5.54.0 ([68235aa](https://github.com/tksst/eslint-config/commit/68235aa136337880eb0eca071d1523055221a131))
+
+## [7.0.2](https://github.com/tksst/eslint-config/compare/v7.0.1...v7.0.2) (2023-02-20)
+
+
+### Bug Fixes
+
+* **deps:** update npm dependencies to v5.52.0 ([e7410ba](https://github.com/tksst/eslint-config/commit/e7410baee658b882de4006ac968ac1525ec73416))
+
+## [7.0.1](https://github.com/tksst/eslint-config/compare/v7.0.0...v7.0.1) (2023-02-03)
+
+
+### Bug Fixes
+
+* **deps:** update npm dependencies ([e61a6b1](https://github.com/tksst/eslint-config/commit/e61a6b1ce3da484a4010d5ced2a2a4972b6e1051))
+
+# [7.0.0](https://github.com/tksst/eslint-config/compare/v6.0.0...v7.0.0) (2023-01-28)
+
+
+### Features
+
+* **deps:** update dependency eslint-plugin-simple-import-sort to v10 ([#143](https://github.com/tksst/eslint-config/issues/143)) ([d864fbd](https://github.com/tksst/eslint-config/commit/d864fbd831a0c71abbfbcb2d0e30f06fcfd338a8))
+
+
+### BREAKING CHANGES
+
+* **deps:** This release might move some imported items with `type` around. This is a breaking formatting change (that only affects TypeScript and Flow), but only in the form of that you need to autofix your files. https://github.com/lydell/eslint-plugin-simple-import-sort/blob/7d4947ad55a446e0a26ac6db8be19ce6fddd4d19/CHANGELOG.md#version-1000-2023-01-27
+
+# [6.0.0](https://github.com/tksst/eslint-config/compare/v5.0.0...v6.0.0) (2023-01-26)
+
+
+### Features
+
+* provides a preset for TypeScript projects ([e362c56](https://github.com/tksst/eslint-config/commit/e362c56c2bc6804e24b0f4842b444b5b8c9e258b))
+
+
+### BREAKING CHANGES
+
+* The configuration files have been moved to the `rules` with some changes.
+
+# [5.0.0](https://github.com/tksst/eslint-config/compare/v4.3.1...v5.0.0) (2023-01-24)
+
+
+### Bug Fixes
+
+* **deps:** update dependency eslint-plugin-simple-import-sort to v9 ([23c5dc0](https://github.com/tksst/eslint-config/commit/23c5dc0d91bd59d13432e27fbb4506af8447d244))
+* **deps:** update npm dependencies to v5.49.0 ([6918f9c](https://github.com/tksst/eslint-config/commit/6918f9c2736d631af94f638894bbba814e1744af))
+
+
+### Features
+
+* migrate to "flat config" of ESLint ([9e16008](https://github.com/tksst/eslint-config/commit/9e16008ff2d3493fb117ff152acf2ee7c4060858))
+
+
+### BREAKING CHANGES
+
+* This package now provides "flat config" and the entry point has changed, so users will need to migrate to it.
+* This package no longer provides eslint-plugin-import rules.
+
+## [4.3.1](https://github.com/tksst/eslint-config/compare/v4.3.0...v4.3.1) (2023-01-07)
+
+
+### Bug Fixes
+
+* add eslint-plugin-import to peerDependencies to fix the plugin not found error (regression of b70ef30) ([0344f98](https://github.com/tksst/eslint-config/commit/0344f98bee939e9485ba98eb1b47f9b36e1c6d27))
+* disable import/order, which duplicates the role of simple-import-sort ([e3d251c](https://github.com/tksst/eslint-config/commit/e3d251c251b95988accb032d9faa48c6fda49453))
+
+# [4.3.0](https://github.com/tksst/eslint-config/compare/v4.2.0...v4.3.0) (2023-01-07)
+
+
+### Bug Fixes
+
+* Eliminate the need for users to install eslint-config-airbnb-typescript and eslint-config-prettier ([b70ef30](https://github.com/tksst/eslint-config/commit/b70ef30920ddb59233fd4d36f0baa79e7a659f1d))
+
+
+### Features
+
+* sort the rules for easy reference ([86e08fc](https://github.com/tksst/eslint-config/commit/86e08fc487158ee4b113544bd4fe883f11882f01))
+
+# [4.2.0](https://github.com/tksst/eslint-config/compare/v4.1.0...v4.2.0) (2022-11-12)
+
+
+### Features
+
+* enable a new rule `no-empty-static-block` ([16afe8c](https://github.com/tksst/eslint-config/commit/16afe8c051e0bad7fbeb24a7505a2b74a71b3c1c))
+
+# [4.1.0](https://github.com/tksst/eslint-config/compare/v4.0.0...v4.1.0) (2022-10-08)
+
+
+### Features
+
+* disable some rules ([03e627d](https://github.com/tksst/eslint-config/commit/03e627d04ac81eb12d7c4510fe60a521e2951bf9))
+
 # [4.0.0](https://github.com/tksst/eslint-config/compare/v3.0.1...v4.0.0) (2022-09-13)
 
 
