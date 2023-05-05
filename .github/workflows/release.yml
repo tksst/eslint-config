@@ -3,20 +3,20 @@ on:
   push:
     branches:
       - main
-      - alpha
 
 jobs:
   test:
     uses: ./.github/workflows/test.yml
   release:
     needs: test
+    permissions:
+      # create a PR
+      contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@8e5e7e5ab8b370d6c329ec480221332ada57f0ab # v3.5.2
-        with:
-          # fetch all history
-          fetch-depth: 0
 
       - name: Setup pnpm
         uses: pnpm/action-setup@c3b53f6a16e57305370b4ae5a540c2077a1d50dd # tag=v2.2.4
@@ -31,8 +31,10 @@ jobs:
 
       - run: pnpm build
 
-      - name: Release
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@e9cc34b540dd3ad1b030c57fd97269e8f6ad905a # v1.4.1
+        with:
+          publish: pnpm exec changeset publish
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: pnpm exec semantic-release
