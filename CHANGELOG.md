@@ -1,5 +1,14 @@
 # @tksst/eslint-config
 
+## 8.0.0
+
+### Major Changes
+
+-   c638432: major upgrade:
+
+    -   major upgrade @typescript-eslint/eslint-plugin@6.0.0
+    -   major upgrade @typescript-eslint/parser@6.0.0
+
 ## 7.0.11
 
 ### Patch Changes
