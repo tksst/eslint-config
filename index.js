@@ -42,6 +42,7 @@ const typeScriptOnly = [
     },
     { rules: tsEslintPlugin.configs["eslint-recommended"].overrides[0].rules },
     { rules: tsEslintPlugin.configs["strict-type-checked"].rules },
+    { rules: tsEslintPlugin.configs["stylistic-type-checked"].rules },
     { rules: configPrettier.rules },
     {
         languageOptions: {
