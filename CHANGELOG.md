@@ -1,5 +1,22 @@
 # @tksst/eslint-config
 
+## 9.0.0
+
+### Major Changes
+
+-   8a0ea93: enable typescript-eslint's strict-type-checked
+-   3a647a4: enable typescript-eslint's stylistic-type-checked
+
+### Minor Changes
+
+-   d9faf7a: update dependencies:
+
+    -   update @eslint/js@8.45.0 (version bump only)
+    -   update @typescript-eslint/eslint-plugin@6.1.0
+    -   update @typescript-eslint/parser@6.1.0 (it seems to have no functional changes)
+    -   update eslint-config-airbnb-typescript@17.1.0 (it seems to have no functional changes)
+    -   update eslint-plugin-jest@27.2.3 (it seems to have no functional changes)
+
 ## 8.0.0
 
 ### Major Changes
