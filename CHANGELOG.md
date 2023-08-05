@@ -1,5 +1,13 @@
 # @tksst/eslint-config
 
+## 9.3.0
+
+### Minor Changes
+
+-   6275418: update dependencies:
+
+    -   update eslint-config-prettier@8.10.0
+
 ## 9.2.0
 
 ### Minor Changes
