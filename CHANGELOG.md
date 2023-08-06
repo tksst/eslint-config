@@ -1,5 +1,11 @@
 # @tksst/eslint-config
 
+## 10.0.0
+
+### Major Changes
+
+-   963a4e1: major upgrade of eslint-config-prettier@9.0.0 from 8.10.0
+
 ## 9.3.0
 
 ### Minor Changes
