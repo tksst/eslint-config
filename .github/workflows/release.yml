@@ -10,6 +10,8 @@ jobs:
   release:
     needs: test
     permissions:
+      # provenance
+      id-token: write
       # create a PR
       contents: write
       pull-requests: write

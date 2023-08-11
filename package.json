@@ -3,7 +3,8 @@
   "version": "10.1.0",
   "description": "My personal ESLint config",
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "provenance": true
   },
   "homepage": "https://github.com/tksst/eslint-config",
   "repository": "github:tksst/eslint-config",
