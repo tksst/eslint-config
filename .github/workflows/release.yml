@@ -19,7 +19,7 @@ jobs:
 
     steps:
       - name: set up the project
-        uses: tksst/github-actions-workflows/actions/setup-pnpm-project@118c76c1845aa9c8974dd0664742f4c46ed25304
+        uses: tksst/github-actions-workflows/actions/setup-pnpm-project@269a893f6432649083afd1c3c6350793e8c00e4b
         with:
           node-version: 18
 
