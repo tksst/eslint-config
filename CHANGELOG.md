@@ -1,5 +1,15 @@
 # @tksst/eslint-config
 
+## 10.3.0
+
+### Minor Changes
+
+-   57e674d: update dependencies:
+
+    -   update @typescript-eslint/eslint-plugin@6.6.0 from 6.4.0
+    -   update @typescript-eslint/parser@6.6.0 from 6.4.0 (version bump only)
+    -   update @eslint/js@8.48.0 from 8.47.0 (version bump only)
+
 ## 10.2.0
 
 ### Minor Changes
