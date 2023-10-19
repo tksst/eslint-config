@@ -34,15 +34,15 @@
     "test:jest": "cross-env NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "dependencies": {
-    "@eslint/js": "8.49.0",
-    "@typescript-eslint/eslint-plugin": "6.7.2",
-    "@typescript-eslint/parser": "6.7.2",
+    "@eslint/js": "8.51.0",
+    "@typescript-eslint/eslint-plugin": "6.8.0",
+    "@typescript-eslint/parser": "6.8.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "17.1.0",
     "eslint-config-prettier": "9.0.0",
-    "eslint-plugin-jest": "27.4.0",
+    "eslint-plugin-jest": "27.4.2",
     "eslint-plugin-simple-import-sort": "10.0.0",
-    "globals": "13.22.0"
+    "globals": "13.23.0"
   },
   "devDependencies": {
     "@changesets/cli": "2.26.2",
