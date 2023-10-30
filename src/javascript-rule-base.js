@@ -39,5 +39,6 @@ export default {
         "simple-import-sort/imports": "warn",
         "simple-import-sort/exports": "warn",
         "sort-imports": "off",
+        "redos/no-vulnerable": "error",
     },
 };

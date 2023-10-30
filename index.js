@@ -3,6 +3,7 @@ import tsEslintPlugin from "@typescript-eslint/eslint-plugin";
 import tsEslintParser from "@typescript-eslint/parser";
 import configPrettier from "eslint-config-prettier";
 import pluginJest from "eslint-plugin-jest";
+import pluginRedos from "eslint-plugin-redos";
 import pluginSimpleImportSort from "eslint-plugin-simple-import-sort";
 import globals from "globals";
 
@@ -25,6 +26,7 @@ const javaScript = [
     {
         plugins: {
             "simple-import-sort": pluginSimpleImportSort,
+            redos: pluginRedos,
         },
         rules: javascriptRule.rules,
     },
