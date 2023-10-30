@@ -4,6 +4,7 @@ import tsEslintParser from "@typescript-eslint/parser";
 import configPrettier from "eslint-config-prettier";
 import pluginJest from "eslint-plugin-jest";
 import pluginRedos from "eslint-plugin-redos";
+import pluginRegexp from "eslint-plugin-regexp";
 import pluginSimpleImportSort from "eslint-plugin-simple-import-sort";
 import globals from "globals";
 
@@ -29,6 +30,12 @@ const javaScript = [
             redos: pluginRedos,
         },
         rules: javascriptRule.rules,
+    },
+    {
+        plugins: {
+            regexp: pluginRegexp,
+        },
+        rules: pluginRegexp.configs.recommended.rules,
     },
 ];
 

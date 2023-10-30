@@ -42,6 +42,7 @@
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-jest": "27.6.0",
     "eslint-plugin-redos": "4.4.5",
+    "eslint-plugin-regexp": "2.1.1",
     "eslint-plugin-simple-import-sort": "10.0.0",
     "globals": "13.23.0"
   },
@@ -59,10 +60,10 @@
     "typescript": "5.2.2"
   },
   "peerDependencies": {
-    "eslint": "^8.27.0"
+    "eslint": "^8.44.0"
   },
   "packageManager": "pnpm@8.10.0",
   "engines": {
-    "node": ">= 12"
+    "node": ">= 18"
   }
 }
