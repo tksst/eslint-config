@@ -1,5 +1,23 @@
 # @tksst/eslint-config
 
+## 11.0.0
+
+### Major Changes
+
+-   53069c5: introduce [eslint-plugin-redos](https://makenowjust-labs.github.io/recheck/docs/usage/as-eslint-plugin/) ([GitHub](https://github.com/makenowjust-labs/recheck/tree/9813615f02bf878748a064f41cbc038910e1dd52/packages/eslint-plugin-redos))
+-   c8bfdaa: introduce [eslint-plugin-regexp](https://ota-meshi.github.io/eslint-plugin-regexp/) ([GitHub](https://github.com/ota-meshi/eslint-plugin-regexp/tree/69b9035d6e433b1d6f7c1034ef334571983f2b33)) and enable `plugin:regexp/recommended`.
+
+    -   drop support Node.js < 18 and ESLint < 8.44.0
+
+-   603fa9f: introduce eslint-plugin-unicorn and enable some rules.
+
+### Patch Changes
+
+-   7157d73: update dependencies:
+
+    -   update [@typescript-eslint/eslint-plugin@6.9.1](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v6.9.1) from 6.9.0
+    -   update [@typescript-eslint/parser@6.9.1](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v6.9.1) from 6.9.0 (version bump only)
+
 ## 10.6.0
 
 ### Minor Changes
