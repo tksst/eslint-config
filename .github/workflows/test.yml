@@ -30,7 +30,6 @@ jobs:
       matrix:
         os:
           - ubuntu-22.04
-          - windows-latest
         node-version:
           - 18
           - 20
@@ -38,10 +37,10 @@ jobs:
         experimental:
           - false
         include:
-          - os: ubuntu-22.04
-            node-version: 22-nightly
-            experimental: true
           - os: windows-latest
+            node-version: 20
+            experimental: false
+          - os: ubuntu-22.04
             node-version: 22-nightly
             experimental: true
 
