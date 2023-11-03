@@ -6,6 +6,7 @@ import pluginJest from "eslint-plugin-jest";
 import pluginRedos from "eslint-plugin-redos";
 import pluginRegexp from "eslint-plugin-regexp";
 import pluginSimpleImportSort from "eslint-plugin-simple-import-sort";
+import pluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
 
 import airBnbBase from "./src/airbnbBase.js";
@@ -28,6 +29,7 @@ const javaScript = [
         plugins: {
             "simple-import-sort": pluginSimpleImportSort,
             redos: pluginRedos,
+            unicorn: pluginUnicorn,
         },
         rules: javascriptRule.rules,
     },
