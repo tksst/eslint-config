@@ -1,3 +1,3 @@
-import { preset } from "@tksst/eslint-config";
+import { preset } from "./dist/lib/index.js";
 
 export default preset.typeScript();
