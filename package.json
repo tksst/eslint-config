@@ -19,7 +19,7 @@
     "import": "./dist/lib/index.js",
     "require": "./dist/lib/index.cjs"
   },
-    "scripts": {
+  "scripts": {
     "clean": "tss-rmrf ./dist/",
     "build": "run-s --continue-on-error clean build:*",
     "build:lib": "tsup --config ./tsup.config.lib.mjs",
@@ -59,6 +59,9 @@
     "@tksst/eslint-config": "11.0.0",
     "@tksst/prettier-config": "1.1.0",
     "@tksst/project-configs": "4.0.1",
+    "@types/eslint": "8.44.6",
+    "@types/eslint-config-prettier": "6.11.2",
+    "@types/eslint__js": "8.42.2",
     "@types/jest": "29.5.7",
     "better-typescript-lib": "2.5.0",
     "eslint": "8.52.0",

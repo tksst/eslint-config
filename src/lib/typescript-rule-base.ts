@@ -1,6 +1,6 @@
-/** @type {import('eslint').Linter.Config} */
+import { type Linter } from "eslint";
 
-export default {
+const x = {
     rules: {
         "@typescript-eslint/explicit-function-return-type": "off",
         "@typescript-eslint/no-empty-function": "off",
@@ -14,4 +14,6 @@ export default {
         "@typescript-eslint/no-useless-empty-export": "warn",
         "prefer-const": "warn",
     },
-};
+} satisfies Linter.FlatConfig;
+
+export default x;
