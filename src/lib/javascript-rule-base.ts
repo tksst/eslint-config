@@ -1,6 +1,6 @@
-/** @type {import('eslint').Linter.Config} */
+import { type Linter } from "eslint";
 
-export default {
+const x = {
     rules: {
         "no-console": "off",
         "no-empty": ["error", { allowEmptyCatch: true }],
@@ -94,4 +94,6 @@ export default {
         // Enforce throwing TypeError in type checking conditions
         "unicorn/prefer-type-error": "error",
     },
-};
+} satisfies Linter.FlatConfig;
+
+export default x;

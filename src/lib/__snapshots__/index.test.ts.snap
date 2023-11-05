@@ -2675,7 +2675,9 @@ exports[`ESLint config Snapshot preset.typeScript 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
-    "languageOptions": {},
+    "languageOptions": {
+      "parser": undefined,
+    },
   },
   {
     "files": [
@@ -5618,7 +5620,9 @@ exports[`ESLint config Snapshot rules.typeScript 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
-    "languageOptions": {},
+    "languageOptions": {
+      "parser": undefined,
+    },
   },
   {
     "files": [
