@@ -10,6 +10,7 @@ jobs:
     permissions:
       actions: write
       contents: read
+
   release:
     needs: build-lint-test
 

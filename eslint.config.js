@@ -1,25 +1,3 @@
-import globals from "globals";
+import { preset } from "@tksst/eslint-config";
 
-import { rules } from "./index.js";
-
-export default [
-    {
-        ignores: ["dist/*"],
-    },
-    {
-        languageOptions: {
-            globals: {
-                ...globals.node,
-            },
-        },
-    },
-    {
-        files: ["**/*.test.js"],
-        languageOptions: {
-            globals: {
-                ...globals.jest,
-            },
-        },
-    },
-    ...rules.javaScript,
-];
+export default preset.typeScript();
