@@ -10,10 +10,10 @@ import pluginSimpleImportSort from "eslint-plugin-simple-import-sort";
 import pluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
 
-import airBnbBase from "./airbnbBase.js";
-import airBnbTsBase from "./airbnbTSBase.js";
-import javascriptRule from "./javascript-rule-base.js";
-import typescriptRule from "./typescript-rule-base.js";
+import airBnbBase from "./configs/airbnbBase.js";
+import airBnbTsBase from "./configs/airbnbTSBase.js";
+import javascriptRule from "./configs/javascript-rule-base.js";
+import typescriptRule from "./configs/typescript-rule-base.js";
 
 const javaScript = [
     js.configs.recommended,
