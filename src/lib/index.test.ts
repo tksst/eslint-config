@@ -27,4 +27,10 @@ describe("ESLint config Snapshot", () => {
     it("rules.typeScript", () => {
         expect(removeParser(removePlugin(config.rules.typeScript))).toMatchSnapshot();
     });
+    it("rules.javaScript", () => {
+        expect(removeParser(removePlugin(config.rules.javaScript))).toMatchSnapshot();
+    });
+    it("rules.typeScriptOnly", () => {
+        expect(removeParser(removePlugin(config.rules.typeScriptOnly))).toMatchSnapshot();
+    });
 });
