@@ -76,7 +76,7 @@ exports[`ESLint calculated config Snapshot .js 1`] = `
       "setTimeout": false,
       "structuredClone": false,
     },
-    "parser": "espree@9.6.1",
+    "parser": "espree",
     "parserOptions": {},
     "sourceType": "module",
   },
@@ -88,7 +88,6 @@ exports[`ESLint calculated config Snapshot .js 1`] = `
     "unicorn:eslint-plugin-unicorn@49.0.0",
     "regexp:eslint-plugin-regexp@2.1.1",
   ],
-  "processor": undefined,
   "rules": {
     "@babel/object-curly-spacing": [
       0,
@@ -2314,7 +2313,7 @@ exports[`ESLint calculated config Snapshot .ts 1`] = `
 {
   "languageOptions": {
     "ecmaVersion": "latest",
-    "parser": "typescript-eslint/parser@6.9.1",
+    "parser": "typescript-eslint/parser",
     "parserOptions": {
       "project": "./tsconfig.json",
     },
@@ -2329,7 +2328,6 @@ exports[`ESLint calculated config Snapshot .ts 1`] = `
     "regexp:eslint-plugin-regexp@2.1.1",
     "@typescript-eslint",
   ],
-  "processor": undefined,
   "rules": {
     "@babel/object-curly-spacing": [
       0,
