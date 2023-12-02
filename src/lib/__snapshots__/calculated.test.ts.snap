@@ -2156,6 +2156,9 @@ exports[`ESLint calculated config Snapshot .js 1`] = `
     "unicorn/prefer-type-error": [
       2,
     ],
+    "unicorn/template-indent": [
+      0,
+    ],
     "use-isnan": [
       2,
     ],
@@ -4826,6 +4829,9 @@ exports[`ESLint calculated config Snapshot .ts 1`] = `
     ],
     "unicorn/prefer-type-error": [
       2,
+    ],
+    "unicorn/template-indent": [
+      0,
     ],
     "use-isnan": [
       2,
