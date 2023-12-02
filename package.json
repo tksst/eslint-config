@@ -41,12 +41,12 @@
     "test:unit": "run-s build _test_unit"
   },
   "dependencies": {
-    "@eslint/js": "8.53.0",
-    "@typescript-eslint/eslint-plugin": "6.11.0",
-    "@typescript-eslint/parser": "6.11.0",
+    "@eslint/js": "8.55.0",
+    "@typescript-eslint/eslint-plugin": "6.13.1",
+    "@typescript-eslint/parser": "6.13.1",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "17.1.0",
-    "eslint-config-prettier": "9.0.0",
+    "eslint-config-prettier": "9.1.0",
     "eslint-plugin-jest": "27.6.0",
     "eslint-plugin-redos": "4.4.5",
     "eslint-plugin-regexp": "2.1.1",
