@@ -85,7 +85,7 @@ exports[`ESLint calculated config Snapshot .js 1`] = `
     "jest:eslint-plugin-jest@27.6.0",
     "simple-import-sort",
     "redos",
-    "unicorn:eslint-plugin-unicorn@49.0.0",
+    "unicorn:eslint-plugin-unicorn@50.0.1",
     "regexp:eslint-plugin-regexp@2.1.1",
   ],
   "rules": {
@@ -2327,7 +2327,7 @@ exports[`ESLint calculated config Snapshot .ts 1`] = `
     "jest:eslint-plugin-jest@27.6.0",
     "simple-import-sort",
     "redos",
-    "unicorn:eslint-plugin-unicorn@49.0.0",
+    "unicorn:eslint-plugin-unicorn@50.0.1",
     "regexp:eslint-plugin-regexp@2.1.1",
     "@typescript-eslint",
   ],
