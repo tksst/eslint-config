@@ -86,7 +86,7 @@ exports[`ESLint calculated config Snapshot .js 1`] = `
     "simple-import-sort",
     "redos",
     "unicorn:eslint-plugin-unicorn@50.0.1",
-    "regexp:eslint-plugin-regexp@2.1.1",
+    "regexp:eslint-plugin-regexp@2.1.2",
   ],
   "rules": {
     "@babel/object-curly-spacing": [
@@ -2328,7 +2328,7 @@ exports[`ESLint calculated config Snapshot .ts 1`] = `
     "simple-import-sort",
     "redos",
     "unicorn:eslint-plugin-unicorn@50.0.1",
-    "regexp:eslint-plugin-regexp@2.1.1",
+    "regexp:eslint-plugin-regexp@2.1.2",
     "@typescript-eslint",
   ],
   "rules": {
@@ -2727,6 +2727,9 @@ exports[`ESLint calculated config Snapshot .ts 1`] = `
     ],
     "@typescript-eslint/no-useless-empty-export": [
       1,
+    ],
+    "@typescript-eslint/no-useless-template-literals": [
+      2,
     ],
     "@typescript-eslint/no-var-requires": [
       2,
