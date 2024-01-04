@@ -1,7 +1,7 @@
 import { FlatESLint } from "eslint/use-at-your-own-risk";
 
 function removeVersionFromParser(conf: { languageOptions: { parser: string } }): void {
-    conf.languageOptions.parser = conf.languageOptions.parser.replace(/@[^@]+$/, "");
+    conf.languageOptions.parser = conf.languageOptions.parser.replace(/(?<!^)@[^@]+$/, "");
 }
 
 /* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
