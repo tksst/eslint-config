@@ -1,5 +1,9 @@
 import { FlatESLint } from "eslint/use-at-your-own-risk";
 
+function removeVersionFromParser(conf: { languageOptions: { parser: string } }): void {
+    conf.languageOptions.parser = conf.languageOptions.parser.replace(/@[^@]+$/, "");
+}
+
 /* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
 
 describe("ESLint calculated config Snapshot", () => {
@@ -8,7 +12,9 @@ describe("ESLint calculated config Snapshot", () => {
         const conf = await eslint.calculateConfigForFile("index.js");
         // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/non-nullable-type-assertion-style
         const conf2 = JSON.parse(JSON.stringify(conf) as string) as any;
-        conf2.languageOptions.parser = conf2.languageOptions.parser.replace(/@[^@]+$/, "");
+
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+        removeVersionFromParser(conf2);
 
         expect(conf2).toMatchSnapshot();
     });
@@ -17,7 +23,9 @@ describe("ESLint calculated config Snapshot", () => {
         const conf = await eslint.calculateConfigForFile("index.ts");
         // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/non-nullable-type-assertion-style
         const conf2 = JSON.parse(JSON.stringify(conf) as string) as any;
-        conf2.languageOptions.parser = conf2.languageOptions.parser.replace(/@[^@]+$/, "");
+
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+        removeVersionFromParser(conf2);
 
         expect(conf2).toMatchSnapshot();
     });
