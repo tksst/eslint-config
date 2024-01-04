@@ -4,6 +4,10 @@ function removeVersionFromParser(conf: { languageOptions: { parser: string } }):
     conf.languageOptions.parser = conf.languageOptions.parser.replace(/(?<!^)@[^@]+$/, "");
 }
 
+function removeVersionFromPlugins(conf: { plugins: string[] }): void {
+    conf.plugins = conf.plugins.map((plugin) => plugin.replace(/(?<!^)@[^@]+$/, ""));
+}
+
 /* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
 
 describe("ESLint calculated config Snapshot", () => {
@@ -15,6 +19,8 @@ describe("ESLint calculated config Snapshot", () => {
 
         // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         removeVersionFromParser(conf2);
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+        removeVersionFromPlugins(conf2);
 
         expect(conf2).toMatchSnapshot();
     });
@@ -26,6 +32,8 @@ describe("ESLint calculated config Snapshot", () => {
 
         // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         removeVersionFromParser(conf2);
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+        removeVersionFromPlugins(conf2);
 
         expect(conf2).toMatchSnapshot();
     });
