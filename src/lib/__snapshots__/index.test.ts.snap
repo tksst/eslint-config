@@ -1,6 +1,6 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`config snapshot config.javaScript 1`] = `
+exports[`config snapshot > config.javaScript 1`] = `
 [
   {
     "rules": {
@@ -2251,7 +2251,7 @@ exports[`config snapshot config.javaScript 1`] = `
 ]
 `;
 
-exports[`config snapshot config.jest 1`] = `
+exports[`config snapshot > config.jest 1`] = `
 [
   {
     "rules": {
@@ -2282,7 +2282,7 @@ exports[`config snapshot config.jest 1`] = `
 ]
 `;
 
-exports[`config snapshot config.typeScript 1`] = `
+exports[`config snapshot > config.typeScript 1`] = `
 [
   {
     "rules": {
@@ -4816,7 +4816,6 @@ exports[`config snapshot config.typeScript 1`] = `
   },
   {
     "languageOptions": {
-      "parser": undefined,
       "parserOptions": {
         "project": "./tsconfig.json",
       },
@@ -5137,7 +5136,7 @@ exports[`config snapshot config.typeScript 1`] = `
 ]
 `;
 
-exports[`config snapshot config.typeScriptOnly 1`] = `
+exports[`config snapshot > config.typeScriptOnly 1`] = `
 [
   {
     "rules": {
@@ -5425,7 +5424,6 @@ exports[`config snapshot config.typeScriptOnly 1`] = `
   },
   {
     "languageOptions": {
-      "parser": undefined,
       "parserOptions": {
         "project": "./tsconfig.json",
       },
@@ -5746,7 +5744,7 @@ exports[`config snapshot config.typeScriptOnly 1`] = `
 ]
 `;
 
-exports[`preset snapshots preset.typeScript 1`] = `
+exports[`preset snapshots > preset.typeScript 1`] = `
 [
   {
     "ignores": [
@@ -8404,7 +8402,6 @@ exports[`preset snapshots preset.typeScript 1`] = `
       "**/*.ctsx",
     ],
     "languageOptions": {
-      "parser": undefined,
       "parserOptions": {
         "project": "./tsconfig.json",
       },
@@ -8741,7 +8738,7 @@ exports[`preset snapshots preset.typeScript 1`] = `
 ]
 `;
 
-exports[`preset snapshots preset.typeScript jest: true 1`] = `
+exports[`preset snapshots > preset.typeScript jest: true 1`] = `
 [
   {
     "ignores": [
@@ -11424,7 +11421,6 @@ exports[`preset snapshots preset.typeScript jest: true 1`] = `
       "**/*.ctsx",
     ],
     "languageOptions": {
-      "parser": undefined,
       "parserOptions": {
         "project": "./tsconfig.json",
       },

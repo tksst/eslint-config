@@ -1,22 +1,23 @@
 import { type Linter } from "eslint";
+import { describe, expect, it } from "vitest";
 
 import * as config from "./index.js";
 
 function removePlugin(c: Linter.FlatConfig[]) {
-    return c.map((it) => {
-        if (it.plugins !== undefined) {
-            delete it.plugins;
+    return c.map((x) => {
+        if (x.plugins !== undefined) {
+            delete x.plugins;
         }
-        return it;
+        return x;
     });
 }
 
 function removeParser(c: Linter.FlatConfig[]) {
-    return c.map((it) => {
-        if (it.languageOptions?.parser !== undefined) {
-            delete it.languageOptions.parser;
+    return c.map((x) => {
+        if (x.languageOptions?.parser !== undefined) {
+            delete x.languageOptions.parser;
         }
-        return it;
+        return x;
     });
 }
 

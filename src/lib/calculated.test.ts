@@ -1,4 +1,5 @@
 import { FlatESLint } from "eslint/use-at-your-own-risk";
+import { describe, expect, it } from "vitest";
 
 function removeVersionFromParser(conf: { languageOptions: { parser: string } }): void {
     conf.languageOptions.parser = conf.languageOptions.parser.replace(/(?<!^)@[^@]+$/, "");
