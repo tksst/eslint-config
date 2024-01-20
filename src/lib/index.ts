@@ -96,6 +96,15 @@ function addFilesToConfigs(config: Linter.FlatConfig[], something: string[], app
     });
 }
 
+const vitest = [
+    jest,
+    {
+        rules: {
+            "jest/no-deprecated-functions": "off",
+        },
+    },
+];
+
 export const config = {
     javaScript,
     typeScriptOnly,
@@ -108,7 +117,7 @@ export const util = {
 };
 
 export const preset = {
-    typeScript: (option?: { jsIsCjs?: boolean; jest?: boolean }): Linter.FlatConfig[] => [
+    typeScript: (option?: { jsIsCjs?: boolean; jest?: boolean; vitest?: boolean }): Linter.FlatConfig[] => [
         {
             ignores: ["dist/**", "coverage/**"],
         },
@@ -130,6 +139,7 @@ export const preset = {
         },
         ...javaScript,
         option?.jest === true ? jest : {},
+        ...(option?.jest !== true && option?.vitest === true ? vitest : []),
         ...addFilesToConfigs(typeScriptOnly, ["**/*.ts", "**/*.mts", "**/*.cts", "**/*.tsx", "**/*.mtsx", "**/*.ctsx"]),
     ],
 };

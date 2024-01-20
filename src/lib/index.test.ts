@@ -43,4 +43,7 @@ describe("preset snapshots", () => {
     it("preset.typeScript jest: true", () => {
         expect(removeParser(removePlugin(config.preset.typeScript({ jest: true })))).toMatchSnapshot();
     });
+    it("preset.typeScript vitest: true", () => {
+        expect(removeParser(removePlugin(config.preset.typeScript({ vitest: true })))).toMatchSnapshot();
+    });
 });
