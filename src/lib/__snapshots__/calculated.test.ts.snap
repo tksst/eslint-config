@@ -2532,6 +2532,9 @@ exports[`ESLint calculated config Snapshot .ts 1`] = `
     "@typescript-eslint/no-array-constructor": [
       2,
     ],
+    "@typescript-eslint/no-array-delete": [
+      2,
+    ],
     "@typescript-eslint/no-base-to-string": [
       2,
     ],
@@ -2763,6 +2766,9 @@ exports[`ESLint calculated config Snapshot .ts 1`] = `
       2,
     ],
     "@typescript-eslint/prefer-optional-chain": [
+      2,
+    ],
+    "@typescript-eslint/prefer-promise-reject-errors": [
       2,
     ],
     "@typescript-eslint/prefer-readonly": [
@@ -4297,7 +4303,7 @@ exports[`ESLint calculated config Snapshot .ts 1`] = `
       2,
     ],
     "prefer-promise-reject-errors": [
-      2,
+      0,
       {
         "allowEmptyReject": true,
       },
