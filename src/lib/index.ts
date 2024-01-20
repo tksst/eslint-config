@@ -3,9 +3,7 @@ import tsEslintPlugin from "@typescript-eslint/eslint-plugin";
 import tsEslintParser from "@typescript-eslint/parser";
 import type { ESLint, Linter } from "eslint";
 import configPrettier from "eslint-config-prettier";
-import pluginJest from "eslint-plugin-jest";
 import pluginRedos from "eslint-plugin-redos";
-import * as pluginRegexp from "eslint-plugin-regexp";
 import pluginSimpleImportSort from "eslint-plugin-simple-import-sort";
 import pluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
@@ -13,21 +11,14 @@ import globals from "globals";
 import airBnbBase from "./configs/airbnbBase.js";
 import airBnbTsBase from "./configs/airbnbTSBase.js";
 import javascriptRule from "./configs/javascript-rule-base.js";
+import jest from "./configs/jest.js";
+import regexp from "./configs/regexp.js";
 import typescriptRule from "./configs/typescript-rule-base.js";
 
 const javaScript = [
     js.configs.recommended,
     ...airBnbBase,
-    {
-        plugins: {
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            jest: pluginJest,
-        },
-    },
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-    { rules: pluginJest.configs.style.rules },
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-    { rules: pluginJest.configs.recommended.rules },
+    jest,
     { rules: configPrettier.rules },
     {
         plugins: {
@@ -40,14 +31,7 @@ const javaScript = [
         },
         rules: javascriptRule.rules,
     },
-    {
-        plugins: {
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            regexp: pluginRegexp,
-        },
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-        rules: pluginRegexp.configs.recommended.rules,
-    },
+    regexp,
 ] satisfies Linter.FlatConfig[];
 
 const x1 = tsEslintPlugin.configs["eslint-recommended"]?.overrides?.[0]?.rules as Linter.RulesRecord | undefined;

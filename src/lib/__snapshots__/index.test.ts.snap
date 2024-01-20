@@ -2005,15 +2005,6 @@ exports[`ESLint config Snapshot preset.typeScript 1`] = `
       ],
     },
   },
-  {},
-  {
-    "rules": {
-      "jest/no-alias-methods": "warn",
-      "jest/prefer-to-be": "error",
-      "jest/prefer-to-contain": "error",
-      "jest/prefer-to-have-length": "error",
-    },
-  },
   {
     "rules": {
       "jest/expect-expect": "warn",
@@ -2031,6 +2022,9 @@ exports[`ESLint config Snapshot preset.typeScript 1`] = `
       "jest/no-mocks-import": "error",
       "jest/no-standalone-expect": "error",
       "jest/no-test-prefixes": "error",
+      "jest/prefer-to-be": "error",
+      "jest/prefer-to-contain": "error",
+      "jest/prefer-to-have-length": "error",
       "jest/valid-describe-callback": "error",
       "jest/valid-expect": "error",
       "jest/valid-expect-in-promise": "error",
@@ -4953,15 +4947,6 @@ exports[`ESLint config Snapshot rules.javaScript 1`] = `
       ],
     },
   },
-  {},
-  {
-    "rules": {
-      "jest/no-alias-methods": "warn",
-      "jest/prefer-to-be": "error",
-      "jest/prefer-to-contain": "error",
-      "jest/prefer-to-have-length": "error",
-    },
-  },
   {
     "rules": {
       "jest/expect-expect": "warn",
@@ -4979,6 +4964,9 @@ exports[`ESLint config Snapshot rules.javaScript 1`] = `
       "jest/no-mocks-import": "error",
       "jest/no-standalone-expect": "error",
       "jest/no-test-prefixes": "error",
+      "jest/prefer-to-be": "error",
+      "jest/prefer-to-contain": "error",
+      "jest/prefer-to-have-length": "error",
       "jest/valid-describe-callback": "error",
       "jest/valid-expect": "error",
       "jest/valid-expect-in-promise": "error",
@@ -7224,15 +7212,6 @@ exports[`ESLint config Snapshot rules.typeScript 1`] = `
       ],
     },
   },
-  {},
-  {
-    "rules": {
-      "jest/no-alias-methods": "warn",
-      "jest/prefer-to-be": "error",
-      "jest/prefer-to-contain": "error",
-      "jest/prefer-to-have-length": "error",
-    },
-  },
   {
     "rules": {
       "jest/expect-expect": "warn",
@@ -7250,6 +7229,9 @@ exports[`ESLint config Snapshot rules.typeScript 1`] = `
       "jest/no-mocks-import": "error",
       "jest/no-standalone-expect": "error",
       "jest/no-test-prefixes": "error",
+      "jest/prefer-to-be": "error",
+      "jest/prefer-to-contain": "error",
+      "jest/prefer-to-have-length": "error",
       "jest/valid-describe-callback": "error",
       "jest/valid-expect": "error",
       "jest/valid-expect-in-promise": "error",
