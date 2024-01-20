@@ -1,94 +1,83 @@
 import js from "@eslint/js";
-import tsEslintPlugin from "@typescript-eslint/eslint-plugin";
-import tsEslintParser from "@typescript-eslint/parser";
-import type { ESLint, Linter } from "eslint";
+import type { Linter } from "eslint";
 import configPrettier from "eslint-config-prettier";
-import pluginJest from "eslint-plugin-jest";
-import pluginRedos from "eslint-plugin-redos";
-import * as pluginRegexp from "eslint-plugin-regexp";
-import pluginSimpleImportSort from "eslint-plugin-simple-import-sort";
-import pluginUnicorn from "eslint-plugin-unicorn";
 import globals from "globals";
 
 import airBnbBase from "./configs/airbnbBase.js";
 import airBnbTsBase from "./configs/airbnbTSBase.js";
-import javascriptRule from "./configs/javascript-rule-base.js";
-import typescriptRule from "./configs/typescript-rule-base.js";
+import jest from "./configs/jest.js";
+import redos from "./configs/redos.js";
+import regexp from "./configs/regexp.js";
+import simpleImportSort from "./configs/simpleImportSort.js";
+import typescriptEslint from "./configs/typescriptEslint.js";
+import unicorn from "./configs/unicorn.js";
 
 const javaScript = [
     js.configs.recommended,
     ...airBnbBase,
-    {
-        plugins: {
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            jest: pluginJest,
-        },
-    },
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-    { rules: pluginJest.configs.style.rules },
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-    { rules: pluginJest.configs.recommended.rules },
+    jest,
     { rules: configPrettier.rules },
+    simpleImportSort,
+    redos,
+    unicorn,
     {
-        plugins: {
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            "simple-import-sort": pluginSimpleImportSort,
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            redos: pluginRedos,
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            unicorn: pluginUnicorn,
+        rules: {
+            "no-console": "off",
+            "no-empty": ["error", { allowEmptyCatch: true }],
+            "no-empty-static-block": "warn",
+            "no-restricted-syntax": "off",
+            "no-plusplus": "off",
+            "no-continue": "off",
+            "no-bitwise": "off",
+            "no-param-reassign": "off",
+            "no-await-in-loop": "warn",
+            "no-empty-function": "off",
+            "no-unused-vars": "warn",
+            "default-case": "off",
+            "prefer-const": "warn",
+            "prefer-destructuring": [
+                "error",
+                {
+                    AssignmentExpression: {
+                        array: false,
+                        object: false,
+                    },
+                    VariableDeclarator: {
+                        array: false,
+                        object: true,
+                    },
+                },
+                {
+                    enforceForRenamedProperties: false,
+                },
+            ],
+            "prefer-regex-literals": "off",
+            "class-methods-use-this": "off",
+            "global-require": "off", // this is DEPRECATED in ESLint v7.0.0
+            "max-classes-per-file": "off",
         },
-        rules: javascriptRule.rules,
     },
-    {
-        plugins: {
-            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-            regexp: pluginRegexp,
-        },
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
-        rules: pluginRegexp.configs.recommended.rules,
-    },
+    regexp,
 ] satisfies Linter.FlatConfig[];
-
-const x1 = tsEslintPlugin.configs["eslint-recommended"]?.overrides?.[0]?.rules as Linter.RulesRecord | undefined;
-
-if (x1 === undefined) {
-    throw new TypeError("unexpected @typescript-eslint/plugin eslint-recommended config");
-}
-
-const x2 = tsEslintPlugin.configs["strict-type-checked"]?.rules as Linter.RulesRecord | undefined;
-
-if (x2 === undefined) {
-    throw new TypeError("unexpected @typescript-eslint/plugin strict-type-checked config");
-}
-
-const x3 = tsEslintPlugin.configs["stylistic-type-checked"]?.rules as Linter.RulesRecord | undefined;
-
-if (x3 === undefined) {
-    throw new TypeError("unexpected @typescript-eslint/plugin stylistic-type-checked config");
-}
 
 const typeScriptOnly = [
     ...airBnbTsBase,
-    {
-        plugins: {
-            "@typescript-eslint": tsEslintPlugin as unknown as ESLint.Plugin,
-        },
-        languageOptions: {
-            parser: tsEslintParser as unknown as Linter.ParserModule,
-        },
-    },
-    { rules: x1 },
-    { rules: x2 },
-    { rules: x3 },
+    typescriptEslint,
     { rules: configPrettier.rules },
     {
-        languageOptions: {
-            parserOptions: {
-                project: "./tsconfig.json",
-            },
+        rules: {
+            "@typescript-eslint/explicit-function-return-type": "off",
+            "@typescript-eslint/no-empty-function": "off",
+            "@typescript-eslint/no-floating-promises": ["error", { ignoreIIFE: true }],
+            "@typescript-eslint/no-use-before-define": "off",
+            "@typescript-eslint/strict-boolean-expressions": "error",
+            "@typescript-eslint/prefer-readonly": "warn",
+            "@typescript-eslint/consistent-type-imports": "warn",
+            "@typescript-eslint/explicit-member-accessibility": "warn",
+            "@typescript-eslint/no-redundant-type-constituents": "warn",
+            "@typescript-eslint/no-useless-empty-export": "warn",
+            "prefer-const": "warn",
         },
-        rules: typescriptRule.rules,
     },
 ] satisfies Linter.FlatConfig[];
 
