@@ -24,13 +24,19 @@ describe("ESLint config Snapshot", () => {
     it("preset.typeScript", () => {
         expect(removeParser(removePlugin(config.preset.typeScript()))).toMatchSnapshot();
     });
+    it("preset.typeScript jest: true", () => {
+        expect(removeParser(removePlugin(config.preset.typeScript({ jest: true })))).toMatchSnapshot();
+    });
     it("rules.typeScript", () => {
-        expect(removeParser(removePlugin(config.rules.typeScript))).toMatchSnapshot();
+        expect(removeParser(removePlugin(config.config.typeScript))).toMatchSnapshot();
     });
     it("rules.javaScript", () => {
-        expect(removeParser(removePlugin(config.rules.javaScript))).toMatchSnapshot();
+        expect(removeParser(removePlugin(config.config.javaScript))).toMatchSnapshot();
     });
     it("rules.typeScriptOnly", () => {
-        expect(removeParser(removePlugin(config.rules.typeScriptOnly))).toMatchSnapshot();
+        expect(removeParser(removePlugin(config.config.typeScriptOnly))).toMatchSnapshot();
+    });
+    it("rules.jest", () => {
+        expect(removeParser(removePlugin([config.config.jest]))).toMatchSnapshot();
     });
 });

@@ -15,7 +15,6 @@ import unicorn from "./configs/unicorn.js";
 const javaScript = [
     js.configs.recommended,
     ...airBnbBase,
-    jest,
     { rules: configPrettier.rules },
     simpleImportSort,
     redos,
@@ -97,10 +96,11 @@ function addFilesToConfigs(config: Linter.FlatConfig[], something: string[], app
     });
 }
 
-export const rules = {
+export const config = {
     javaScript,
     typeScriptOnly,
     typeScript: [...javaScript, ...typeScriptOnly],
+    jest,
 };
 
 export const util = {
@@ -108,7 +108,7 @@ export const util = {
 };
 
 export const preset = {
-    typeScript: (option?: { jsIsCjs: boolean }): Linter.FlatConfig[] => [
+    typeScript: (option?: { jsIsCjs?: boolean; jest?: boolean }): Linter.FlatConfig[] => [
         {
             ignores: ["dist/**", "coverage/**"],
         },
@@ -129,6 +129,7 @@ export const preset = {
             },
         },
         ...javaScript,
+        option?.jest === true ? jest : {},
         ...addFilesToConfigs(typeScriptOnly, ["**/*.ts", "**/*.mts", "**/*.cts", "**/*.tsx", "**/*.mtsx", "**/*.ctsx"]),
     ],
 };

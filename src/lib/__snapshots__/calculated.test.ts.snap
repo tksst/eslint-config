@@ -82,11 +82,11 @@ exports[`ESLint calculated config Snapshot .js 1`] = `
   },
   "plugins": [
     "@",
-    "jest:eslint-plugin-jest",
     "simple-import-sort",
     "redos",
     "unicorn:eslint-plugin-unicorn",
     "regexp:eslint-plugin-regexp",
+    "jest:eslint-plugin-jest",
   ],
   "rules": {
     "@babel/object-curly-spacing": [
@@ -2324,11 +2324,11 @@ exports[`ESLint calculated config Snapshot .ts 1`] = `
   },
   "plugins": [
     "@",
-    "jest:eslint-plugin-jest",
     "simple-import-sort",
     "redos",
     "unicorn:eslint-plugin-unicorn",
     "regexp:eslint-plugin-regexp",
+    "jest:eslint-plugin-jest",
     "@typescript-eslint",
   ],
   "rules": {
