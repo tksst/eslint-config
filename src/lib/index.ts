@@ -1,7 +1,5 @@
 import js from "@eslint/js";
-import tsEslintPlugin from "@typescript-eslint/eslint-plugin";
-import tsEslintParser from "@typescript-eslint/parser";
-import type { ESLint, Linter } from "eslint";
+import type { Linter } from "eslint";
 import configPrettier from "eslint-config-prettier";
 import pluginRedos from "eslint-plugin-redos";
 import pluginSimpleImportSort from "eslint-plugin-simple-import-sort";
@@ -14,6 +12,7 @@ import javascriptRule from "./configs/javascript-rule-base.js";
 import jest from "./configs/jest.js";
 import regexp from "./configs/regexp.js";
 import typescriptRule from "./configs/typescript-rule-base.js";
+import typescriptEslint from "./configs/typescriptEslint.js";
 
 const javaScript = [
     js.configs.recommended,
@@ -34,44 +33,11 @@ const javaScript = [
     regexp,
 ] satisfies Linter.FlatConfig[];
 
-const x1 = tsEslintPlugin.configs["eslint-recommended"]?.overrides?.[0]?.rules as Linter.RulesRecord | undefined;
-
-if (x1 === undefined) {
-    throw new TypeError("unexpected @typescript-eslint/plugin eslint-recommended config");
-}
-
-const x2 = tsEslintPlugin.configs["strict-type-checked"]?.rules as Linter.RulesRecord | undefined;
-
-if (x2 === undefined) {
-    throw new TypeError("unexpected @typescript-eslint/plugin strict-type-checked config");
-}
-
-const x3 = tsEslintPlugin.configs["stylistic-type-checked"]?.rules as Linter.RulesRecord | undefined;
-
-if (x3 === undefined) {
-    throw new TypeError("unexpected @typescript-eslint/plugin stylistic-type-checked config");
-}
-
 const typeScriptOnly = [
     ...airBnbTsBase,
-    {
-        plugins: {
-            "@typescript-eslint": tsEslintPlugin as unknown as ESLint.Plugin,
-        },
-        languageOptions: {
-            parser: tsEslintParser as unknown as Linter.ParserModule,
-        },
-    },
-    { rules: x1 },
-    { rules: x2 },
-    { rules: x3 },
+    typescriptEslint,
     { rules: configPrettier.rules },
     {
-        languageOptions: {
-            parserOptions: {
-                project: "./tsconfig.json",
-            },
-        },
         rules: typescriptRule.rules,
     },
 ] satisfies Linter.FlatConfig[];
