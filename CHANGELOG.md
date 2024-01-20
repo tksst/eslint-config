@@ -1,5 +1,15 @@
 # @tksst/eslint-config
 
+## 12.0.0
+
+### Major Changes
+
+- 5765cfc: `preset.typescript` no longer includes `eslint-plugin-jest` by default. If you need it, you have to pass the `jest: true` option.
+
+### Minor Changes
+
+- 18d54bf: add a preset option for projects that use vitest
+
 ## 11.5.0
 
 ### Minor Changes
