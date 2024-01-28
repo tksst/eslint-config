@@ -1287,7 +1287,7 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
       "always",
     ],
     "no-return-await": [
-      2,
+      0,
     ],
     "no-script-url": [
       2,
@@ -2803,8 +2803,8 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       2,
     ],
     "@typescript-eslint/return-await": [
-      2,
-      "in-try-catch",
+      1,
+      "always",
     ],
     "@typescript-eslint/semi": [
       0,

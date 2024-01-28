@@ -2156,6 +2156,7 @@ exports[`config snapshot > config.javaScript 1`] = `
       "no-param-reassign": "off",
       "no-plusplus": "off",
       "no-restricted-syntax": "off",
+      "no-return-await": "off",
       "no-unused-vars": "warn",
       "prefer-const": "warn",
       "prefer-destructuring": [
@@ -4438,6 +4439,7 @@ exports[`config snapshot > config.typeScript 1`] = `
       "no-param-reassign": "off",
       "no-plusplus": "off",
       "no-restricted-syntax": "off",
+      "no-return-await": "off",
       "no-unused-vars": "warn",
       "prefer-const": "warn",
       "prefer-destructuring": [
@@ -5129,6 +5131,10 @@ exports[`config snapshot > config.typeScript 1`] = `
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-readonly": "warn",
+      "@typescript-eslint/return-await": [
+        "warn",
+        "always",
+      ],
       "@typescript-eslint/strict-boolean-expressions": "error",
       "prefer-const": "warn",
     },
@@ -5737,6 +5743,10 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-readonly": "warn",
+      "@typescript-eslint/return-await": [
+        "warn",
+        "always",
+      ],
       "@typescript-eslint/strict-boolean-expressions": "error",
       "prefer-const": "warn",
     },
@@ -7999,6 +8009,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "no-param-reassign": "off",
       "no-plusplus": "off",
       "no-restricted-syntax": "off",
+      "no-return-await": "off",
       "no-unused-vars": "warn",
       "prefer-const": "warn",
       "prefer-destructuring": [
@@ -8731,6 +8742,10 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-readonly": "warn",
+      "@typescript-eslint/return-await": [
+        "warn",
+        "always",
+      ],
       "@typescript-eslint/strict-boolean-expressions": "error",
       "prefer-const": "warn",
     },
@@ -10993,6 +11008,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "no-param-reassign": "off",
       "no-plusplus": "off",
       "no-restricted-syntax": "off",
+      "no-return-await": "off",
       "no-unused-vars": "warn",
       "prefer-const": "warn",
       "prefer-destructuring": [
@@ -11750,6 +11766,10 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-readonly": "warn",
+      "@typescript-eslint/return-await": [
+        "warn",
+        "always",
+      ],
       "@typescript-eslint/strict-boolean-expressions": "error",
       "prefer-const": "warn",
     },
@@ -14012,6 +14032,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "no-param-reassign": "off",
       "no-plusplus": "off",
       "no-restricted-syntax": "off",
+      "no-return-await": "off",
       "no-unused-vars": "warn",
       "prefer-const": "warn",
       "prefer-destructuring": [
@@ -14775,6 +14796,10 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-readonly": "warn",
+      "@typescript-eslint/return-await": [
+        "warn",
+        "always",
+      ],
       "@typescript-eslint/strict-boolean-expressions": "error",
       "prefer-const": "warn",
     },

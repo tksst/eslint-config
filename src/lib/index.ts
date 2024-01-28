@@ -54,6 +54,11 @@ const javaScript = [
             "class-methods-use-this": "off",
             "global-require": "off", // this is DEPRECATED in ESLint v7.0.0
             "max-classes-per-file": "off",
+            // no-return-await is deplicated in ESLint v8.46.0.
+            // This rule is very harmful on V8, but airbnb is enabling it.
+            // There is little difference in performance between no-return-await and return-await.
+            // On V8, no-return-await does not properly place history on the call stack.
+            "no-return-await": "off",
         },
     },
     regexp,
@@ -75,6 +80,9 @@ const typeScriptOnly = [
             "@typescript-eslint/explicit-member-accessibility": "warn",
             "@typescript-eslint/no-redundant-type-constituents": "warn",
             "@typescript-eslint/no-useless-empty-export": "warn",
+            // Override the default setting of typescript-eslint for the same reason as `no-return-await`,
+            // but stays with warn for backward compatibility reasons.
+            "@typescript-eslint/return-await": ["warn", "always"],
             "prefer-const": "warn",
         },
     },
