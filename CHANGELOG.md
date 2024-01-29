@@ -1,5 +1,22 @@
 # @tksst/eslint-config
 
+## 12.1.0
+
+### Minor Changes
+
+- 791397e: disable [`no-return-await`](https://eslint.org/docs/latest/rules/no-return-await) for JavaScript files and set [@typescript-eslint/return-await](https://typescript-eslint.io/rules/return-await/) from `error`/`in-try-catch` to `warn`/`always` that means you should always use return-await for TypeScript.
+  return-await is preferable because:
+
+  - better call stack in some engines such as V8
+  - proper handling with try-catch statement
+
+### Patch Changes
+
+- ac3a85c: update dependencies:
+
+  - update [@typescript-eslint/eslint-plugin@6.19.1](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v6.19.1) from 6.19.0
+  - update [@typescript-eslint/parser@6.19.1](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v6.19.1) from 6.19.0 (version bump only)
+
 ## 12.0.0
 
 ### Major Changes
