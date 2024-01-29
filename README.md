@@ -13,5 +13,5 @@ Example `eslint.config.js`:
 ```javascript
 import { preset } from "@tksst/eslint-config";
 
-export default preset.typeScript({ jsIsCjs: true });
+export default preset.typeScript({ jsIsCjs: true, jest: false, vitest: true });
 ```
