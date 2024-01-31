@@ -111,7 +111,7 @@ const vitest = [
             "jest/no-deprecated-functions": "off",
         },
     },
-];
+] satisfies Linter.FlatConfig[];
 
 export const config = {
     javaScript,
