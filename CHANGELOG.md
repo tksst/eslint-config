@@ -1,5 +1,17 @@
 # @tksst/eslint-config
 
+## 12.2.0
+
+### Minor Changes
+
+- f3c3ea0: Update eslint-plugin-simple-import-sort@11.0.0 from 10.0.0. This package has been bumped to major. However, because the impact is minor, it is considered a minor change rather than a major change.
+- 8d11e78: update dependencies:
+
+  - update [@typescript-eslint/eslint-plugin@6.21.0](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v6.21.0) from 6.19.1
+  - update [@typescript-eslint/parser@6.21.0](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v6.21.0) from 6.19.1
+
+- a4770a9: Update eslint-plugin-unicorn@51.0.1 from 50.0.1. This package bumped to major, but this does not affect this package.
+
 ## 12.1.0
 
 ### Minor Changes
