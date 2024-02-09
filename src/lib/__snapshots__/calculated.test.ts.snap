@@ -82,7 +82,7 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
   },
   "plugins": [
     "@",
-    "simple-import-sort",
+    "simple-import-sort:eslint-plugin-simple-import-sort",
     "redos",
     "unicorn:eslint-plugin-unicorn",
     "regexp:eslint-plugin-regexp",
@@ -1163,7 +1163,7 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
   },
   "plugins": [
     "@",
-    "simple-import-sort",
+    "simple-import-sort:eslint-plugin-simple-import-sort",
     "redos",
     "unicorn:eslint-plugin-unicorn",
     "regexp:eslint-plugin-regexp",
