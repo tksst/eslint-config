@@ -1168,7 +1168,7 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "unicorn:eslint-plugin-unicorn",
     "regexp:eslint-plugin-regexp",
     "jest:eslint-plugin-jest",
-    "@typescript-eslint",
+    "@typescript-eslint:@typescript-eslint/eslint-plugin",
   ],
   "rules": {
     "@typescript-eslint/adjacent-overload-signatures": [
