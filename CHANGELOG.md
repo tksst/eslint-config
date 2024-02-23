@@ -1,5 +1,25 @@
 # @tksst/eslint-config
 
+## 13.0.0
+
+### Major Changes
+
+- db9cf96: Major upgrade typescript-eslint:
+
+  - update [@typescript-eslint/eslint-plugin@7.0.2](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v7.0.2) from 6.21.0
+  - update [@typescript-eslint/parser@7.0.2](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v7.0.2) from 6.21.0
+
+  This introduces breaking changes that necessitate updating the following dependencies:
+
+  - Require Node.js >= 18.18.0
+  - ESLint >= 8.56.0
+  - TypeScript >= 4.7.4 if you use TypeScript
+
+### Minor Changes
+
+- 7e00e31: update [eslint-plugin-jest@27.9.0](https://github.com/jest-community/eslint-plugin-jest/releases/tag/v27.9.0) from 27.6.3
+- b169cb8: update [globals@14.0.0](https://github.com/sindresorhus/globals/releases/tag/v14.0.0) from 13.24.0
+
 ## 12.3.0
 
 ### Minor Changes
