@@ -130,6 +130,10 @@ jobs:
       - check-skippable
       - test
       - build-lint
+    # Runs even when the previous job was in error
+    if: ${{ always() }}
+    # Do not fail the workflow even if this job fails
+    continue-on-error: true
     runs-on: ubuntu-22.04
     steps:
       - uses: Kesin11/actions-timeline@6905b677e042d41193107842cc5c7b715bef0042 # v2.0.3
