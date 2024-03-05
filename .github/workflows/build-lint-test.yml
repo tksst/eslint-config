@@ -15,6 +15,7 @@ jobs:
     permissions:
       actions: write
       contents: read
+    timeout-minutes: 10
     outputs:
       skippable: ${{ steps.check.outputs.should_skip }}
     steps:
@@ -25,6 +26,7 @@ jobs:
     name: Test
     needs: check-skippable
     if: needs.check-skippable.outputs.skippable != 'true'
+    timeout-minutes: 10
     strategy:
       fail-fast: false
       matrix:
@@ -81,6 +83,7 @@ jobs:
     name: Build and Lint
     needs: check-skippable
     if: needs.check-skippable.outputs.skippable != 'true'
+    timeout-minutes: 10
 
     # Using matrix strategy, OS and Node version will be displayed in a title of a job.
     strategy:
@@ -135,5 +138,6 @@ jobs:
     # Do not fail the workflow even if this job fails
     continue-on-error: true
     runs-on: ubuntu-22.04
+    timeout-minutes: 10
     steps:
       - uses: Kesin11/actions-timeline@6905b677e042d41193107842cc5c7b715bef0042 # v2.0.3
