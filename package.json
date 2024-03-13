@@ -19,6 +19,7 @@
     "import": "./dist/lib/index.js",
     "require": "./dist/lib/index.cjs"
   },
+  "bin": "./src/exec-eslint.mjs",
   "scripts": {
     "clean": "tss-rmrf ./dist/",
     "_eslint": "eslint --color .",
@@ -44,6 +45,7 @@
     "@eslint/js": "8.56.0",
     "@typescript-eslint/eslint-plugin": "7.0.2",
     "@typescript-eslint/parser": "7.0.2",
+    "eslint": "8.56.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-airbnb-typescript": "18.0.0",
     "eslint-config-prettier": "9.1.0",
@@ -64,7 +66,6 @@
     "@types/eslint__js": "8.42.3",
     "@vitest/coverage-v8": "1.3.1",
     "better-typescript-lib": "2.6.0",
-    "eslint": "8.56.0",
     "npm-run-all2": "6.1.2",
     "prettier": "3.2.5",
     "secretlint": "8.1.2",
