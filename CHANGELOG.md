@@ -1,5 +1,16 @@
 # @tksst/eslint-config
 
+## 13.2.0
+
+### Minor Changes
+
+- ebfcf32: Disable [prefer-optional-chain](https://typescript-eslint.io/rules/prefer-optional-chain/), [consistent-type-definitions](https://typescript-eslint.io/rules/consistent-type-definitions/) and [class-literal-property-style](https://typescript-eslint.io/rules/class-literal-property-style/) in typescript-eslint stylistic rules because they are too opinionated for me.
+- 341013a: update [eslint-plugin-regexp@2.4.0](https://github.com/ota-meshi/eslint-plugin-regexp/releases/tag/v2.4.0) from 2.3.0
+- 3bbf21d: update dependencies:
+
+  - update [@typescript-eslint/eslint-plugin@7.3.1](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v7.3.1) from 7.2.0
+  - update [@typescript-eslint/parser@7.3.1](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v7.3.1) from 7.2.0
+
 ## 13.1.0
 
 ### Minor Changes
