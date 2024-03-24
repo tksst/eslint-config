@@ -83,6 +83,10 @@ const typeScriptOnly = [
             // Override the default setting of typescript-eslint for the same reason as `no-return-await`,
             // but stays with warn for backward compatibility reasons.
             "@typescript-eslint/return-await": ["warn", "always"],
+            // disable some opinionated rules in @typescript-eslint/plugin stylistic-type-checked
+            "@typescript-eslint/prefer-optional-chain": "off",
+            "@typescript-eslint/consistent-type-definitions": "off",
+            "@typescript-eslint/class-literal-property-style": "off",
             "prefer-const": "warn",
         },
     },

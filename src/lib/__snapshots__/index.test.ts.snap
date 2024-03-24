@@ -5142,6 +5142,8 @@ exports[`config snapshot > config.typeScript 1`] = `
   },
   {
     "rules": {
+      "@typescript-eslint/class-literal-property-style": "off",
+      "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": "warn",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-member-accessibility": "warn",
@@ -5155,6 +5157,7 @@ exports[`config snapshot > config.typeScript 1`] = `
       "@typescript-eslint/no-redundant-type-constituents": "warn",
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
+      "@typescript-eslint/prefer-optional-chain": "off",
       "@typescript-eslint/prefer-readonly": "warn",
       "@typescript-eslint/return-await": [
         "warn",
@@ -5779,6 +5782,8 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
   },
   {
     "rules": {
+      "@typescript-eslint/class-literal-property-style": "off",
+      "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": "warn",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-member-accessibility": "warn",
@@ -5792,6 +5797,7 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
       "@typescript-eslint/no-redundant-type-constituents": "warn",
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
+      "@typescript-eslint/prefer-optional-chain": "off",
       "@typescript-eslint/prefer-readonly": "warn",
       "@typescript-eslint/return-await": [
         "warn",
@@ -8803,6 +8809,8 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "**/*.ctsx",
     ],
     "rules": {
+      "@typescript-eslint/class-literal-property-style": "off",
+      "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": "warn",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-member-accessibility": "warn",
@@ -8816,6 +8824,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "@typescript-eslint/no-redundant-type-constituents": "warn",
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
+      "@typescript-eslint/prefer-optional-chain": "off",
       "@typescript-eslint/prefer-readonly": "warn",
       "@typescript-eslint/return-await": [
         "warn",
@@ -11852,6 +11861,8 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "**/*.ctsx",
     ],
     "rules": {
+      "@typescript-eslint/class-literal-property-style": "off",
+      "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": "warn",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-member-accessibility": "warn",
@@ -11865,6 +11876,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "@typescript-eslint/no-redundant-type-constituents": "warn",
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
+      "@typescript-eslint/prefer-optional-chain": "off",
       "@typescript-eslint/prefer-readonly": "warn",
       "@typescript-eslint/return-await": [
         "warn",
@@ -14907,6 +14919,8 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "**/*.ctsx",
     ],
     "rules": {
+      "@typescript-eslint/class-literal-property-style": "off",
+      "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": "warn",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-member-accessibility": "warn",
@@ -14920,6 +14934,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "@typescript-eslint/no-redundant-type-constituents": "warn",
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
+      "@typescript-eslint/prefer-optional-chain": "off",
       "@typescript-eslint/prefer-readonly": "warn",
       "@typescript-eslint/return-await": [
         "warn",

@@ -1192,9 +1192,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "@typescript-eslint/ban-types": [
       2,
     ],
-    "@typescript-eslint/class-literal-property-style": [
-      2,
-    ],
     "@typescript-eslint/consistent-generic-constructors": [
       2,
     ],
@@ -1202,9 +1199,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       2,
     ],
     "@typescript-eslint/consistent-type-assertions": [
-      2,
-    ],
-    "@typescript-eslint/consistent-type-definitions": [
       2,
     ],
     "@typescript-eslint/consistent-type-imports": [
@@ -1447,9 +1441,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       2,
     ],
     "@typescript-eslint/prefer-nullish-coalescing": [
-      2,
-    ],
-    "@typescript-eslint/prefer-optional-chain": [
       2,
     ],
     "@typescript-eslint/prefer-promise-reject-errors": [
