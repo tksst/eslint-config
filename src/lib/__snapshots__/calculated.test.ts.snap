@@ -1182,6 +1182,9 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     ],
     "@typescript-eslint/ban-ts-comment": [
       2,
+      {
+        "minimumDescriptionLength": 10,
+      },
     ],
     "@typescript-eslint/ban-tslint-comment": [
       2,
@@ -1472,9 +1475,24 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     ],
     "@typescript-eslint/restrict-plus-operands": [
       2,
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNullish": false,
+        "allowNumberAndString": false,
+        "allowRegExp": false,
+      },
     ],
     "@typescript-eslint/restrict-template-expressions": [
       2,
+      {
+        "allowAny": false,
+        "allowBoolean": false,
+        "allowNever": false,
+        "allowNullish": false,
+        "allowNumber": false,
+        "allowRegExp": false,
+      },
     ],
     "@typescript-eslint/return-await": [
       1,
@@ -1490,6 +1508,9 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       2,
     ],
     "@typescript-eslint/unified-signatures": [
+      2,
+    ],
+    "@typescript-eslint/use-unknown-in-catch-callback-variable": [
       2,
     ],
     "array-callback-return": [
