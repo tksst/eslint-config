@@ -1,5 +1,11 @@
 # @tksst/eslint-config
 
+## 13.4.0
+
+### Minor Changes
+
+- b6efa41: Disable [@typescript-eslint/restrict-template-expressions](https://typescript-eslint.io/rules/restrict-template-expressions/). It's too restrictive for me.
+
 ## 13.3.0
 
 ### Minor Changes
