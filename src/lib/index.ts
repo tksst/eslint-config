@@ -194,6 +194,8 @@ const typeScriptOnly = [
             "@typescript-eslint/no-unused-expressions": "error",
             // this is set by @eslint/js recommended but not needed for TypeScript
             "valid-typeof": "off",
+            // This is enabled by typescript-eslint/recommended-type-checked, but it is too strict for me.
+            "@typescript-eslint/restrict-template-expressions": "off",
         },
     },
 ] satisfies Linter.FlatConfig[];

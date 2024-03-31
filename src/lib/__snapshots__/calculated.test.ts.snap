@@ -1060,17 +1060,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
         "allowRegExp": false,
       },
     ],
-    "@typescript-eslint/restrict-template-expressions": [
-      2,
-      {
-        "allowAny": false,
-        "allowBoolean": false,
-        "allowNever": false,
-        "allowNullish": false,
-        "allowNumber": false,
-        "allowRegExp": false,
-      },
-    ],
     "@typescript-eslint/return-await": [
       1,
       "always",

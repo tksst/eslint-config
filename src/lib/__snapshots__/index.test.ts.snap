@@ -1408,6 +1408,7 @@ exports[`config snapshot > config.typeScript 1`] = `
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-optional-chain": "off",
       "@typescript-eslint/prefer-readonly": "warn",
+      "@typescript-eslint/restrict-template-expressions": "off",
       "@typescript-eslint/return-await": [
         "warn",
         "always",
@@ -1792,6 +1793,7 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-optional-chain": "off",
       "@typescript-eslint/prefer-readonly": "warn",
+      "@typescript-eslint/restrict-template-expressions": "off",
       "@typescript-eslint/return-await": [
         "warn",
         "always",
@@ -2802,6 +2804,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-optional-chain": "off",
       "@typescript-eslint/prefer-readonly": "warn",
+      "@typescript-eslint/restrict-template-expressions": "off",
       "@typescript-eslint/return-await": [
         "warn",
         "always",
@@ -3837,6 +3840,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-optional-chain": "off",
       "@typescript-eslint/prefer-readonly": "warn",
+      "@typescript-eslint/restrict-template-expressions": "off",
       "@typescript-eslint/return-await": [
         "warn",
         "always",
@@ -4878,6 +4882,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-optional-chain": "off",
       "@typescript-eslint/prefer-readonly": "warn",
+      "@typescript-eslint/restrict-template-expressions": "off",
       "@typescript-eslint/return-await": [
         "warn",
         "always",
