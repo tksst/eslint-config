@@ -948,9 +948,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "@typescript-eslint/no-this-alias": [
       2,
     ],
-    "@typescript-eslint/no-throw-literal": [
-      2,
-    ],
     "@typescript-eslint/no-unnecessary-boolean-literal-compare": [
       2,
     ],
@@ -1006,6 +1003,9 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
+      2,
+    ],
+    "@typescript-eslint/only-throw-error": [
       2,
     ],
     "@typescript-eslint/prefer-as-const": [
