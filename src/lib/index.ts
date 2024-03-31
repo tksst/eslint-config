@@ -88,6 +88,25 @@ const typeScriptOnly = [
             "@typescript-eslint/consistent-type-definitions": "off",
             "@typescript-eslint/class-literal-property-style": "off",
             "prefer-const": "warn",
+            // useful rules from eslint-config-airbnb-typescript
+            "@typescript-eslint/default-param-last": "error",
+            "@typescript-eslint/naming-convention": [
+                "error",
+                {
+                    format: ["camelCase", "PascalCase", "UPPER_CASE"],
+                    selector: "variable",
+                },
+                {
+                    format: ["camelCase", "PascalCase"],
+                    selector: "function",
+                },
+                {
+                    format: ["PascalCase"],
+                    selector: "typeLike",
+                },
+            ],
+            "@typescript-eslint/no-loop-func": "error",
+            "@typescript-eslint/no-unused-expressions": "error",
         },
     },
 ] satisfies Linter.FlatConfig[];

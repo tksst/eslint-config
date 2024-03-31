@@ -5145,8 +5145,33 @@ exports[`config snapshot > config.typeScript 1`] = `
       "@typescript-eslint/class-literal-property-style": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": "warn",
+      "@typescript-eslint/default-param-last": "error",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-member-accessibility": "warn",
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "format": [
+            "camelCase",
+            "PascalCase",
+            "UPPER_CASE",
+          ],
+          "selector": "variable",
+        },
+        {
+          "format": [
+            "camelCase",
+            "PascalCase",
+          ],
+          "selector": "function",
+        },
+        {
+          "format": [
+            "PascalCase",
+          ],
+          "selector": "typeLike",
+        },
+      ],
       "@typescript-eslint/no-empty-function": "off",
       "@typescript-eslint/no-floating-promises": [
         "error",
@@ -5154,7 +5179,9 @@ exports[`config snapshot > config.typeScript 1`] = `
           "ignoreIIFE": true,
         },
       ],
+      "@typescript-eslint/no-loop-func": "error",
       "@typescript-eslint/no-redundant-type-constituents": "warn",
+      "@typescript-eslint/no-unused-expressions": "error",
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-optional-chain": "off",
@@ -5785,8 +5812,33 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
       "@typescript-eslint/class-literal-property-style": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": "warn",
+      "@typescript-eslint/default-param-last": "error",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-member-accessibility": "warn",
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "format": [
+            "camelCase",
+            "PascalCase",
+            "UPPER_CASE",
+          ],
+          "selector": "variable",
+        },
+        {
+          "format": [
+            "camelCase",
+            "PascalCase",
+          ],
+          "selector": "function",
+        },
+        {
+          "format": [
+            "PascalCase",
+          ],
+          "selector": "typeLike",
+        },
+      ],
       "@typescript-eslint/no-empty-function": "off",
       "@typescript-eslint/no-floating-promises": [
         "error",
@@ -5794,7 +5846,9 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
           "ignoreIIFE": true,
         },
       ],
+      "@typescript-eslint/no-loop-func": "error",
       "@typescript-eslint/no-redundant-type-constituents": "warn",
+      "@typescript-eslint/no-unused-expressions": "error",
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-optional-chain": "off",
@@ -8814,8 +8868,33 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "@typescript-eslint/class-literal-property-style": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": "warn",
+      "@typescript-eslint/default-param-last": "error",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-member-accessibility": "warn",
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "format": [
+            "camelCase",
+            "PascalCase",
+            "UPPER_CASE",
+          ],
+          "selector": "variable",
+        },
+        {
+          "format": [
+            "camelCase",
+            "PascalCase",
+          ],
+          "selector": "function",
+        },
+        {
+          "format": [
+            "PascalCase",
+          ],
+          "selector": "typeLike",
+        },
+      ],
       "@typescript-eslint/no-empty-function": "off",
       "@typescript-eslint/no-floating-promises": [
         "error",
@@ -8823,7 +8902,9 @@ exports[`preset snapshots > preset.typeScript 1`] = `
           "ignoreIIFE": true,
         },
       ],
+      "@typescript-eslint/no-loop-func": "error",
       "@typescript-eslint/no-redundant-type-constituents": "warn",
+      "@typescript-eslint/no-unused-expressions": "error",
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-optional-chain": "off",
@@ -11868,8 +11949,33 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "@typescript-eslint/class-literal-property-style": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": "warn",
+      "@typescript-eslint/default-param-last": "error",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-member-accessibility": "warn",
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "format": [
+            "camelCase",
+            "PascalCase",
+            "UPPER_CASE",
+          ],
+          "selector": "variable",
+        },
+        {
+          "format": [
+            "camelCase",
+            "PascalCase",
+          ],
+          "selector": "function",
+        },
+        {
+          "format": [
+            "PascalCase",
+          ],
+          "selector": "typeLike",
+        },
+      ],
       "@typescript-eslint/no-empty-function": "off",
       "@typescript-eslint/no-floating-promises": [
         "error",
@@ -11877,7 +11983,9 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
           "ignoreIIFE": true,
         },
       ],
+      "@typescript-eslint/no-loop-func": "error",
       "@typescript-eslint/no-redundant-type-constituents": "warn",
+      "@typescript-eslint/no-unused-expressions": "error",
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-optional-chain": "off",
@@ -14928,8 +15036,33 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "@typescript-eslint/class-literal-property-style": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
       "@typescript-eslint/consistent-type-imports": "warn",
+      "@typescript-eslint/default-param-last": "error",
       "@typescript-eslint/explicit-function-return-type": "off",
       "@typescript-eslint/explicit-member-accessibility": "warn",
+      "@typescript-eslint/naming-convention": [
+        "error",
+        {
+          "format": [
+            "camelCase",
+            "PascalCase",
+            "UPPER_CASE",
+          ],
+          "selector": "variable",
+        },
+        {
+          "format": [
+            "camelCase",
+            "PascalCase",
+          ],
+          "selector": "function",
+        },
+        {
+          "format": [
+            "PascalCase",
+          ],
+          "selector": "typeLike",
+        },
+      ],
       "@typescript-eslint/no-empty-function": "off",
       "@typescript-eslint/no-floating-promises": [
         "error",
@@ -14937,7 +15070,9 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
           "ignoreIIFE": true,
         },
       ],
+      "@typescript-eslint/no-loop-func": "error",
       "@typescript-eslint/no-redundant-type-constituents": "warn",
+      "@typescript-eslint/no-unused-expressions": "error",
       "@typescript-eslint/no-use-before-define": "off",
       "@typescript-eslint/no-useless-empty-export": "warn",
       "@typescript-eslint/prefer-optional-chain": "off",
