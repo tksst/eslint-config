@@ -1414,6 +1414,7 @@ exports[`config snapshot > config.typeScript 1`] = `
       ],
       "@typescript-eslint/strict-boolean-expressions": "error",
       "prefer-const": "warn",
+      "valid-typeof": "off",
     },
   },
 ]
@@ -1797,6 +1798,7 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
       ],
       "@typescript-eslint/strict-boolean-expressions": "error",
       "prefer-const": "warn",
+      "valid-typeof": "off",
     },
   },
 ]
@@ -2806,6 +2808,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       ],
       "@typescript-eslint/strict-boolean-expressions": "error",
       "prefer-const": "warn",
+      "valid-typeof": "off",
     },
   },
 ]
@@ -3840,6 +3843,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       ],
       "@typescript-eslint/strict-boolean-expressions": "error",
       "prefer-const": "warn",
+      "valid-typeof": "off",
     },
   },
 ]
@@ -4880,6 +4884,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       ],
       "@typescript-eslint/strict-boolean-expressions": "error",
       "prefer-const": "warn",
+      "valid-typeof": "off",
     },
   },
 ]

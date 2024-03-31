@@ -1716,9 +1716,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "use-isnan": [
       2,
     ],
-    "valid-typeof": [
-      2,
-    ],
   },
 }
 `;

@@ -192,6 +192,8 @@ const typeScriptOnly = [
             ],
             "@typescript-eslint/no-loop-func": "error",
             "@typescript-eslint/no-unused-expressions": "error",
+            // this is set by @eslint/js recommended but not needed for TypeScript
+            "valid-typeof": "off",
         },
     },
 ] satisfies Linter.FlatConfig[];
