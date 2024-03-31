@@ -91,51 +91,11 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     "jest:eslint-plugin-jest",
   ],
   "rules": {
-    "array-callback-return": [
-      2,
-      {
-        "allowImplicit": true,
-        "allowVoid": false,
-        "checkForEach": false,
-      },
-    ],
-    "arrow-body-style": [
-      2,
-      "as-needed",
-      {
-        "requireReturnForObjectLiteral": false,
-      },
-    ],
-    "block-scoped-var": [
-      2,
-    ],
-    "camelcase": [
-      2,
-      {
-        "ignoreDestructuring": false,
-        "ignoreGlobals": false,
-        "ignoreImports": false,
-        "properties": "never",
-      },
-    ],
-    "consistent-return": [
-      2,
-    ],
     "constructor-super": [
       2,
     ],
     "default-case-last": [
       2,
-    ],
-    "default-param-last": [
-      2,
-    ],
-    "dot-notation": [
-      2,
-      {
-        "allowKeywords": true,
-        "allowPattern": "",
-      },
     ],
     "eqeqeq": [
       2,
@@ -152,9 +112,6 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     ],
     "getter-return": [
       2,
-      {
-        "allowImplicit": true,
-      },
     ],
     "grouped-accessor-pairs": [
       2,
@@ -225,40 +182,6 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     "jest/valid-title": [
       2,
     ],
-    "lines-around-directive": [
-      2,
-      {
-        "after": "always",
-        "before": "always",
-      },
-    ],
-    "lines-between-class-members": [
-      2,
-      "always",
-      {
-        "exceptAfterSingleLine": false,
-      },
-    ],
-    "new-cap": [
-      2,
-      {
-        "capIsNew": false,
-        "capIsNewExceptions": [
-          "Immutable.Map",
-          "Immutable.Set",
-          "Immutable.List",
-        ],
-        "newIsCap": true,
-        "newIsCapExceptions": [],
-        "properties": true,
-      },
-    ],
-    "no-alert": [
-      1,
-    ],
-    "no-array-constructor": [
-      2,
-    ],
     "no-async-promise-executor": [
       2,
     ],
@@ -282,15 +205,11 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     ],
     "no-cond-assign": [
       2,
-      "always",
     ],
     "no-const-assign": [
       2,
     ],
     "no-constant-condition": [
-      1,
-    ],
-    "no-constructor-return": [
       2,
     ],
     "no-control-regex": [
@@ -361,12 +280,6 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     ],
     "no-global-assign": [
       2,
-      {
-        "exceptions": [],
-      },
-    ],
-    "no-implied-eval": [
-      2,
     ],
     "no-import-assign": [
       2,
@@ -383,20 +296,10 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     "no-label-var": [
       2,
     ],
-    "no-labels": [
-      2,
-      {
-        "allowLoop": false,
-        "allowSwitch": false,
-      },
-    ],
     "no-lone-blocks": [
       2,
     ],
     "no-lonely-if": [
-      2,
-    ],
-    "no-loop-func": [
       2,
     ],
     "no-loss-of-precision": [
@@ -405,19 +308,7 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     "no-misleading-character-class": [
       2,
     ],
-    "no-multi-assign": [
-      2,
-    ],
-    "no-multi-str": [
-      2,
-    ],
-    "no-nested-ternary": [
-      2,
-    ],
     "no-new": [
-      2,
-    ],
-    "no-new-func": [
       2,
     ],
     "no-new-object": [
@@ -461,84 +352,6 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     ],
     "no-regex-spaces": [
       2,
-    ],
-    "no-restricted-exports": [
-      2,
-      {
-        "restrictedNamedExports": [
-          "default",
-          "then",
-        ],
-      },
-    ],
-    "no-restricted-globals": [
-      2,
-      {
-        "message": "Use Number.isFinite instead https://github.com/airbnb/javascript#standard-library--isfinite",
-        "name": "isFinite",
-      },
-      {
-        "message": "Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan",
-        "name": "isNaN",
-      },
-      "addEventListener",
-      "blur",
-      "close",
-      "closed",
-      "confirm",
-      "defaultStatus",
-      "defaultstatus",
-      "event",
-      "external",
-      "find",
-      "focus",
-      "frameElement",
-      "frames",
-      "history",
-      "innerHeight",
-      "innerWidth",
-      "length",
-      "location",
-      "locationbar",
-      "menubar",
-      "moveBy",
-      "moveTo",
-      "name",
-      "onblur",
-      "onerror",
-      "onfocus",
-      "onload",
-      "onresize",
-      "onunload",
-      "open",
-      "opener",
-      "opera",
-      "outerHeight",
-      "outerWidth",
-      "pageXOffset",
-      "pageYOffset",
-      "parent",
-      "print",
-      "removeEventListener",
-      "resizeBy",
-      "resizeTo",
-      "screen",
-      "screenLeft",
-      "screenTop",
-      "screenX",
-      "screenY",
-      "scroll",
-      "scrollbars",
-      "scrollBy",
-      "scrollTo",
-      "scrollX",
-      "scrollY",
-      "self",
-      "status",
-      "statusbar",
-      "stop",
-      "toolbar",
-      "top",
     ],
     "no-restricted-properties": [
       2,
@@ -593,16 +406,12 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     ],
     "no-return-assign": [
       2,
-      "always",
     ],
     "no-script-url": [
       2,
     ],
     "no-self-assign": [
       2,
-      {
-        "props": true,
-      },
     ],
     "no-self-compare": [
       2,
@@ -611,9 +420,6 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
       2,
     ],
     "no-setter-return": [
-      2,
-    ],
-    "no-shadow": [
       2,
     ],
     "no-shadow-restricted-names": [
@@ -628,43 +434,14 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     "no-this-before-super": [
       2,
     ],
-    "no-throw-literal": [
-      2,
-    ],
     "no-undef": [
       2,
     ],
     "no-undef-init": [
       2,
     ],
-    "no-underscore-dangle": [
-      2,
-      {
-        "allow": [],
-        "allowAfterSuper": false,
-        "allowAfterThis": false,
-        "allowAfterThisConstructor": false,
-        "allowFunctionParams": true,
-        "allowInArrayDestructuring": true,
-        "allowInObjectDestructuring": true,
-        "enforceInClassFields": false,
-        "enforceInMethodNames": true,
-      },
-    ],
-    "no-unneeded-ternary": [
-      2,
-      {
-        "defaultAssignment": false,
-      },
-    ],
     "no-unreachable": [
       2,
-    ],
-    "no-unreachable-loop": [
-      2,
-      {
-        "ignore": [],
-      },
     ],
     "no-unsafe-finally": [
       2,
@@ -674,102 +451,24 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     ],
     "no-unsafe-optional-chaining": [
       2,
-      {
-        "disallowArithmeticOperators": true,
-      },
-    ],
-    "no-unused-expressions": [
-      2,
-      {
-        "allowShortCircuit": false,
-        "allowTaggedTemplates": false,
-        "allowTernary": false,
-        "enforceForJSX": false,
-      },
     ],
     "no-unused-labels": [
       2,
     ],
     "no-unused-vars": [
       1,
-      {
-        "args": "after-used",
-        "ignoreRestSiblings": true,
-        "vars": "all",
-      },
-    ],
-    "no-use-before-define": [
-      2,
-      {
-        "classes": true,
-        "functions": true,
-        "variables": true,
-      },
     ],
     "no-useless-catch": [
-      2,
-    ],
-    "no-useless-computed-key": [
-      2,
-    ],
-    "no-useless-concat": [
-      2,
-    ],
-    "no-useless-constructor": [
       2,
     ],
     "no-useless-escape": [
       2,
     ],
-    "no-useless-rename": [
-      2,
-      {
-        "ignoreDestructuring": false,
-        "ignoreExport": false,
-        "ignoreImport": false,
-      },
-    ],
-    "no-useless-return": [
-      2,
-    ],
-    "no-var": [
-      2,
-    ],
-    "no-void": [
-      2,
-    ],
     "no-with": [
       2,
     ],
-    "object-shorthand": [
-      2,
-      "always",
-      {
-        "avoidQuotes": true,
-        "ignoreConstructors": false,
-      },
-    ],
-    "one-var": [
-      2,
-      "never",
-    ],
-    "operator-assignment": [
-      2,
-      "always",
-    ],
-    "prefer-arrow-callback": [
-      2,
-      {
-        "allowNamedFunctions": false,
-        "allowUnboundThis": true,
-      },
-    ],
     "prefer-const": [
       1,
-      {
-        "destructuring": "any",
-        "ignoreReadBeforeAssign": true,
-      },
     ],
     "prefer-destructuring": [
       2,
@@ -787,37 +486,7 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
         "enforceForRenamedProperties": false,
       },
     ],
-    "prefer-exponentiation-operator": [
-      2,
-    ],
-    "prefer-numeric-literals": [
-      2,
-    ],
-    "prefer-object-spread": [
-      2,
-    ],
-    "prefer-promise-reject-errors": [
-      2,
-      {
-        "allowEmptyReject": true,
-      },
-    ],
     "prefer-regex-literals": [
-      2,
-      {
-        "disallowRedundantWrapping": true,
-      },
-    ],
-    "prefer-rest-params": [
-      2,
-    ],
-    "prefer-spread": [
-      2,
-    ],
-    "prefer-template": [
-      2,
-    ],
-    "radix": [
       2,
     ],
     "redos/no-vulnerable": [
@@ -1012,47 +681,6 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     "simple-import-sort/imports": [
       1,
     ],
-    "spaced-comment": [
-      2,
-      "always",
-      {
-        "block": {
-          "balanced": true,
-          "exceptions": [
-            "-",
-            "+",
-          ],
-          "markers": [
-            "=",
-            "!",
-            ":",
-            "::",
-          ],
-        },
-        "line": {
-          "exceptions": [
-            "-",
-            "+",
-          ],
-          "markers": [
-            "=",
-            "!",
-            "/",
-          ],
-        },
-      },
-    ],
-    "strict": [
-      2,
-      "never",
-    ],
-    "symbol-description": [
-      2,
-    ],
-    "unicode-bom": [
-      2,
-      "never",
-    ],
     "unicorn/escape-case": [
       2,
     ],
@@ -1139,15 +767,6 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     ],
     "valid-typeof": [
       2,
-      {
-        "requireStringLiterals": true,
-      },
-    ],
-    "vars-on-top": [
-      2,
-    ],
-    "yoda": [
-      2,
     ],
   },
 }
@@ -1211,24 +830,9 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     ],
     "@typescript-eslint/dot-notation": [
       2,
-      {
-        "allowIndexSignaturePropertyAccess": false,
-        "allowKeywords": true,
-        "allowPattern": "",
-        "allowPrivateClassPropertyAccess": false,
-        "allowProtectedClassPropertyAccess": false,
-      },
     ],
     "@typescript-eslint/explicit-member-accessibility": [
       1,
-    ],
-    "@typescript-eslint/lines-between-class-members": [
-      2,
-      "always",
-      {
-        "exceptAfterOverload": true,
-        "exceptAfterSingleLine": false,
-      },
     ],
     "@typescript-eslint/naming-convention": [
       2,
@@ -1267,9 +871,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       2,
     ],
     "@typescript-eslint/no-confusing-void-expression": [
-      2,
-    ],
-    "@typescript-eslint/no-dupe-class-members": [
       2,
     ],
     "@typescript-eslint/no-duplicate-enum-values": [
@@ -1341,14 +942,8 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "@typescript-eslint/no-non-null-assertion": [
       2,
     ],
-    "@typescript-eslint/no-redeclare": [
-      2,
-    ],
     "@typescript-eslint/no-redundant-type-constituents": [
       1,
-    ],
-    "@typescript-eslint/no-shadow": [
-      2,
     ],
     "@typescript-eslint/no-this-alias": [
       2,
@@ -1394,20 +989,9 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     ],
     "@typescript-eslint/no-unused-expressions": [
       2,
-      {
-        "allowShortCircuit": false,
-        "allowTaggedTemplates": false,
-        "allowTernary": false,
-        "enforceForJSX": false,
-      },
     ],
     "@typescript-eslint/no-unused-vars": [
       2,
-      {
-        "args": "after-used",
-        "ignoreRestSiblings": true,
-        "vars": "all",
-      },
     ],
     "@typescript-eslint/no-useless-constructor": [
       2,
@@ -1506,27 +1090,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "@typescript-eslint/use-unknown-in-catch-callback-variable": [
       2,
     ],
-    "array-callback-return": [
-      2,
-      {
-        "allowImplicit": true,
-        "allowVoid": false,
-        "checkForEach": false,
-      },
-    ],
-    "arrow-body-style": [
-      2,
-      "as-needed",
-      {
-        "requireReturnForObjectLiteral": false,
-      },
-    ],
-    "block-scoped-var": [
-      2,
-    ],
-    "consistent-return": [
-      2,
-    ],
     "default-case-last": [
       2,
     ],
@@ -1612,30 +1175,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "jest/valid-title": [
       2,
     ],
-    "lines-around-directive": [
-      2,
-      {
-        "after": "always",
-        "before": "always",
-      },
-    ],
-    "new-cap": [
-      2,
-      {
-        "capIsNew": false,
-        "capIsNewExceptions": [
-          "Immutable.Map",
-          "Immutable.Set",
-          "Immutable.List",
-        ],
-        "newIsCap": true,
-        "newIsCapExceptions": [],
-        "properties": true,
-      },
-    ],
-    "no-alert": [
-      1,
-    ],
     "no-async-promise-executor": [
       2,
     ],
@@ -1659,12 +1198,8 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     ],
     "no-cond-assign": [
       2,
-      "always",
     ],
     "no-constant-condition": [
-      1,
-    ],
-    "no-constructor-return": [
       2,
     ],
     "no-control-regex": [
@@ -1723,9 +1258,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     ],
     "no-global-assign": [
       2,
-      {
-        "exceptions": [],
-      },
     ],
     "no-inner-declarations": [
       2,
@@ -1739,13 +1271,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "no-label-var": [
       2,
     ],
-    "no-labels": [
-      2,
-      {
-        "allowLoop": false,
-        "allowSwitch": false,
-      },
-    ],
     "no-lone-blocks": [
       2,
     ],
@@ -1753,15 +1278,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       2,
     ],
     "no-misleading-character-class": [
-      2,
-    ],
-    "no-multi-assign": [
-      2,
-    ],
-    "no-multi-str": [
-      2,
-    ],
-    "no-nested-ternary": [
       2,
     ],
     "no-new": [
@@ -1799,84 +1315,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     ],
     "no-regex-spaces": [
       2,
-    ],
-    "no-restricted-exports": [
-      2,
-      {
-        "restrictedNamedExports": [
-          "default",
-          "then",
-        ],
-      },
-    ],
-    "no-restricted-globals": [
-      2,
-      {
-        "message": "Use Number.isFinite instead https://github.com/airbnb/javascript#standard-library--isfinite",
-        "name": "isFinite",
-      },
-      {
-        "message": "Use Number.isNaN instead https://github.com/airbnb/javascript#standard-library--isnan",
-        "name": "isNaN",
-      },
-      "addEventListener",
-      "blur",
-      "close",
-      "closed",
-      "confirm",
-      "defaultStatus",
-      "defaultstatus",
-      "event",
-      "external",
-      "find",
-      "focus",
-      "frameElement",
-      "frames",
-      "history",
-      "innerHeight",
-      "innerWidth",
-      "length",
-      "location",
-      "locationbar",
-      "menubar",
-      "moveBy",
-      "moveTo",
-      "name",
-      "onblur",
-      "onerror",
-      "onfocus",
-      "onload",
-      "onresize",
-      "onunload",
-      "open",
-      "opener",
-      "opera",
-      "outerHeight",
-      "outerWidth",
-      "pageXOffset",
-      "pageYOffset",
-      "parent",
-      "print",
-      "removeEventListener",
-      "resizeBy",
-      "resizeTo",
-      "screen",
-      "screenLeft",
-      "screenTop",
-      "screenX",
-      "screenY",
-      "scroll",
-      "scrollbars",
-      "scrollBy",
-      "scrollTo",
-      "scrollX",
-      "scrollY",
-      "self",
-      "status",
-      "statusbar",
-      "stop",
-      "toolbar",
-      "top",
     ],
     "no-restricted-properties": [
       2,
@@ -1931,16 +1369,12 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     ],
     "no-return-assign": [
       2,
-      "always",
     ],
     "no-script-url": [
       2,
     ],
     "no-self-assign": [
       2,
-      {
-        "props": true,
-      },
     ],
     "no-self-compare": [
       2,
@@ -1960,40 +1394,11 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "no-undef-init": [
       2,
     ],
-    "no-underscore-dangle": [
-      2,
-      {
-        "allow": [],
-        "allowAfterSuper": false,
-        "allowAfterThis": false,
-        "allowAfterThisConstructor": false,
-        "allowFunctionParams": true,
-        "allowInArrayDestructuring": true,
-        "allowInObjectDestructuring": true,
-        "enforceInClassFields": false,
-        "enforceInMethodNames": true,
-      },
-    ],
-    "no-unneeded-ternary": [
-      2,
-      {
-        "defaultAssignment": false,
-      },
-    ],
-    "no-unreachable-loop": [
-      2,
-      {
-        "ignore": [],
-      },
-    ],
     "no-unsafe-finally": [
       2,
     ],
     "no-unsafe-optional-chaining": [
       2,
-      {
-        "disallowArithmeticOperators": true,
-      },
     ],
     "no-unused-labels": [
       2,
@@ -2001,64 +1406,17 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "no-useless-catch": [
       2,
     ],
-    "no-useless-computed-key": [
-      2,
-    ],
-    "no-useless-concat": [
-      2,
-    ],
     "no-useless-escape": [
-      2,
-    ],
-    "no-useless-rename": [
-      2,
-      {
-        "ignoreDestructuring": false,
-        "ignoreExport": false,
-        "ignoreImport": false,
-      },
-    ],
-    "no-useless-return": [
       2,
     ],
     "no-var": [
       2,
     ],
-    "no-void": [
-      2,
-    ],
     "no-with": [
       2,
     ],
-    "object-shorthand": [
-      2,
-      "always",
-      {
-        "avoidQuotes": true,
-        "ignoreConstructors": false,
-      },
-    ],
-    "one-var": [
-      2,
-      "never",
-    ],
-    "operator-assignment": [
-      2,
-      "always",
-    ],
-    "prefer-arrow-callback": [
-      2,
-      {
-        "allowNamedFunctions": false,
-        "allowUnboundThis": true,
-      },
-    ],
     "prefer-const": [
       1,
-      {
-        "destructuring": "any",
-        "ignoreReadBeforeAssign": true,
-      },
     ],
     "prefer-destructuring": [
       2,
@@ -2076,31 +1434,13 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
         "enforceForRenamedProperties": false,
       },
     ],
-    "prefer-exponentiation-operator": [
-      2,
-    ],
-    "prefer-numeric-literals": [
-      2,
-    ],
-    "prefer-object-spread": [
-      2,
-    ],
     "prefer-regex-literals": [
       2,
-      {
-        "disallowRedundantWrapping": true,
-      },
     ],
     "prefer-rest-params": [
       2,
     ],
     "prefer-spread": [
-      2,
-    ],
-    "prefer-template": [
-      2,
-    ],
-    "radix": [
       2,
     ],
     "redos/no-vulnerable": [
@@ -2295,47 +1635,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "simple-import-sort/imports": [
       1,
     ],
-    "spaced-comment": [
-      2,
-      "always",
-      {
-        "block": {
-          "balanced": true,
-          "exceptions": [
-            "-",
-            "+",
-          ],
-          "markers": [
-            "=",
-            "!",
-            ":",
-            "::",
-          ],
-        },
-        "line": {
-          "exceptions": [
-            "-",
-            "+",
-          ],
-          "markers": [
-            "=",
-            "!",
-            "/",
-          ],
-        },
-      },
-    ],
-    "strict": [
-      2,
-      "never",
-    ],
-    "symbol-description": [
-      2,
-    ],
-    "unicode-bom": [
-      2,
-      "never",
-    ],
     "unicorn/escape-case": [
       2,
     ],
@@ -2417,10 +1716,7 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "use-isnan": [
       2,
     ],
-    "vars-on-top": [
-      2,
-    ],
-    "yoda": [
+    "valid-typeof": [
       2,
     ],
   },

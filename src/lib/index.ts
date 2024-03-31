@@ -3,8 +3,6 @@ import type { Linter } from "eslint";
 import configPrettier from "eslint-config-prettier";
 import globals from "globals";
 
-import airBnbBase from "./configs/airbnbBase.js";
-import airBnbTsBase from "./configs/airbnbTSBase.js";
 import jest from "./configs/jest.js";
 import redos from "./configs/redos.js";
 import regexp from "./configs/regexp.js";
@@ -14,7 +12,6 @@ import unicorn from "./configs/unicorn.js";
 
 const javaScript = [
     js.configs.recommended,
-    ...airBnbBase,
     { rules: configPrettier.rules },
     simpleImportSort,
     redos,
@@ -154,7 +151,6 @@ const javaScript = [
 ] satisfies Linter.FlatConfig[];
 
 const typeScriptOnly = [
-    ...airBnbTsBase,
     typescriptEslint,
     { rules: configPrettier.rules },
     {
