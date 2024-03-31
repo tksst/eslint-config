@@ -1,5 +1,19 @@
 # @tksst/eslint-config
 
+## 13.3.0
+
+### Minor Changes
+
+- 141df65: Remove eslint-config-airbnb-\* and simplified. Some meddlesome rules were removed by this, but useful rules were kept by adding them separately.
+- 1f9ad20: update dependencies:
+
+  - update [@typescript-eslint/eslint-plugin@7.4.0](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v7.4.0) from 7.3.1
+  - update [@typescript-eslint/parser@7.4.0](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v7.4.0) from 7.3.1
+
+### Patch Changes
+
+- 4968554: update [globals@15.0.0](https://github.com/sindresorhus/globals/releases/tag/v15.0.0) from 14.0.0. That seems like a trivial change to me.
+
 ## 13.2.0
 
 ### Minor Changes
