@@ -38,7 +38,8 @@
     "lint:secretlint": "secretlint --maskSecrets **",
     "lint:tsc": "tsc --noEmit",
     "test": "run-s test:*",
-    "test:unit": "run-s build _test_unit"
+    "test:unit": "run-s build _test_unit",
+    "prepare": "husky"
   },
   "dependencies": {
     "@eslint/js": "8.57.0",
@@ -63,6 +64,8 @@
     "@vitest/coverage-v8": "1.4.0",
     "better-typescript-lib": "2.6.0",
     "eslint": "8.57.0",
+    "husky": "9.0.11",
+    "lint-staged": "15.2.2",
     "npm-run-all2": "6.1.2",
     "prettier": "3.2.5",
     "secretlint": "8.1.2",
@@ -82,5 +85,11 @@
   "packageManager": "pnpm@8.15.5",
   "engines": {
     "node": "^18.18.0 || >=20"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --cache --check",
+      "secretlint"
+    ]
   }
 }
