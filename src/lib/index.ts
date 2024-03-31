@@ -3,8 +3,6 @@ import type { Linter } from "eslint";
 import configPrettier from "eslint-config-prettier";
 import globals from "globals";
 
-import airBnbBase from "./configs/airbnbBase.js";
-import airBnbTsBase from "./configs/airbnbTSBase.js";
 import jest from "./configs/jest.js";
 import redos from "./configs/redos.js";
 import regexp from "./configs/regexp.js";
@@ -14,7 +12,6 @@ import unicorn from "./configs/unicorn.js";
 
 const javaScript = [
     js.configs.recommended,
-    ...airBnbBase,
     { rules: configPrettier.rules },
     simpleImportSort,
     redos,
@@ -59,13 +56,101 @@ const javaScript = [
             // There is little difference in performance between no-return-await and return-await.
             // On V8, no-return-await does not properly place history on the call stack.
             "no-return-await": "off",
+            // useful rules from eslint-config-airbnb-base
+            "default-case-last": "error",
+            eqeqeq: [
+                "error",
+                "always",
+                {
+                    null: "ignore",
+                },
+            ],
+
+            "func-names": "warn",
+            "grouped-accessor-pairs": "error",
+            "guard-for-in": "error",
+            "no-buffer-constructor": "error",
+            "no-caller": "error",
+            "no-else-return": ["error", { allowElseIf: false }],
+            "no-eval": "error",
+            "no-extend-native": "error",
+            "no-extra-bind": "error",
+            "no-extra-label": "error",
+            "no-iterator": "error",
+            "no-label-var": "error",
+            "no-lone-blocks": "error",
+            "no-lonely-if": "error",
+            "no-new": "error",
+            "no-new-object": "error",
+            "no-new-require": "error",
+            "no-new-wrappers": "error",
+            "no-octal-escape": "error",
+            "no-path-concat": "error",
+            "no-promise-executor-return": "error",
+            "no-proto": "error",
+            "no-restricted-properties": [
+                "error",
+                {
+                    message: "arguments.callee is deprecated",
+                    object: "arguments",
+                    property: "callee",
+                },
+                {
+                    message: "Please use Number.isFinite instead",
+                    object: "global",
+                    property: "isFinite",
+                },
+                {
+                    message: "Please use Number.isFinite instead",
+                    object: "self",
+                    property: "isFinite",
+                },
+                {
+                    message: "Please use Number.isFinite instead",
+                    object: "window",
+                    property: "isFinite",
+                },
+                {
+                    message: "Please use Number.isNaN instead",
+                    object: "global",
+                    property: "isNaN",
+                },
+                {
+                    message: "Please use Number.isNaN instead",
+                    object: "self",
+                    property: "isNaN",
+                },
+                {
+                    message: "Please use Number.isNaN instead",
+                    object: "window",
+                    property: "isNaN",
+                },
+                {
+                    message: "Please use Object.defineProperty instead.",
+                    property: "__defineGetter__",
+                },
+                {
+                    message: "Please use Object.defineProperty instead.",
+                    property: "__defineSetter__",
+                },
+                {
+                    message: "Use the exponentiation operator (**) instead.",
+                    object: "Math",
+                    property: "pow",
+                },
+            ],
+            "no-return-assign": "error",
+            "no-script-url": "error",
+            "no-self-compare": "error",
+            "no-sequences": "error",
+            "no-template-curly-in-string": "error",
+            "no-undef-init": "error",
         },
     },
     regexp,
 ] satisfies Linter.FlatConfig[];
 
 const typeScriptOnly = [
-    ...airBnbTsBase,
     typescriptEslint,
     { rules: configPrettier.rules },
     {
@@ -88,6 +173,27 @@ const typeScriptOnly = [
             "@typescript-eslint/consistent-type-definitions": "off",
             "@typescript-eslint/class-literal-property-style": "off",
             "prefer-const": "warn",
+            // useful rules from eslint-config-airbnb-typescript
+            "@typescript-eslint/default-param-last": "error",
+            "@typescript-eslint/naming-convention": [
+                "error",
+                {
+                    format: ["camelCase", "PascalCase", "UPPER_CASE"],
+                    selector: "variable",
+                },
+                {
+                    format: ["camelCase", "PascalCase"],
+                    selector: "function",
+                },
+                {
+                    format: ["PascalCase"],
+                    selector: "typeLike",
+                },
+            ],
+            "@typescript-eslint/no-loop-func": "error",
+            "@typescript-eslint/no-unused-expressions": "error",
+            // this is set by @eslint/js recommended but not needed for TypeScript
+            "valid-typeof": "off",
         },
     },
 ] satisfies Linter.FlatConfig[];
