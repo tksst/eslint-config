@@ -1,5 +1,21 @@
 # @tksst/eslint-config
 
+## 13.5.0
+
+### Minor Changes
+
+- f5c6d74: enable [unicorn/no-single-promise-in-promise-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-single-promise-in-promise-methods.md) and [unicorn/no-await-in-promise-methods](https://github.com/sindresorhus/eslint-plugin-unicorn/blob/main/docs/rules/no-await-in-promise-methods.md)
+- d9eb398: update dependencies:
+
+  - update [@typescript-eslint/eslint-plugin@7.5.0](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v7.5.0) from 7.4.0
+  - update [@typescript-eslint/parser@7.5.0](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v7.5.0) from 7.4.0
+
+- 493e81e: update eslint-plugin-jest@28.0.0 from 27.9.0, which is a major upgrade but seems not to break anything for me
+
+### Patch Changes
+
+- e17b2bd: update [eslint-plugin-unicorn@52.0.0](https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v52.0.0) from 51.0.1
+
 ## 13.4.0
 
 ### Minor Changes
