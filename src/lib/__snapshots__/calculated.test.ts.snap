@@ -82,6 +82,9 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     "parserOptions": {},
     "sourceType": "module",
   },
+  "linterOptions": {
+    "reportUnusedDisableDirectives": 1,
+  },
   "plugins": [
     "@",
     "simple-import-sort:eslint-plugin-simple-import-sort",
@@ -787,6 +790,9 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       "project": "./tsconfig.json",
     },
     "sourceType": "module",
+  },
+  "linterOptions": {
+    "reportUnusedDisableDirectives": 1,
   },
   "plugins": [
     "@",
