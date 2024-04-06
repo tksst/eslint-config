@@ -264,10 +264,12 @@ exports[`config snapshot > config.javaScript 1`] = `
   {
     "rules": {
       "unicorn/escape-case": "error",
+      "unicorn/no-await-in-promise-methods": "error",
       "unicorn/no-hex-escape": "error",
       "unicorn/no-instanceof-array": "error",
       "unicorn/no-invalid-remove-event-listener": "error",
       "unicorn/no-new-buffer": "error",
+      "unicorn/no-single-promise-in-promise-methods": "error",
       "unicorn/no-static-only-class": "error",
       "unicorn/no-typeof-undefined": "error",
       "unicorn/no-useless-spread": "error",
@@ -800,10 +802,12 @@ exports[`config snapshot > config.typeScript 1`] = `
   {
     "rules": {
       "unicorn/escape-case": "error",
+      "unicorn/no-await-in-promise-methods": "error",
       "unicorn/no-hex-escape": "error",
       "unicorn/no-instanceof-array": "error",
       "unicorn/no-invalid-remove-event-listener": "error",
       "unicorn/no-new-buffer": "error",
+      "unicorn/no-single-promise-in-promise-methods": "error",
       "unicorn/no-static-only-class": "error",
       "unicorn/no-typeof-undefined": "error",
       "unicorn/no-useless-spread": "error",
@@ -2171,10 +2175,12 @@ exports[`preset snapshots > preset.typeScript 1`] = `
   {
     "rules": {
       "unicorn/escape-case": "error",
+      "unicorn/no-await-in-promise-methods": "error",
       "unicorn/no-hex-escape": "error",
       "unicorn/no-instanceof-array": "error",
       "unicorn/no-invalid-remove-event-listener": "error",
       "unicorn/no-new-buffer": "error",
+      "unicorn/no-single-promise-in-promise-methods": "error",
       "unicorn/no-static-only-class": "error",
       "unicorn/no-typeof-undefined": "error",
       "unicorn/no-useless-spread": "error",
@@ -3182,10 +3188,12 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
   {
     "rules": {
       "unicorn/escape-case": "error",
+      "unicorn/no-await-in-promise-methods": "error",
       "unicorn/no-hex-escape": "error",
       "unicorn/no-instanceof-array": "error",
       "unicorn/no-invalid-remove-event-listener": "error",
       "unicorn/no-new-buffer": "error",
+      "unicorn/no-single-promise-in-promise-methods": "error",
       "unicorn/no-static-only-class": "error",
       "unicorn/no-typeof-undefined": "error",
       "unicorn/no-useless-spread": "error",
@@ -4218,10 +4226,12 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
   {
     "rules": {
       "unicorn/escape-case": "error",
+      "unicorn/no-await-in-promise-methods": "error",
       "unicorn/no-hex-escape": "error",
       "unicorn/no-instanceof-array": "error",
       "unicorn/no-invalid-remove-event-listener": "error",
       "unicorn/no-new-buffer": "error",
+      "unicorn/no-single-promise-in-promise-methods": "error",
       "unicorn/no-static-only-class": "error",
       "unicorn/no-typeof-undefined": "error",
       "unicorn/no-useless-spread": "error",

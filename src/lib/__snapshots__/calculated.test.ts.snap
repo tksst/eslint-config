@@ -684,6 +684,9 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     "unicorn/escape-case": [
       2,
     ],
+    "unicorn/no-await-in-promise-methods": [
+      2,
+    ],
     "unicorn/no-hex-escape": [
       2,
     ],
@@ -694,6 +697,9 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
       2,
     ],
     "unicorn/no-new-buffer": [
+      2,
+    ],
+    "unicorn/no-single-promise-in-promise-methods": [
       2,
     ],
     "unicorn/no-static-only-class": [
@@ -1627,6 +1633,9 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "unicorn/escape-case": [
       2,
     ],
+    "unicorn/no-await-in-promise-methods": [
+      2,
+    ],
     "unicorn/no-hex-escape": [
       2,
     ],
@@ -1637,6 +1646,9 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       2,
     ],
     "unicorn/no-new-buffer": [
+      2,
+    ],
+    "unicorn/no-single-promise-in-promise-methods": [
       2,
     ],
     "unicorn/no-static-only-class": [

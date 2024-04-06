@@ -59,6 +59,10 @@ const x = {
         "unicorn/prefer-string-trim-start-end": "error",
         // Enforce throwing TypeError in type checking conditions
         "unicorn/prefer-type-error": "error",
+        // Disallow passing single-element arrays to Promise methods
+        "unicorn/no-single-promise-in-promise-methods": "error",
+        // Disallow using await in Promise method parameters
+        "unicorn/no-await-in-promise-methods": "error",
     },
 } satisfies Linter.FlatConfig;
 
