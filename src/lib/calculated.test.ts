@@ -1,5 +1,5 @@
 import type { Linter } from "eslint";
-import { FlatESLint } from "eslint/use-at-your-own-risk";
+import { ESLint } from "eslint";
 import { describe, expect, it } from "vitest";
 
 function removeVersionFromParser(conf: { languageOptions: { parser: string } }): void {
@@ -31,7 +31,7 @@ function removeDisabledRules(conf: Linter.FlatConfig): void {
 
 describe("ESLint calculated config Snapshot", () => {
     it(".js", async () => {
-        const eslint = new FlatESLint();
+        const eslint = new ESLint();
         const conf = await eslint.calculateConfigForFile("index.js");
         // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/non-nullable-type-assertion-style
         const conf2 = JSON.parse(JSON.stringify(conf) as string) as any;
@@ -46,7 +46,7 @@ describe("ESLint calculated config Snapshot", () => {
         expect(conf2).toMatchSnapshot();
     });
     it(".ts", async () => {
-        const eslint = new FlatESLint();
+        const eslint = new ESLint();
         const conf = await eslint.calculateConfigForFile("index.ts");
         // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/non-nullable-type-assertion-style
         const conf2 = JSON.parse(JSON.stringify(conf) as string) as any;
