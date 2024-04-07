@@ -27,7 +27,7 @@ function removeDisabledRules(conf: Linter.FlatConfig): void {
     }
 }
 
-/* eslint-disable @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access */
+/* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
 describe("ESLint calculated config Snapshot", () => {
     it(".js", async () => {

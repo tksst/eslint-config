@@ -6,7 +6,7 @@ const x = {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
         jest: pluginJest,
     },
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
     rules: {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
         ...pluginJest.configs.style.rules,

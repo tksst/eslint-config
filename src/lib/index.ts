@@ -250,9 +250,7 @@ export const preset = {
         {
             files: ["**/*.js", "**/*.cjs", "**/*.mjs", "**/*.jsx", "**/*.cjsx", "**/*.mjsx"],
             languageOptions: {
-                // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
                 globals: {
-                    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
                     ...globals.node,
                 },
             },
