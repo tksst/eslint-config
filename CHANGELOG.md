@@ -1,5 +1,18 @@
 # @tksst/eslint-config
 
+## 13.6.0
+
+### Minor Changes
+
+- d5dcaf4: allow ESLint 9 as peer dependency
+- 96589f6: upgrade [@eslint/js@9.0.0](https://github.com/eslint/eslint/releases/tag/v9.0.0) from 8.57.0. This enables these rules in my preset:
+
+  - [no-constant-binary-expression](https://eslint.org/docs/latest/rules/no-constant-binary-expression)
+  - [no-new-native-nonconstructor](https://eslint.org/docs/latest/rules/no-new-native-nonconstructor)
+  - [no-unused-private-class-members](https://eslint.org/docs/latest/rules/no-unused-private-class-members)
+
+- e5f59fe: update [eslint-plugin-jest@28.2.0](https://github.com/jest-community/eslint-plugin-jest/releases/tag/v28.2.0) from 28.0.0
+
 ## 13.5.0
 
 ### Minor Changes
