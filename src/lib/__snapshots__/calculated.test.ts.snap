@@ -212,6 +212,9 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     "no-const-assign": [
       2,
     ],
+    "no-constant-binary-expression": [
+      2,
+    ],
     "no-constant-condition": [
       2,
     ],
@@ -287,9 +290,6 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     "no-import-assign": [
       2,
     ],
-    "no-inner-declarations": [
-      2,
-    ],
     "no-irregular-whitespace": [
       2,
     ],
@@ -314,13 +314,13 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
     "no-new": [
       2,
     ],
+    "no-new-native-nonconstructor": [
+      2,
+    ],
     "no-new-object": [
       2,
     ],
     "no-new-require": [
-      2,
-    ],
-    "no-new-symbol": [
       2,
     ],
     "no-new-wrappers": [
@@ -456,6 +456,9 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
       2,
     ],
     "no-unused-labels": [
+      2,
+    ],
+    "no-unused-private-class-members": [
       2,
     ],
     "no-unused-vars": [
@@ -1200,6 +1203,9 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "no-cond-assign": [
       2,
     ],
+    "no-constant-binary-expression": [
+      2,
+    ],
     "no-constant-condition": [
       2,
     ],
@@ -1260,9 +1266,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
     "no-global-assign": [
       2,
     ],
-    "no-inner-declarations": [
-      2,
-    ],
     "no-irregular-whitespace": [
       2,
     ],
@@ -1282,6 +1285,9 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       2,
     ],
     "no-new": [
+      2,
+    ],
+    "no-new-native-nonconstructor": [
       2,
     ],
     "no-new-object": [
@@ -1402,6 +1408,9 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       2,
     ],
     "no-unused-labels": [
+      2,
+    ],
+    "no-unused-private-class-members": [
       2,
     ],
     "no-useless-catch": [
