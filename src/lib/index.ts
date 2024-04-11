@@ -1,25 +1,19 @@
-import js from "@eslint/js";
 import type { Linter } from "eslint";
-import configPrettier from "eslint-config-prettier";
 import globals from "globals";
 
+import eslintJsRecommended from "./external-config/eslintJsRecommended.js";
 import jest from "./external-config/jest.js";
+import prettier from "./external-config/prettier.js";
 import redos from "./external-config/redos.js";
 import regexp from "./external-config/regexp.js";
 import simpleImportSort from "./external-config/simpleImportSort.js";
 import typescriptEslint from "./external-config/typescriptEslint.js";
 import unicorn from "./external-config/unicorn.js";
-import { EXTERNAL, PKG_NAME } from "./name.js";
+import { PKG_NAME } from "./name.js";
 
 const javaScript = [
-    {
-        name: `${EXTERNAL}/@eslint/js/recommended`,
-        ...js.configs.recommended,
-    },
-    {
-        name: `${EXTERNAL}/eslint-config-prettier`,
-        rules: configPrettier.rules,
-    },
+    eslintJsRecommended(),
+    prettier(),
     simpleImportSort,
     redos,
     unicorn,
@@ -160,10 +154,7 @@ const javaScript = [
 
 const typeScriptOnly = [
     typescriptEslint,
-    {
-        name: `${EXTERNAL}/eslint-config-prettier`,
-        rules: configPrettier.rules,
-    },
+    prettier(),
     {
         name: `${PKG_NAME}/typeScriptOnly/custom-rules`,
         rules: {
