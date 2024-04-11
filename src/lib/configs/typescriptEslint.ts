@@ -2,6 +2,8 @@ import tsEslintPlugin from "@typescript-eslint/eslint-plugin";
 import tsEslintParser from "@typescript-eslint/parser";
 import type { ESLint, Linter } from "eslint";
 
+import { EXTERNAL } from "../name.js";
+
 const x1 = tsEslintPlugin.configs["eslint-recommended"]?.overrides?.[0]?.rules as Linter.RulesRecord | undefined;
 
 if (x1 === undefined) {
@@ -21,6 +23,7 @@ if (x3 === undefined) {
 }
 
 const x = {
+    name: `${EXTERNAL}/@typescript-eslint`,
     plugins: {
         "@typescript-eslint": tsEslintPlugin as unknown as ESLint.Plugin,
     },

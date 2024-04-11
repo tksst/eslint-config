@@ -3,6 +3,7 @@
 exports[`config snapshot > config.javaScript 1`] = `
 [
   {
+    "name": "@tksst/eslint-config/external/@eslint/js/recommended",
     "rules": {
       "constructor-super": "error",
       "for-direction": "error",
@@ -68,6 +69,7 @@ exports[`config snapshot > config.javaScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-config-prettier",
     "rules": {
       "@babel/object-curly-spacing": "off",
       "@babel/semi": "off",
@@ -250,6 +252,7 @@ exports[`config snapshot > config.javaScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-simple-import-sort",
     "rules": {
       "simple-import-sort/exports": "warn",
       "simple-import-sort/imports": "warn",
@@ -257,11 +260,13 @@ exports[`config snapshot > config.javaScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-redos",
     "rules": {
       "redos/no-vulnerable": "error",
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-unicorn",
     "rules": {
       "unicorn/escape-case": "error",
       "unicorn/no-await-in-promise-methods": "error",
@@ -299,6 +304,7 @@ exports[`config snapshot > config.javaScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/javaScript/custom-rules",
     "rules": {
       "class-methods-use-this": "off",
       "default-case": "off",
@@ -434,6 +440,7 @@ exports[`config snapshot > config.javaScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-regexp",
     "rules": {
       "no-control-regex": "error",
       "no-empty-character-class": "off",
@@ -510,6 +517,7 @@ exports[`config snapshot > config.javaScript 1`] = `
 exports[`config snapshot > config.jest 1`] = `
 [
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-jest",
     "rules": {
       "jest/expect-expect": "warn",
       "jest/no-alias-methods": "error",
@@ -541,6 +549,7 @@ exports[`config snapshot > config.jest 1`] = `
 exports[`config snapshot > config.typeScript 1`] = `
 [
   {
+    "name": "@tksst/eslint-config/external/@eslint/js/recommended",
     "rules": {
       "constructor-super": "error",
       "for-direction": "error",
@@ -606,6 +615,7 @@ exports[`config snapshot > config.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-config-prettier",
     "rules": {
       "@babel/object-curly-spacing": "off",
       "@babel/semi": "off",
@@ -788,6 +798,7 @@ exports[`config snapshot > config.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-simple-import-sort",
     "rules": {
       "simple-import-sort/exports": "warn",
       "simple-import-sort/imports": "warn",
@@ -795,11 +806,13 @@ exports[`config snapshot > config.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-redos",
     "rules": {
       "redos/no-vulnerable": "error",
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-unicorn",
     "rules": {
       "unicorn/escape-case": "error",
       "unicorn/no-await-in-promise-methods": "error",
@@ -837,6 +850,7 @@ exports[`config snapshot > config.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/javaScript/custom-rules",
     "rules": {
       "class-methods-use-this": "off",
       "default-case": "off",
@@ -972,6 +986,7 @@ exports[`config snapshot > config.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-regexp",
     "rules": {
       "no-control-regex": "error",
       "no-empty-character-class": "off",
@@ -1048,6 +1063,7 @@ exports[`config snapshot > config.typeScript 1`] = `
         "project": "./tsconfig.json",
       },
     },
+    "name": "@tksst/eslint-config/external/@typescript-eslint",
     "rules": {
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
@@ -1185,6 +1201,7 @@ exports[`config snapshot > config.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-config-prettier",
     "rules": {
       "@babel/object-curly-spacing": "off",
       "@babel/semi": "off",
@@ -1367,6 +1384,7 @@ exports[`config snapshot > config.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/typeScriptOnly/custom-rules",
     "rules": {
       "@typescript-eslint/class-literal-property-style": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
@@ -1433,6 +1451,7 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
         "project": "./tsconfig.json",
       },
     },
+    "name": "@tksst/eslint-config/external/@typescript-eslint",
     "rules": {
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
@@ -1570,6 +1589,7 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-config-prettier",
     "rules": {
       "@babel/object-curly-spacing": "off",
       "@babel/semi": "off",
@@ -1752,6 +1772,7 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/typeScriptOnly/custom-rules",
     "rules": {
       "@typescript-eslint/class-literal-property-style": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
@@ -1817,6 +1838,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "dist/**",
       "coverage/**",
     ],
+    "name": "@tksst/eslint-config/preset/typeScript/ignores",
   },
   {
     "files": [
@@ -1826,6 +1848,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
     "languageOptions": {
       "sourceType": "module",
     },
+    "name": "@tksst/eslint-config/preset/typeScript/js-source-type",
   },
   {
     "files": [
@@ -1912,8 +1935,10 @@ exports[`preset snapshots > preset.typeScript 1`] = `
         "structuredClone": false,
       },
     },
+    "name": "@tksst/eslint-config/preset/typeScript/js-globals-node",
   },
   {
+    "name": "@tksst/eslint-config/external/@eslint/js/recommended",
     "rules": {
       "constructor-super": "error",
       "for-direction": "error",
@@ -1979,6 +2004,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-config-prettier",
     "rules": {
       "@babel/object-curly-spacing": "off",
       "@babel/semi": "off",
@@ -2161,6 +2187,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-simple-import-sort",
     "rules": {
       "simple-import-sort/exports": "warn",
       "simple-import-sort/imports": "warn",
@@ -2168,11 +2195,13 @@ exports[`preset snapshots > preset.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-redos",
     "rules": {
       "redos/no-vulnerable": "error",
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-unicorn",
     "rules": {
       "unicorn/escape-case": "error",
       "unicorn/no-await-in-promise-methods": "error",
@@ -2210,6 +2239,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/javaScript/custom-rules",
     "rules": {
       "class-methods-use-this": "off",
       "default-case": "off",
@@ -2345,6 +2375,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-regexp",
     "rules": {
       "no-control-regex": "error",
       "no-empty-character-class": "off",
@@ -2430,6 +2461,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
         "project": "./tsconfig.json",
       },
     },
+    "name": "@tksst/eslint-config/external/@typescript-eslint",
     "rules": {
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
@@ -2575,6 +2607,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
+    "name": "@tksst/eslint-config/external/eslint-config-prettier",
     "rules": {
       "@babel/object-curly-spacing": "off",
       "@babel/semi": "off",
@@ -2765,6 +2798,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
+    "name": "@tksst/eslint-config/typeScriptOnly/custom-rules",
     "rules": {
       "@typescript-eslint/class-literal-property-style": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
@@ -2830,6 +2864,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "dist/**",
       "coverage/**",
     ],
+    "name": "@tksst/eslint-config/preset/typeScript/ignores",
   },
   {
     "files": [
@@ -2839,6 +2874,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
     "languageOptions": {
       "sourceType": "module",
     },
+    "name": "@tksst/eslint-config/preset/typeScript/js-source-type",
   },
   {
     "files": [
@@ -2925,8 +2961,10 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
         "structuredClone": false,
       },
     },
+    "name": "@tksst/eslint-config/preset/typeScript/js-globals-node",
   },
   {
+    "name": "@tksst/eslint-config/external/@eslint/js/recommended",
     "rules": {
       "constructor-super": "error",
       "for-direction": "error",
@@ -2992,6 +3030,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-config-prettier",
     "rules": {
       "@babel/object-curly-spacing": "off",
       "@babel/semi": "off",
@@ -3174,6 +3213,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-simple-import-sort",
     "rules": {
       "simple-import-sort/exports": "warn",
       "simple-import-sort/imports": "warn",
@@ -3181,11 +3221,13 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-redos",
     "rules": {
       "redos/no-vulnerable": "error",
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-unicorn",
     "rules": {
       "unicorn/escape-case": "error",
       "unicorn/no-await-in-promise-methods": "error",
@@ -3223,6 +3265,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/javaScript/custom-rules",
     "rules": {
       "class-methods-use-this": "off",
       "default-case": "off",
@@ -3358,6 +3401,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-regexp",
     "rules": {
       "no-control-regex": "error",
       "no-empty-character-class": "off",
@@ -3429,6 +3473,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-jest",
     "rules": {
       "jest/expect-expect": "warn",
       "jest/no-alias-methods": "error",
@@ -3468,6 +3513,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
         "project": "./tsconfig.json",
       },
     },
+    "name": "@tksst/eslint-config/external/@typescript-eslint",
     "rules": {
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
@@ -3613,6 +3659,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
+    "name": "@tksst/eslint-config/external/eslint-config-prettier",
     "rules": {
       "@babel/object-curly-spacing": "off",
       "@babel/semi": "off",
@@ -3803,6 +3850,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
+    "name": "@tksst/eslint-config/typeScriptOnly/custom-rules",
     "rules": {
       "@typescript-eslint/class-literal-property-style": "off",
       "@typescript-eslint/consistent-type-definitions": "off",
@@ -3868,6 +3916,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "dist/**",
       "coverage/**",
     ],
+    "name": "@tksst/eslint-config/preset/typeScript/ignores",
   },
   {
     "files": [
@@ -3877,6 +3926,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
     "languageOptions": {
       "sourceType": "module",
     },
+    "name": "@tksst/eslint-config/preset/typeScript/js-source-type",
   },
   {
     "files": [
@@ -3963,8 +4013,10 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
         "structuredClone": false,
       },
     },
+    "name": "@tksst/eslint-config/preset/typeScript/js-globals-node",
   },
   {
+    "name": "@tksst/eslint-config/external/@eslint/js/recommended",
     "rules": {
       "constructor-super": "error",
       "for-direction": "error",
@@ -4030,6 +4082,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-config-prettier",
     "rules": {
       "@babel/object-curly-spacing": "off",
       "@babel/semi": "off",
@@ -4212,6 +4265,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-simple-import-sort",
     "rules": {
       "simple-import-sort/exports": "warn",
       "simple-import-sort/imports": "warn",
@@ -4219,11 +4273,13 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-redos",
     "rules": {
       "redos/no-vulnerable": "error",
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-unicorn",
     "rules": {
       "unicorn/escape-case": "error",
       "unicorn/no-await-in-promise-methods": "error",
@@ -4261,6 +4317,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/javaScript/custom-rules",
     "rules": {
       "class-methods-use-this": "off",
       "default-case": "off",
@@ -4396,6 +4453,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-regexp",
     "rules": {
       "no-control-regex": "error",
       "no-empty-character-class": "off",
@@ -4468,6 +4526,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
   },
   {},
   {
+    "name": "@tksst/eslint-config/external/eslint-plugin-jest",
     "rules": {
       "jest/expect-expect": "warn",
       "jest/no-alias-methods": "error",
@@ -4494,6 +4553,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
     },
   },
   {
+    "name": "@tksst/eslint-config/vitest/disable-no-deprecated-functions",
     "rules": {
       "jest/no-deprecated-functions": "off",
     },
@@ -4512,6 +4572,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
         "project": "./tsconfig.json",
       },
     },
+    "name": "@tksst/eslint-config/external/@typescript-eslint",
     "rules": {
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
@@ -4657,6 +4718,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
+    "name": "@tksst/eslint-config/external/eslint-config-prettier",
     "rules": {
       "@babel/object-curly-spacing": "off",
       "@babel/semi": "off",
@@ -4847,6 +4909,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
+    "name": "@tksst/eslint-config/typeScriptOnly/custom-rules",
     "rules": {
       "@typescript-eslint/class-literal-property-style": "off",
       "@typescript-eslint/consistent-type-definitions": "off",

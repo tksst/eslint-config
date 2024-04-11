@@ -9,14 +9,22 @@ import regexp from "./configs/regexp.js";
 import simpleImportSort from "./configs/simpleImportSort.js";
 import typescriptEslint from "./configs/typescriptEslint.js";
 import unicorn from "./configs/unicorn.js";
+import { EXTERNAL, PKG_NAME } from "./name.js";
 
 const javaScript = [
-    js.configs.recommended,
-    { rules: configPrettier.rules },
+    {
+        name: `${EXTERNAL}/@eslint/js/recommended`,
+        ...js.configs.recommended,
+    },
+    {
+        name: `${EXTERNAL}/eslint-config-prettier`,
+        rules: configPrettier.rules,
+    },
     simpleImportSort,
     redos,
     unicorn,
     {
+        name: `${PKG_NAME}/javaScript/custom-rules`,
         rules: {
             "no-console": "off",
             "no-empty": ["error", { allowEmptyCatch: true }],
@@ -152,8 +160,12 @@ const javaScript = [
 
 const typeScriptOnly = [
     typescriptEslint,
-    { rules: configPrettier.rules },
     {
+        name: `${EXTERNAL}/eslint-config-prettier`,
+        rules: configPrettier.rules,
+    },
+    {
+        name: `${PKG_NAME}/typeScriptOnly/custom-rules`,
         rules: {
             "@typescript-eslint/explicit-function-return-type": "off",
             "@typescript-eslint/no-empty-function": "off",
@@ -219,6 +231,7 @@ function addFilesToConfigs(config: Linter.FlatConfig[], something: string[], app
 const vitest = [
     jest,
     {
+        name: `${PKG_NAME}/vitest/disable-no-deprecated-functions`,
         rules: {
             "jest/no-deprecated-functions": "off",
         },
@@ -236,18 +249,23 @@ export const util = {
     addFilesToConfigs,
 };
 
+const PRESET_TYPESCRIPT = `${PKG_NAME}/preset/typeScript`;
+
 export const preset = {
     typeScript: (option?: { jsIsCjs?: boolean; jest?: boolean; vitest?: boolean }): Linter.FlatConfig[] => [
         {
+            name: `${PRESET_TYPESCRIPT}/ignores`,
             ignores: ["dist/**", "coverage/**"],
         },
         {
+            name: `${PRESET_TYPESCRIPT}/js-source-type`,
             files: ["**/*.js", "**/*.jsx"],
             languageOptions: {
                 sourceType: option?.jsIsCjs === true ? "commonjs" : "module",
             },
         },
         {
+            name: `${PRESET_TYPESCRIPT}/js-globals-node`,
             files: ["**/*.js", "**/*.cjs", "**/*.mjs", "**/*.jsx", "**/*.cjsx", "**/*.mjsx"],
             languageOptions: {
                 globals: {

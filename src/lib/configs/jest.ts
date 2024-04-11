@@ -1,7 +1,10 @@
 import type { Linter } from "eslint";
 import pluginJest from "eslint-plugin-jest";
 
+import { EXTERNAL } from "../name.js";
+
 const x = {
+    name: `${EXTERNAL}/eslint-plugin-jest`,
     plugins: {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
         jest: pluginJest,

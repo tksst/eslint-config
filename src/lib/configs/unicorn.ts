@@ -1,7 +1,10 @@
 import type { Linter } from "eslint";
 import pluginUnicorn from "eslint-plugin-unicorn";
 
+import { EXTERNAL } from "../name.js";
+
 const x = {
+    name: `${EXTERNAL}/eslint-plugin-unicorn`,
     plugins: {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
         unicorn: pluginUnicorn,
