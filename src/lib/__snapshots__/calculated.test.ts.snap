@@ -492,9 +492,6 @@ exports[`ESLint calculated config Snapshot > .js 1`] = `
         "enforceForRenamedProperties": false,
       },
     ],
-    "prefer-regex-literals": [
-      2,
-    ],
     "redos/no-vulnerable": [
       2,
     ],
@@ -1443,9 +1440,6 @@ exports[`ESLint calculated config Snapshot > .ts 1`] = `
       {
         "enforceForRenamedProperties": false,
       },
-    ],
-    "prefer-regex-literals": [
-      2,
     ],
     "prefer-rest-params": [
       2,

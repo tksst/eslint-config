@@ -17,6 +17,7 @@ const javaScript = [
     simpleImportSort,
     redos,
     unicorn,
+    regexp,
     {
         name: `${PKG_NAME}/javaScript/custom-rules`,
         rules: {
@@ -149,7 +150,6 @@ const javaScript = [
             "no-undef-init": "error",
         },
     },
-    regexp,
 ] satisfies Linter.FlatConfig[];
 
 const typeScriptOnly = [
