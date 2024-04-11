@@ -3,12 +3,12 @@ import type { Linter } from "eslint";
 import configPrettier from "eslint-config-prettier";
 import globals from "globals";
 
-import jest from "./configs/jest.js";
-import redos from "./configs/redos.js";
-import regexp from "./configs/regexp.js";
-import simpleImportSort from "./configs/simpleImportSort.js";
-import typescriptEslint from "./configs/typescriptEslint.js";
-import unicorn from "./configs/unicorn.js";
+import jest from "./external-config/jest.js";
+import redos from "./external-config/redos.js";
+import regexp from "./external-config/regexp.js";
+import simpleImportSort from "./external-config/simpleImportSort.js";
+import typescriptEslint from "./external-config/typescriptEslint.js";
+import unicorn from "./external-config/unicorn.js";
 import { EXTERNAL, PKG_NAME } from "./name.js";
 
 const javaScript = [
