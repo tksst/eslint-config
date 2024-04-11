@@ -9,6 +9,5 @@ declare module "eslint-config-airbnb-typescript/lib/shared.js";
 declare module "eslint-plugin-jest";
 declare module "eslint-plugin-simple-import-sort";
 declare module "eslint-plugin-redos";
-declare module "eslint-plugin-regexp";
 declare module "eslint-plugin-unicorn";
 declare module "eslint/use-at-your-own-risk";
