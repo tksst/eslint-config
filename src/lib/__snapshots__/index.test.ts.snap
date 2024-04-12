@@ -1066,7 +1066,13 @@ exports[`config snapshot > config.typeScript 1`] = `
     "name": "@tksst/eslint-config/external/@typescript-eslint/load-plugins-and-parser",
   },
   {
-    "name": "@tksst/eslint-config/external/@typescript-eslint/eslint-recommended",
+    "languageOptions": {
+      "sourceType": "module",
+    },
+    "name": "typescript-eslint/base",
+  },
+  {
+    "name": "typescript-eslint/eslint-recommended",
     "rules": {
       "constructor-super": "off",
       "getter-return": "off",
@@ -1091,7 +1097,7 @@ exports[`config snapshot > config.typeScript 1`] = `
     },
   },
   {
-    "name": "@tksst/eslint-config/external/@typescript-eslint/strict-type-checked",
+    "name": "typescript-eslint/strict-type-checked",
     "rules": {
       "@typescript-eslint/await-thenable": "error",
       "@typescript-eslint/ban-ts-comment": [
@@ -1187,7 +1193,38 @@ exports[`config snapshot > config.typeScript 1`] = `
     },
   },
   {
-    "name": "@tksst/eslint-config/external/@typescript-eslint/stylistic-type-checked",
+    "languageOptions": {
+      "sourceType": "module",
+    },
+    "name": "typescript-eslint/base",
+  },
+  {
+    "name": "typescript-eslint/eslint-recommended",
+    "rules": {
+      "constructor-super": "off",
+      "getter-return": "off",
+      "no-const-assign": "off",
+      "no-dupe-args": "off",
+      "no-dupe-class-members": "off",
+      "no-dupe-keys": "off",
+      "no-func-assign": "off",
+      "no-import-assign": "off",
+      "no-new-symbol": "off",
+      "no-obj-calls": "off",
+      "no-redeclare": "off",
+      "no-setter-return": "off",
+      "no-this-before-super": "off",
+      "no-undef": "off",
+      "no-unreachable": "off",
+      "no-unsafe-negation": "off",
+      "no-var": "error",
+      "prefer-const": "error",
+      "prefer-rest-params": "error",
+      "prefer-spread": "error",
+    },
+  },
+  {
+    "name": "typescript-eslint/stylistic-type-checked",
     "rules": {
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
@@ -1467,7 +1504,13 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
     "name": "@tksst/eslint-config/external/@typescript-eslint/load-plugins-and-parser",
   },
   {
-    "name": "@tksst/eslint-config/external/@typescript-eslint/eslint-recommended",
+    "languageOptions": {
+      "sourceType": "module",
+    },
+    "name": "typescript-eslint/base",
+  },
+  {
+    "name": "typescript-eslint/eslint-recommended",
     "rules": {
       "constructor-super": "off",
       "getter-return": "off",
@@ -1492,7 +1535,7 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
     },
   },
   {
-    "name": "@tksst/eslint-config/external/@typescript-eslint/strict-type-checked",
+    "name": "typescript-eslint/strict-type-checked",
     "rules": {
       "@typescript-eslint/await-thenable": "error",
       "@typescript-eslint/ban-ts-comment": [
@@ -1588,7 +1631,38 @@ exports[`config snapshot > config.typeScriptOnly 1`] = `
     },
   },
   {
-    "name": "@tksst/eslint-config/external/@typescript-eslint/stylistic-type-checked",
+    "languageOptions": {
+      "sourceType": "module",
+    },
+    "name": "typescript-eslint/base",
+  },
+  {
+    "name": "typescript-eslint/eslint-recommended",
+    "rules": {
+      "constructor-super": "off",
+      "getter-return": "off",
+      "no-const-assign": "off",
+      "no-dupe-args": "off",
+      "no-dupe-class-members": "off",
+      "no-dupe-keys": "off",
+      "no-func-assign": "off",
+      "no-import-assign": "off",
+      "no-new-symbol": "off",
+      "no-obj-calls": "off",
+      "no-redeclare": "off",
+      "no-setter-return": "off",
+      "no-this-before-super": "off",
+      "no-undef": "off",
+      "no-unreachable": "off",
+      "no-unsafe-negation": "off",
+      "no-var": "error",
+      "prefer-const": "error",
+      "prefer-rest-params": "error",
+      "prefer-spread": "error",
+    },
+  },
+  {
+    "name": "typescript-eslint/stylistic-type-checked",
     "rules": {
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
@@ -2498,7 +2572,21 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
-    "name": "@tksst/eslint-config/external/@typescript-eslint/eslint-recommended",
+    "languageOptions": {
+      "sourceType": "module",
+    },
+    "name": "typescript-eslint/base",
+  },
+  {
+    "files": [
+      "**/*.ts",
+      "**/*.mts",
+      "**/*.cts",
+      "**/*.tsx",
+      "**/*.mtsx",
+      "**/*.ctsx",
+    ],
+    "name": "typescript-eslint/eslint-recommended",
     "rules": {
       "constructor-super": "off",
       "getter-return": "off",
@@ -2531,7 +2619,7 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
-    "name": "@tksst/eslint-config/external/@typescript-eslint/strict-type-checked",
+    "name": "typescript-eslint/strict-type-checked",
     "rules": {
       "@typescript-eslint/await-thenable": "error",
       "@typescript-eslint/ban-ts-comment": [
@@ -2635,7 +2723,54 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
-    "name": "@tksst/eslint-config/external/@typescript-eslint/stylistic-type-checked",
+    "languageOptions": {
+      "sourceType": "module",
+    },
+    "name": "typescript-eslint/base",
+  },
+  {
+    "files": [
+      "**/*.ts",
+      "**/*.mts",
+      "**/*.cts",
+      "**/*.tsx",
+      "**/*.mtsx",
+      "**/*.ctsx",
+    ],
+    "name": "typescript-eslint/eslint-recommended",
+    "rules": {
+      "constructor-super": "off",
+      "getter-return": "off",
+      "no-const-assign": "off",
+      "no-dupe-args": "off",
+      "no-dupe-class-members": "off",
+      "no-dupe-keys": "off",
+      "no-func-assign": "off",
+      "no-import-assign": "off",
+      "no-new-symbol": "off",
+      "no-obj-calls": "off",
+      "no-redeclare": "off",
+      "no-setter-return": "off",
+      "no-this-before-super": "off",
+      "no-undef": "off",
+      "no-unreachable": "off",
+      "no-unsafe-negation": "off",
+      "no-var": "error",
+      "prefer-const": "error",
+      "prefer-rest-params": "error",
+      "prefer-spread": "error",
+    },
+  },
+  {
+    "files": [
+      "**/*.ts",
+      "**/*.mts",
+      "**/*.cts",
+      "**/*.tsx",
+      "**/*.mtsx",
+      "**/*.ctsx",
+    ],
+    "name": "typescript-eslint/stylistic-type-checked",
     "rules": {
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
@@ -3587,7 +3722,21 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
-    "name": "@tksst/eslint-config/external/@typescript-eslint/eslint-recommended",
+    "languageOptions": {
+      "sourceType": "module",
+    },
+    "name": "typescript-eslint/base",
+  },
+  {
+    "files": [
+      "**/*.ts",
+      "**/*.mts",
+      "**/*.cts",
+      "**/*.tsx",
+      "**/*.mtsx",
+      "**/*.ctsx",
+    ],
+    "name": "typescript-eslint/eslint-recommended",
     "rules": {
       "constructor-super": "off",
       "getter-return": "off",
@@ -3620,7 +3769,7 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
-    "name": "@tksst/eslint-config/external/@typescript-eslint/strict-type-checked",
+    "name": "typescript-eslint/strict-type-checked",
     "rules": {
       "@typescript-eslint/await-thenable": "error",
       "@typescript-eslint/ban-ts-comment": [
@@ -3724,7 +3873,54 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
-    "name": "@tksst/eslint-config/external/@typescript-eslint/stylistic-type-checked",
+    "languageOptions": {
+      "sourceType": "module",
+    },
+    "name": "typescript-eslint/base",
+  },
+  {
+    "files": [
+      "**/*.ts",
+      "**/*.mts",
+      "**/*.cts",
+      "**/*.tsx",
+      "**/*.mtsx",
+      "**/*.ctsx",
+    ],
+    "name": "typescript-eslint/eslint-recommended",
+    "rules": {
+      "constructor-super": "off",
+      "getter-return": "off",
+      "no-const-assign": "off",
+      "no-dupe-args": "off",
+      "no-dupe-class-members": "off",
+      "no-dupe-keys": "off",
+      "no-func-assign": "off",
+      "no-import-assign": "off",
+      "no-new-symbol": "off",
+      "no-obj-calls": "off",
+      "no-redeclare": "off",
+      "no-setter-return": "off",
+      "no-this-before-super": "off",
+      "no-undef": "off",
+      "no-unreachable": "off",
+      "no-unsafe-negation": "off",
+      "no-var": "error",
+      "prefer-const": "error",
+      "prefer-rest-params": "error",
+      "prefer-spread": "error",
+    },
+  },
+  {
+    "files": [
+      "**/*.ts",
+      "**/*.mts",
+      "**/*.cts",
+      "**/*.tsx",
+      "**/*.mtsx",
+      "**/*.ctsx",
+    ],
+    "name": "typescript-eslint/stylistic-type-checked",
     "rules": {
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
@@ -4683,7 +4879,21 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
-    "name": "@tksst/eslint-config/external/@typescript-eslint/eslint-recommended",
+    "languageOptions": {
+      "sourceType": "module",
+    },
+    "name": "typescript-eslint/base",
+  },
+  {
+    "files": [
+      "**/*.ts",
+      "**/*.mts",
+      "**/*.cts",
+      "**/*.tsx",
+      "**/*.mtsx",
+      "**/*.ctsx",
+    ],
+    "name": "typescript-eslint/eslint-recommended",
     "rules": {
       "constructor-super": "off",
       "getter-return": "off",
@@ -4716,7 +4926,7 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
-    "name": "@tksst/eslint-config/external/@typescript-eslint/strict-type-checked",
+    "name": "typescript-eslint/strict-type-checked",
     "rules": {
       "@typescript-eslint/await-thenable": "error",
       "@typescript-eslint/ban-ts-comment": [
@@ -4820,7 +5030,54 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "**/*.mtsx",
       "**/*.ctsx",
     ],
-    "name": "@tksst/eslint-config/external/@typescript-eslint/stylistic-type-checked",
+    "languageOptions": {
+      "sourceType": "module",
+    },
+    "name": "typescript-eslint/base",
+  },
+  {
+    "files": [
+      "**/*.ts",
+      "**/*.mts",
+      "**/*.cts",
+      "**/*.tsx",
+      "**/*.mtsx",
+      "**/*.ctsx",
+    ],
+    "name": "typescript-eslint/eslint-recommended",
+    "rules": {
+      "constructor-super": "off",
+      "getter-return": "off",
+      "no-const-assign": "off",
+      "no-dupe-args": "off",
+      "no-dupe-class-members": "off",
+      "no-dupe-keys": "off",
+      "no-func-assign": "off",
+      "no-import-assign": "off",
+      "no-new-symbol": "off",
+      "no-obj-calls": "off",
+      "no-redeclare": "off",
+      "no-setter-return": "off",
+      "no-this-before-super": "off",
+      "no-undef": "off",
+      "no-unreachable": "off",
+      "no-unsafe-negation": "off",
+      "no-var": "error",
+      "prefer-const": "error",
+      "prefer-rest-params": "error",
+      "prefer-spread": "error",
+    },
+  },
+  {
+    "files": [
+      "**/*.ts",
+      "**/*.mts",
+      "**/*.cts",
+      "**/*.tsx",
+      "**/*.mtsx",
+      "**/*.ctsx",
+    ],
+    "name": "typescript-eslint/stylistic-type-checked",
     "rules": {
       "@typescript-eslint/adjacent-overload-signatures": "error",
       "@typescript-eslint/array-type": "error",
