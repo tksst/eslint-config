@@ -22,22 +22,37 @@ if (x3 === undefined) {
     throw new TypeError("unexpected @typescript-eslint/plugin stylistic-type-checked config");
 }
 
-const x = {
-    name: `${EXTERNAL}/@typescript-eslint`,
-    plugins: {
-        "@typescript-eslint": tsEslintPlugin as unknown as ESLint.Plugin,
-    },
-    languageOptions: {
-        parser: tsEslintParser as unknown as Linter.ParserModule,
-        parserOptions: {
-            project: "./tsconfig.json",
+const x = [
+    {
+        name: `${EXTERNAL}/@typescript-eslint/load-plugins-and-parser`,
+        plugins: {
+            "@typescript-eslint": tsEslintPlugin as unknown as ESLint.Plugin,
+        },
+        languageOptions: {
+            parser: tsEslintParser as unknown as Linter.ParserModule,
+            parserOptions: {
+                project: "./tsconfig.json",
+            },
         },
     },
-    rules: {
-        ...x1,
-        ...x2,
-        ...x3,
+    {
+        name: `${EXTERNAL}/@typescript-eslint/eslint-recommended`,
+        rules: {
+            ...x1,
+        },
     },
-} satisfies Linter.FlatConfig;
+    {
+        name: `${EXTERNAL}/@typescript-eslint/strict-type-checked`,
+        rules: {
+            ...x2,
+        },
+    },
+    {
+        name: `${EXTERNAL}/@typescript-eslint/stylistic-type-checked`,
+        rules: {
+            ...x3,
+        },
+    },
+] satisfies Linter.FlatConfig[];
 
 export default x;

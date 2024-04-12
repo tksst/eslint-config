@@ -153,7 +153,7 @@ const javaScript = [
 ] satisfies Linter.FlatConfig[];
 
 const typeScriptOnly = [
-    typescriptEslint,
+    ...typescriptEslint,
     prettier(),
     {
         name: `${PKG_NAME}/typeScriptOnly/custom-rules`,
