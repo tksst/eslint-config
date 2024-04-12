@@ -1,5 +1,20 @@
 # @tksst/eslint-config
 
+## 13.7.0
+
+### Minor Changes
+
+- 9d385e6: add a name to the rules to be used for debugging purposes
+- 3a679c5: update dependencies:
+
+  - update [@typescript-eslint/eslint-plugin@7.6.0](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v7.6.0) from 7.5.0
+  - update [@typescript-eslint/parser@7.6.0](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v7.6.0) from 7.5.0
+  - update [eslint-plugin-regexp@2.5.0](https://github.com/ota-meshi/eslint-plugin-regexp/releases/tag/v2.5.0) from 2.4.0
+
+### Patch Changes
+
+- dba55e1: Sort the contents of the JavaScript configuration in the correct order. This disable `prefer-regex-literals`.
+
 ## 13.6.0
 
 ### Minor Changes
