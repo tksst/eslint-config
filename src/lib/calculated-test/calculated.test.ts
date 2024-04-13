@@ -1,3 +1,6 @@
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
 import type { Linter } from "eslint";
 import { ESLint } from "eslint";
 import { describe, expect, it } from "vitest";
@@ -27,11 +30,16 @@ function removeDisabledRules(conf: Linter.FlatConfig): void {
     }
 }
 
+const thisFilePath = fileURLToPath(import.meta.url);
+
+const eslint = new ESLint({
+    cwd: path.dirname(thisFilePath),
+});
+
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
 describe("ESLint calculated config Snapshot", () => {
     it(".js", async () => {
-        const eslint = new ESLint();
         const conf = await eslint.calculateConfigForFile("index.js");
         // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/non-nullable-type-assertion-style
         const conf2 = JSON.parse(JSON.stringify(conf) as string) as any;
@@ -46,7 +54,6 @@ describe("ESLint calculated config Snapshot", () => {
         expect(conf2).toMatchSnapshot();
     });
     it(".ts", async () => {
-        const eslint = new ESLint();
         const conf = await eslint.calculateConfigForFile("index.ts");
         // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/non-nullable-type-assertion-style
         const conf2 = JSON.parse(JSON.stringify(conf) as string) as any;
