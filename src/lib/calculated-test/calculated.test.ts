@@ -34,42 +34,35 @@ function removeDisabledRules(conf: Linter.FlatConfig): void {
 
 const thisFilePath = fileURLToPath(import.meta.url);
 
-const eslint = new ESLint({
-    cwd: path.dirname(thisFilePath),
-    // @ts-expect-error @types/eslint does not understand FlatConfig
-    overrideConfig: preset.typeScript({ vitest: true }),
-});
-
-/* eslint-disable @typescript-eslint/no-unsafe-assignment */
-
 describe("ESLint calculated config Snapshot", () => {
-    it(".js", async () => {
-        const conf = await eslint.calculateConfigForFile("index.js");
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/non-nullable-type-assertion-style
-        const conf2 = JSON.parse(JSON.stringify(conf) as string) as any;
+    describe.each([true, false])("jsIsCjs: %p", (jsIsCjs) => {
+        describe.each([true, false])("jest: %p", (jest) => {
+            describe.each([true, false])("vitest: %p", (vitest) => {
+                const eslint = new ESLint({
+                    cwd: path.dirname(thisFilePath),
+                    // @ts-expect-error @types/eslint does not understand FlatConfig
+                    overrideConfig: preset.typeScript({ jsIsCjs, jest, vitest }),
+                });
 
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-        removeVersionFromParser(conf2);
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-        removeVersionFromPlugins(conf2);
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-        removeDisabledRules(conf2);
+                it.each(["js", "cjs", "mjs", "ts"])("filetype: %p", async (filetype) => {
+                    /* eslint-disable @typescript-eslint/no-unsafe-assignment */
 
-        expect(conf2).toMatchSnapshot();
+                    const conf = await eslint.calculateConfigForFile(`index.${filetype}`);
+                    // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/non-nullable-type-assertion-style
+                    const conf2 = JSON.parse(JSON.stringify(conf) as string) as any;
+
+                    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+                    removeVersionFromParser(conf2);
+                    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+                    removeVersionFromPlugins(conf2);
+                    // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
+                    removeDisabledRules(conf2);
+
+                    expect(conf2).toMatchSnapshot();
+
+                    /* eslint-enable */
+                });
+            });
+        });
     });
-    it(".ts", async () => {
-        const conf = await eslint.calculateConfigForFile("index.ts");
-        // eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/non-nullable-type-assertion-style
-        const conf2 = JSON.parse(JSON.stringify(conf) as string) as any;
-
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-        removeVersionFromParser(conf2);
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-        removeVersionFromPlugins(conf2);
-        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
-        removeDisabledRules(conf2);
-
-        expect(conf2).toMatchSnapshot();
-    });
-    /* eslint-enable */
 });
