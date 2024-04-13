@@ -23,7 +23,6 @@
     "clean": "tss-rmrf ./dist/",
     "_eslint": "eslint --color .",
     "_eslint-fix": "pnpm _eslint --fix",
-    "_test_unit": "vitest run --coverage",
     "build": "run-s --continue-on-error clean build:*",
     "build:lib": "tsup --config ./tsup.config.lib.mjs",
     "prepack": "pnpm build",
@@ -38,7 +37,7 @@
     "lint:secretlint": "secretlint --maskSecrets **",
     "lint:tsc": "tsc --noEmit",
     "test": "run-s test:*",
-    "test:unit": "run-s build _test_unit",
+    "test:unit": "vitest run --coverage",
     "prepare": "husky"
   },
   "dependencies": {

@@ -5,6 +5,8 @@ import type { Linter } from "eslint";
 import { ESLint } from "eslint";
 import { describe, expect, it } from "vitest";
 
+import { preset } from "../index.js";
+
 function removeVersionFromParser(conf: { languageOptions: { parser: string } }): void {
     conf.languageOptions.parser = conf.languageOptions.parser.replace(/(?<!^)@[^@]+$/, "");
 }
@@ -34,6 +36,8 @@ const thisFilePath = fileURLToPath(import.meta.url);
 
 const eslint = new ESLint({
     cwd: path.dirname(thisFilePath),
+    // @ts-expect-error @types/eslint does not understand FlatConfig
+    overrideConfig: preset.typeScript({ vitest: true }),
 });
 
 /* eslint-disable @typescript-eslint/no-unsafe-assignment */
