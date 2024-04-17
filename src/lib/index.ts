@@ -245,7 +245,7 @@ const PRESET_TYPESCRIPT = `${PKG_NAME}/preset/typeScript`;
 export const preset = {
     typeScript: (option?: { jsIsCjs?: boolean; jest?: boolean; vitest?: boolean }): Linter.FlatConfig[] => [
         {
-            ignores: ["dist/**", "coverage/**"],
+            ignores: ["dist/", "coverage/"],
         },
         {
             name: `${PRESET_TYPESCRIPT}/js-source-type`,

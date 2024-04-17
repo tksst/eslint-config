@@ -1935,8 +1935,8 @@ exports[`preset snapshots > preset.typeScript 1`] = `
 [
   {
     "ignores": [
-      "dist/**",
-      "coverage/**",
+      "dist/",
+      "coverage/",
     ],
   },
   {
@@ -3058,8 +3058,8 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
 [
   {
     "ignores": [
-      "dist/**",
-      "coverage/**",
+      "dist/",
+      "coverage/",
     ],
   },
   {
@@ -4207,8 +4207,8 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
 [
   {
     "ignores": [
-      "dist/**",
-      "coverage/**",
+      "dist/",
+      "coverage/",
     ],
   },
   {
