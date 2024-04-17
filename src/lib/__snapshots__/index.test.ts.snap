@@ -1938,7 +1938,6 @@ exports[`preset snapshots > preset.typeScript 1`] = `
       "dist/**",
       "coverage/**",
     ],
-    "name": "@tksst/eslint-config/preset/typeScript/ignores",
   },
   {
     "files": [
@@ -3062,7 +3061,6 @@ exports[`preset snapshots > preset.typeScript jest: true 1`] = `
       "dist/**",
       "coverage/**",
     ],
-    "name": "@tksst/eslint-config/preset/typeScript/ignores",
   },
   {
     "files": [
@@ -4212,7 +4210,6 @@ exports[`preset snapshots > preset.typeScript vitest: true 1`] = `
       "dist/**",
       "coverage/**",
     ],
-    "name": "@tksst/eslint-config/preset/typeScript/ignores",
   },
   {
     "files": [
