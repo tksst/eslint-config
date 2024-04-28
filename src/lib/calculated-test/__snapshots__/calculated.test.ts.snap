@@ -2590,9 +2590,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "no-new": [
       2,
     ],
-    "no-new-native-nonconstructor": [
-      2,
-    ],
     "no-new-object": [
       2,
     ],
@@ -5880,9 +5877,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       2,
     ],
     "no-new": [
-      2,
-    ],
-    "no-new-native-nonconstructor": [
       2,
     ],
     "no-new-object": [
@@ -9186,9 +9180,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "no-new": [
       2,
     ],
-    "no-new-native-nonconstructor": [
-      2,
-    ],
     "no-new-object": [
       2,
     ],
@@ -12490,9 +12481,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "no-new": [
       2,
     ],
-    "no-new-native-nonconstructor": [
-      2,
-    ],
     "no-new-object": [
       2,
     ],
@@ -15524,9 +15512,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       2,
     ],
     "no-new": [
-      2,
-    ],
-    "no-new-native-nonconstructor": [
       2,
     ],
     "no-new-object": [
@@ -18816,9 +18801,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       2,
     ],
     "no-new": [
-      2,
-    ],
-    "no-new-native-nonconstructor": [
       2,
     ],
     "no-new-object": [
@@ -22122,9 +22104,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "no-new": [
       2,
     ],
-    "no-new-native-nonconstructor": [
-      2,
-    ],
     "no-new-object": [
       2,
     ],
@@ -25424,9 +25403,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       2,
     ],
     "no-new": [
-      2,
-    ],
-    "no-new-native-nonconstructor": [
       2,
     ],
     "no-new-object": [
