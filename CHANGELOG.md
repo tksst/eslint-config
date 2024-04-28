@@ -1,5 +1,11 @@
 # @tksst/eslint-config
 
+## 13.8.0
+
+### Minor Changes
+
+- 5d6d14d: update [typescript-eslint](https://github.com/typescript-eslint/typescript-eslint/releases/tag/v7.7.1) from 7.6.0
+
 ## 13.7.1
 
 ### Patch Changes
