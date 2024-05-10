@@ -47,7 +47,7 @@
     "eslint-plugin-redos": "4.4.5",
     "eslint-plugin-regexp": "2.5.0",
     "eslint-plugin-simple-import-sort": "12.1.0",
-    "eslint-plugin-unicorn": "52.0.0",
+    "eslint-plugin-unicorn": "53.0.0",
     "globals": "15.0.0",
     "typescript-eslint": "7.7.1"
   },
