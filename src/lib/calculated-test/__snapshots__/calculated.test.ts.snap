@@ -24,6 +24,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -53,6 +54,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -742,6 +744,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -771,6 +774,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -1460,6 +1464,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -1489,6 +1494,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -2339,6 +2345,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-unnecessary-condition": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      2,
+    ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
       2,
     ],
@@ -2380,9 +2389,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     ],
     "@typescript-eslint/no-useless-empty-export": [
       1,
-    ],
-    "@typescript-eslint/no-useless-template-literals": [
-      2,
     ],
     "@typescript-eslint/no-var-requires": [
       2,
@@ -2427,9 +2433,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
-    ],
-    "@typescript-eslint/prefer-ts-expect-error": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -3061,6 +3064,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -3090,6 +3094,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -3843,6 +3848,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -3872,6 +3878,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -4625,6 +4632,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -4654,6 +4662,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -5569,6 +5578,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-unnecessary-condition": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      2,
+    ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
       2,
     ],
@@ -5610,9 +5622,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     ],
     "@typescript-eslint/no-useless-empty-export": [
       1,
-    ],
-    "@typescript-eslint/no-useless-template-literals": [
-      2,
     ],
     "@typescript-eslint/no-var-requires": [
       2,
@@ -5657,9 +5666,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
-    ],
-    "@typescript-eslint/prefer-ts-expect-error": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -6354,6 +6360,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -6383,6 +6390,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -7139,6 +7147,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -7168,6 +7177,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -7924,6 +7934,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -7953,6 +7964,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -8871,6 +8883,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-unnecessary-condition": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      2,
+    ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
       2,
     ],
@@ -8912,9 +8927,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     ],
     "@typescript-eslint/no-useless-empty-export": [
       1,
-    ],
-    "@typescript-eslint/no-useless-template-literals": [
-      2,
     ],
     "@typescript-eslint/no-var-requires": [
       2,
@@ -8959,9 +8971,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
-    ],
-    "@typescript-eslint/prefer-ts-expect-error": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -9659,6 +9668,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -9688,6 +9698,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -10444,6 +10455,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -10473,6 +10485,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -11229,6 +11242,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -11258,6 +11272,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -12176,6 +12191,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-unnecessary-condition": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      2,
+    ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
       2,
     ],
@@ -12217,9 +12235,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     ],
     "@typescript-eslint/no-useless-empty-export": [
       1,
-    ],
-    "@typescript-eslint/no-useless-template-literals": [
-      2,
     ],
     "@typescript-eslint/no-var-requires": [
       2,
@@ -12264,9 +12279,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
-    ],
-    "@typescript-eslint/prefer-ts-expect-error": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -12964,6 +12976,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -12993,6 +13006,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -13682,6 +13696,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -13711,6 +13726,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -14400,6 +14416,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -14429,6 +14446,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -15279,6 +15297,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-unnecessary-condition": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      2,
+    ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
       2,
     ],
@@ -15320,9 +15341,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     ],
     "@typescript-eslint/no-useless-empty-export": [
       1,
-    ],
-    "@typescript-eslint/no-useless-template-literals": [
-      2,
     ],
     "@typescript-eslint/no-var-requires": [
       2,
@@ -15367,9 +15385,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
-    ],
-    "@typescript-eslint/prefer-ts-expect-error": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -16001,6 +16016,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -16030,6 +16046,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -16783,6 +16800,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -16812,6 +16830,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -17565,6 +17584,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -17594,6 +17614,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -18509,6 +18530,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-unnecessary-condition": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      2,
+    ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
       2,
     ],
@@ -18550,9 +18574,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     ],
     "@typescript-eslint/no-useless-empty-export": [
       1,
-    ],
-    "@typescript-eslint/no-useless-template-literals": [
-      2,
     ],
     "@typescript-eslint/no-var-requires": [
       2,
@@ -18597,9 +18618,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
-    ],
-    "@typescript-eslint/prefer-ts-expect-error": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -19294,6 +19312,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -19323,6 +19342,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -20079,6 +20099,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -20108,6 +20129,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -20864,6 +20886,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -20893,6 +20916,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -21811,6 +21835,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-unnecessary-condition": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      2,
+    ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
       2,
     ],
@@ -21852,9 +21879,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     ],
     "@typescript-eslint/no-useless-empty-export": [
       1,
-    ],
-    "@typescript-eslint/no-useless-template-literals": [
-      2,
     ],
     "@typescript-eslint/no-var-requires": [
       2,
@@ -21899,9 +21923,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
-    ],
-    "@typescript-eslint/prefer-ts-expect-error": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -22599,6 +22620,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -22628,6 +22650,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -23384,6 +23407,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -23413,6 +23437,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -24169,6 +24194,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "File": false,
       "FormData": false,
       "Headers": false,
+      "Iterator": false,
       "MessageChannel": false,
       "MessageEvent": false,
       "MessagePort": false,
@@ -24198,6 +24224,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       "URL": false,
       "URLSearchParams": false,
       "WebAssembly": false,
+      "WebSocket": false,
       "WritableStream": false,
       "WritableStreamDefaultController": false,
       "WritableStreamDefaultWriter": false,
@@ -25116,6 +25143,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-unnecessary-condition": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-template-expression": [
+      2,
+    ],
     "@typescript-eslint/no-unnecessary-type-arguments": [
       2,
     ],
@@ -25157,9 +25187,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     ],
     "@typescript-eslint/no-useless-empty-export": [
       1,
-    ],
-    "@typescript-eslint/no-useless-template-literals": [
-      2,
     ],
     "@typescript-eslint/no-var-requires": [
       2,
@@ -25204,9 +25231,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
-      2,
-    ],
-    "@typescript-eslint/prefer-ts-expect-error": [
       2,
     ],
     "@typescript-eslint/require-await": [
