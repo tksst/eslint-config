@@ -2,6 +2,8 @@
 "@tksst/eslint-config": minor
 ---
 
+update dependencies:
+
 - update [@eslint/js@9.8.0](https://github.com/eslint/eslint/releases/tag/v9.8.0) from 9.1.1
 - update [eslint-plugin-jest@28.6.0](https://github.com/jest-community/eslint-plugin-jest/releases/tag/v28.6.0) from 28.3.0
 - update [eslint-plugin-regexp@2.6.0](https://github.com/ota-meshi/eslint-plugin-regexp/releases/tag/v2.6.0) from 2.5.0
