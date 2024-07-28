@@ -20,7 +20,7 @@ const x = [
             "@typescript-eslint": plugin as unknown as ESLint.Plugin,
         },
         languageOptions: {
-            parser: parser as unknown as Linter.FlatConfigParserModule,
+            parser: parser as unknown as Linter.Parser,
             parserOptions: {
                 project: "./tsconfig.json",
             },

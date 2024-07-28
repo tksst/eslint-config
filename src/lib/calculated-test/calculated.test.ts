@@ -40,7 +40,6 @@ describe("ESLint calculated config Snapshot", () => {
             describe.each([true, false])("vitest: %p", (vitest) => {
                 const eslint = new ESLint({
                     cwd: path.dirname(thisFilePath),
-                    // @ts-expect-error @types/eslint does not understand FlatConfig
                     overrideConfig: preset.typeScript({ jsIsCjs, jest, vitest }),
                 });
 
