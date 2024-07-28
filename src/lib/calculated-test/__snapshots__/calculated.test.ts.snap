@@ -2,6 +2,7 @@
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false > vitest: %p false > filetype: %p cjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -719,6 +720,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false > vitest: %p false > filetype: %p js 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -1436,6 +1438,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false > vitest: %p false > filetype: %p mjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -2153,6 +2156,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false > vitest: %p false > filetype: %p ts 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "parser": "typescript-eslint/parser",
@@ -3035,6 +3039,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false > vitest: %p true > filetype: %p cjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -3816,6 +3821,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false > vitest: %p true > filetype: %p js 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -4597,6 +4603,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false > vitest: %p true > filetype: %p mjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -5378,6 +5385,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false > vitest: %p true > filetype: %p ts 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "parser": "typescript-eslint/parser",
@@ -6324,6 +6332,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true > vitest: %p false > filetype: %p cjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -7108,6 +7117,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true > vitest: %p false > filetype: %p js 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -7892,6 +7902,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true > vitest: %p false > filetype: %p mjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -8676,6 +8687,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true > vitest: %p false > filetype: %p ts 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "parser": "typescript-eslint/parser",
@@ -9625,6 +9637,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true > vitest: %p true > filetype: %p cjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -10409,6 +10422,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true > vitest: %p true > filetype: %p js 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -11193,6 +11207,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true > vitest: %p true > filetype: %p mjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -11977,6 +11992,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true > vitest: %p true > filetype: %p ts 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "parser": "typescript-eslint/parser",
@@ -12926,6 +12942,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false > vitest: %p false > filetype: %p cjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -13643,6 +13660,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false > vitest: %p false > filetype: %p js 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -14360,6 +14378,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false > vitest: %p false > filetype: %p mjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -15077,6 +15096,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false > vitest: %p false > filetype: %p ts 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "parser": "typescript-eslint/parser",
@@ -15959,6 +15979,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false > vitest: %p true > filetype: %p cjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -16740,6 +16761,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false > vitest: %p true > filetype: %p js 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -17521,6 +17543,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false > vitest: %p true > filetype: %p mjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -18302,6 +18325,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false > vitest: %p true > filetype: %p ts 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "parser": "typescript-eslint/parser",
@@ -19248,6 +19272,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > vitest: %p false > filetype: %p cjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -20032,6 +20057,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > vitest: %p false > filetype: %p js 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -20816,6 +20842,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > vitest: %p false > filetype: %p mjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -21600,6 +21627,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > vitest: %p false > filetype: %p ts 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "parser": "typescript-eslint/parser",
@@ -22549,6 +22577,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > vitest: %p true > filetype: %p cjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -23333,6 +23362,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > vitest: %p true > filetype: %p js 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -24117,6 +24147,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > vitest: %p true > filetype: %p mjs 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "globals": {
@@ -24901,6 +24932,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
 
 exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > vitest: %p true > filetype: %p ts 1`] = `
 {
+  "language": "@/js",
   "languageOptions": {
     "ecmaVersion": "latest",
     "parser": "typescript-eslint/parser",
