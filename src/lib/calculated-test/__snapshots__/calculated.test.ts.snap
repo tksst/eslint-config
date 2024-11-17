@@ -2201,9 +2201,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/ban-tslint-comment": [
       2,
     ],
-    "@typescript-eslint/ban-types": [
-      2,
-    ],
     "@typescript-eslint/consistent-generic-constructors": [
       2,
     ],
@@ -2264,6 +2261,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-confusing-void-expression": [
       2,
     ],
+    "@typescript-eslint/no-deprecated": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
@@ -2273,7 +2273,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-dynamic-delete": [
       2,
     ],
-    "@typescript-eslint/no-empty-interface": [
+    "@typescript-eslint/no-empty-object-type": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -2306,9 +2306,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-loop-func": [
       2,
     ],
-    "@typescript-eslint/no-loss-of-precision": [
-      2,
-    ],
     "@typescript-eslint/no-meaningless-void-operator": [
       2,
     ],
@@ -2336,6 +2333,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-redundant-type-constituents": [
       1,
     ],
+    "@typescript-eslint/no-require-imports": [
+      2,
+    ],
     "@typescript-eslint/no-this-alias": [
       2,
     ],
@@ -2357,6 +2357,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-argument": [
       2,
     ],
@@ -2372,10 +2375,16 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-unsafe-enum-comparison": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       2,
     ],
     "@typescript-eslint/no-unsafe-return": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
       2,
     ],
     "@typescript-eslint/no-unused-expressions": [
@@ -2390,7 +2399,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-useless-empty-export": [
       1,
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -2400,6 +2409,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       2,
     ],
     "@typescript-eslint/prefer-as-const": [
+      2,
+    ],
+    "@typescript-eslint/prefer-find": [
       2,
     ],
     "@typescript-eslint/prefer-for-of": [
@@ -2427,6 +2439,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       1,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
+      2,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
       2,
     ],
     "@typescript-eslint/prefer-return-this-type": [
@@ -2502,9 +2517,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       2,
     ],
     "no-case-declarations": [
-      2,
-    ],
-    "no-class-assign": [
       2,
     ],
     "no-compare-neg-zero": [
@@ -2589,6 +2601,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       2,
     ],
     "no-lonely-if": [
+      2,
+    ],
+    "no-loss-of-precision": [
       2,
     ],
     "no-misleading-character-class": [
@@ -5434,9 +5449,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/ban-tslint-comment": [
       2,
     ],
-    "@typescript-eslint/ban-types": [
-      2,
-    ],
     "@typescript-eslint/consistent-generic-constructors": [
       2,
     ],
@@ -5497,6 +5509,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-confusing-void-expression": [
       2,
     ],
+    "@typescript-eslint/no-deprecated": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
@@ -5506,7 +5521,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-dynamic-delete": [
       2,
     ],
-    "@typescript-eslint/no-empty-interface": [
+    "@typescript-eslint/no-empty-object-type": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -5539,9 +5554,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-loop-func": [
       2,
     ],
-    "@typescript-eslint/no-loss-of-precision": [
-      2,
-    ],
     "@typescript-eslint/no-meaningless-void-operator": [
       2,
     ],
@@ -5569,6 +5581,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-redundant-type-constituents": [
       1,
     ],
+    "@typescript-eslint/no-require-imports": [
+      2,
+    ],
     "@typescript-eslint/no-this-alias": [
       2,
     ],
@@ -5590,6 +5605,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-argument": [
       2,
     ],
@@ -5605,10 +5623,16 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-unsafe-enum-comparison": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       2,
     ],
     "@typescript-eslint/no-unsafe-return": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
       2,
     ],
     "@typescript-eslint/no-unused-expressions": [
@@ -5623,7 +5647,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/no-useless-empty-export": [
       1,
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -5633,6 +5657,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       2,
     ],
     "@typescript-eslint/prefer-as-const": [
+      2,
+    ],
+    "@typescript-eslint/prefer-find": [
       2,
     ],
     "@typescript-eslint/prefer-for-of": [
@@ -5660,6 +5687,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       1,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
+      2,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
       2,
     ],
     "@typescript-eslint/prefer-return-this-type": [
@@ -5800,9 +5830,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "no-case-declarations": [
       2,
     ],
-    "no-class-assign": [
-      2,
-    ],
     "no-compare-neg-zero": [
       2,
     ],
@@ -5885,6 +5912,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       2,
     ],
     "no-lonely-if": [
+      2,
+    ],
+    "no-loss-of-precision": [
       2,
     ],
     "no-misleading-character-class": [
@@ -8739,9 +8769,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/ban-tslint-comment": [
       2,
     ],
-    "@typescript-eslint/ban-types": [
-      2,
-    ],
     "@typescript-eslint/consistent-generic-constructors": [
       2,
     ],
@@ -8802,6 +8829,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-confusing-void-expression": [
       2,
     ],
+    "@typescript-eslint/no-deprecated": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
@@ -8811,7 +8841,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-dynamic-delete": [
       2,
     ],
-    "@typescript-eslint/no-empty-interface": [
+    "@typescript-eslint/no-empty-object-type": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -8844,9 +8874,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-loop-func": [
       2,
     ],
-    "@typescript-eslint/no-loss-of-precision": [
-      2,
-    ],
     "@typescript-eslint/no-meaningless-void-operator": [
       2,
     ],
@@ -8874,6 +8901,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-redundant-type-constituents": [
       1,
     ],
+    "@typescript-eslint/no-require-imports": [
+      2,
+    ],
     "@typescript-eslint/no-this-alias": [
       2,
     ],
@@ -8895,6 +8925,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-argument": [
       2,
     ],
@@ -8910,10 +8943,16 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-unsafe-enum-comparison": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       2,
     ],
     "@typescript-eslint/no-unsafe-return": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
       2,
     ],
     "@typescript-eslint/no-unused-expressions": [
@@ -8928,7 +8967,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-useless-empty-export": [
       1,
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -8938,6 +8977,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       2,
     ],
     "@typescript-eslint/prefer-as-const": [
+      2,
+    ],
+    "@typescript-eslint/prefer-find": [
       2,
     ],
     "@typescript-eslint/prefer-for-of": [
@@ -8965,6 +9007,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       1,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
+      2,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
       2,
     ],
     "@typescript-eslint/prefer-return-this-type": [
@@ -9108,9 +9153,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "no-case-declarations": [
       2,
     ],
-    "no-class-assign": [
-      2,
-    ],
     "no-compare-neg-zero": [
       2,
     ],
@@ -9193,6 +9235,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       2,
     ],
     "no-lonely-if": [
+      2,
+    ],
+    "no-loss-of-precision": [
       2,
     ],
     "no-misleading-character-class": [
@@ -12047,9 +12092,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/ban-tslint-comment": [
       2,
     ],
-    "@typescript-eslint/ban-types": [
-      2,
-    ],
     "@typescript-eslint/consistent-generic-constructors": [
       2,
     ],
@@ -12110,6 +12152,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-confusing-void-expression": [
       2,
     ],
+    "@typescript-eslint/no-deprecated": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
@@ -12119,7 +12164,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-dynamic-delete": [
       2,
     ],
-    "@typescript-eslint/no-empty-interface": [
+    "@typescript-eslint/no-empty-object-type": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -12152,9 +12197,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-loop-func": [
       2,
     ],
-    "@typescript-eslint/no-loss-of-precision": [
-      2,
-    ],
     "@typescript-eslint/no-meaningless-void-operator": [
       2,
     ],
@@ -12182,6 +12224,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-redundant-type-constituents": [
       1,
     ],
+    "@typescript-eslint/no-require-imports": [
+      2,
+    ],
     "@typescript-eslint/no-this-alias": [
       2,
     ],
@@ -12203,6 +12248,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-argument": [
       2,
     ],
@@ -12218,10 +12266,16 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-unsafe-enum-comparison": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       2,
     ],
     "@typescript-eslint/no-unsafe-return": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
       2,
     ],
     "@typescript-eslint/no-unused-expressions": [
@@ -12236,7 +12290,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/no-useless-empty-export": [
       1,
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -12246,6 +12300,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       2,
     ],
     "@typescript-eslint/prefer-as-const": [
+      2,
+    ],
+    "@typescript-eslint/prefer-find": [
       2,
     ],
     "@typescript-eslint/prefer-for-of": [
@@ -12273,6 +12330,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       1,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
+      2,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
       2,
     ],
     "@typescript-eslint/prefer-return-this-type": [
@@ -12416,9 +12476,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "no-case-declarations": [
       2,
     ],
-    "no-class-assign": [
-      2,
-    ],
     "no-compare-neg-zero": [
       2,
     ],
@@ -12501,6 +12558,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       2,
     ],
     "no-lonely-if": [
+      2,
+    ],
+    "no-loss-of-precision": [
       2,
     ],
     "no-misleading-character-class": [
@@ -15153,9 +15213,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/ban-tslint-comment": [
       2,
     ],
-    "@typescript-eslint/ban-types": [
-      2,
-    ],
     "@typescript-eslint/consistent-generic-constructors": [
       2,
     ],
@@ -15216,6 +15273,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-confusing-void-expression": [
       2,
     ],
+    "@typescript-eslint/no-deprecated": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
@@ -15225,7 +15285,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-dynamic-delete": [
       2,
     ],
-    "@typescript-eslint/no-empty-interface": [
+    "@typescript-eslint/no-empty-object-type": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -15258,9 +15318,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-loop-func": [
       2,
     ],
-    "@typescript-eslint/no-loss-of-precision": [
-      2,
-    ],
     "@typescript-eslint/no-meaningless-void-operator": [
       2,
     ],
@@ -15288,6 +15345,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-redundant-type-constituents": [
       1,
     ],
+    "@typescript-eslint/no-require-imports": [
+      2,
+    ],
     "@typescript-eslint/no-this-alias": [
       2,
     ],
@@ -15309,6 +15369,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-argument": [
       2,
     ],
@@ -15324,10 +15387,16 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-unsafe-enum-comparison": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       2,
     ],
     "@typescript-eslint/no-unsafe-return": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
       2,
     ],
     "@typescript-eslint/no-unused-expressions": [
@@ -15342,7 +15411,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-useless-empty-export": [
       1,
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -15352,6 +15421,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       2,
     ],
     "@typescript-eslint/prefer-as-const": [
+      2,
+    ],
+    "@typescript-eslint/prefer-find": [
       2,
     ],
     "@typescript-eslint/prefer-for-of": [
@@ -15379,6 +15451,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       1,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
+      2,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
       2,
     ],
     "@typescript-eslint/prefer-return-this-type": [
@@ -15454,9 +15529,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       2,
     ],
     "no-case-declarations": [
-      2,
-    ],
-    "no-class-assign": [
       2,
     ],
     "no-compare-neg-zero": [
@@ -15541,6 +15613,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       2,
     ],
     "no-lonely-if": [
+      2,
+    ],
+    "no-loss-of-precision": [
       2,
     ],
     "no-misleading-character-class": [
@@ -18386,9 +18461,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/ban-tslint-comment": [
       2,
     ],
-    "@typescript-eslint/ban-types": [
-      2,
-    ],
     "@typescript-eslint/consistent-generic-constructors": [
       2,
     ],
@@ -18449,6 +18521,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-confusing-void-expression": [
       2,
     ],
+    "@typescript-eslint/no-deprecated": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
@@ -18458,7 +18533,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-dynamic-delete": [
       2,
     ],
-    "@typescript-eslint/no-empty-interface": [
+    "@typescript-eslint/no-empty-object-type": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -18491,9 +18566,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-loop-func": [
       2,
     ],
-    "@typescript-eslint/no-loss-of-precision": [
-      2,
-    ],
     "@typescript-eslint/no-meaningless-void-operator": [
       2,
     ],
@@ -18521,6 +18593,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-redundant-type-constituents": [
       1,
     ],
+    "@typescript-eslint/no-require-imports": [
+      2,
+    ],
     "@typescript-eslint/no-this-alias": [
       2,
     ],
@@ -18542,6 +18617,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-argument": [
       2,
     ],
@@ -18557,10 +18635,16 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-unsafe-enum-comparison": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       2,
     ],
     "@typescript-eslint/no-unsafe-return": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
       2,
     ],
     "@typescript-eslint/no-unused-expressions": [
@@ -18575,7 +18659,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "@typescript-eslint/no-useless-empty-export": [
       1,
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -18585,6 +18669,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       2,
     ],
     "@typescript-eslint/prefer-as-const": [
+      2,
+    ],
+    "@typescript-eslint/prefer-find": [
       2,
     ],
     "@typescript-eslint/prefer-for-of": [
@@ -18612,6 +18699,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       1,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
+      2,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
       2,
     ],
     "@typescript-eslint/prefer-return-this-type": [
@@ -18752,9 +18842,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
     "no-case-declarations": [
       2,
     ],
-    "no-class-assign": [
-      2,
-    ],
     "no-compare-neg-zero": [
       2,
     ],
@@ -18837,6 +18924,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       2,
     ],
     "no-lonely-if": [
+      2,
+    ],
+    "no-loss-of-precision": [
       2,
     ],
     "no-misleading-character-class": [
@@ -21691,9 +21781,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/ban-tslint-comment": [
       2,
     ],
-    "@typescript-eslint/ban-types": [
-      2,
-    ],
     "@typescript-eslint/consistent-generic-constructors": [
       2,
     ],
@@ -21754,6 +21841,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-confusing-void-expression": [
       2,
     ],
+    "@typescript-eslint/no-deprecated": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
@@ -21763,7 +21853,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-dynamic-delete": [
       2,
     ],
-    "@typescript-eslint/no-empty-interface": [
+    "@typescript-eslint/no-empty-object-type": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -21796,9 +21886,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-loop-func": [
       2,
     ],
-    "@typescript-eslint/no-loss-of-precision": [
-      2,
-    ],
     "@typescript-eslint/no-meaningless-void-operator": [
       2,
     ],
@@ -21826,6 +21913,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-redundant-type-constituents": [
       1,
     ],
+    "@typescript-eslint/no-require-imports": [
+      2,
+    ],
     "@typescript-eslint/no-this-alias": [
       2,
     ],
@@ -21847,6 +21937,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-argument": [
       2,
     ],
@@ -21862,10 +21955,16 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-unsafe-enum-comparison": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       2,
     ],
     "@typescript-eslint/no-unsafe-return": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
       2,
     ],
     "@typescript-eslint/no-unused-expressions": [
@@ -21880,7 +21979,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-useless-empty-export": [
       1,
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -21890,6 +21989,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       2,
     ],
     "@typescript-eslint/prefer-as-const": [
+      2,
+    ],
+    "@typescript-eslint/prefer-find": [
       2,
     ],
     "@typescript-eslint/prefer-for-of": [
@@ -21917,6 +22019,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       1,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
+      2,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
       2,
     ],
     "@typescript-eslint/prefer-return-this-type": [
@@ -22060,9 +22165,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "no-case-declarations": [
       2,
     ],
-    "no-class-assign": [
-      2,
-    ],
     "no-compare-neg-zero": [
       2,
     ],
@@ -22145,6 +22247,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       2,
     ],
     "no-lonely-if": [
+      2,
+    ],
+    "no-loss-of-precision": [
       2,
     ],
     "no-misleading-character-class": [
@@ -24999,9 +25104,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/ban-tslint-comment": [
       2,
     ],
-    "@typescript-eslint/ban-types": [
-      2,
-    ],
     "@typescript-eslint/consistent-generic-constructors": [
       2,
     ],
@@ -25062,6 +25164,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-confusing-void-expression": [
       2,
     ],
+    "@typescript-eslint/no-deprecated": [
+      2,
+    ],
     "@typescript-eslint/no-duplicate-enum-values": [
       2,
     ],
@@ -25071,7 +25176,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-dynamic-delete": [
       2,
     ],
-    "@typescript-eslint/no-empty-interface": [
+    "@typescript-eslint/no-empty-object-type": [
       2,
     ],
     "@typescript-eslint/no-explicit-any": [
@@ -25104,9 +25209,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-loop-func": [
       2,
     ],
-    "@typescript-eslint/no-loss-of-precision": [
-      2,
-    ],
     "@typescript-eslint/no-meaningless-void-operator": [
       2,
     ],
@@ -25134,6 +25236,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-redundant-type-constituents": [
       1,
     ],
+    "@typescript-eslint/no-require-imports": [
+      2,
+    ],
     "@typescript-eslint/no-this-alias": [
       2,
     ],
@@ -25155,6 +25260,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-unnecessary-type-constraint": [
       2,
     ],
+    "@typescript-eslint/no-unnecessary-type-parameters": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-argument": [
       2,
     ],
@@ -25170,10 +25278,16 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-unsafe-enum-comparison": [
       2,
     ],
+    "@typescript-eslint/no-unsafe-function-type": [
+      2,
+    ],
     "@typescript-eslint/no-unsafe-member-access": [
       2,
     ],
     "@typescript-eslint/no-unsafe-return": [
+      2,
+    ],
+    "@typescript-eslint/no-unsafe-unary-minus": [
       2,
     ],
     "@typescript-eslint/no-unused-expressions": [
@@ -25188,7 +25302,7 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "@typescript-eslint/no-useless-empty-export": [
       1,
     ],
-    "@typescript-eslint/no-var-requires": [
+    "@typescript-eslint/no-wrapper-object-types": [
       2,
     ],
     "@typescript-eslint/non-nullable-type-assertion-style": [
@@ -25198,6 +25312,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       2,
     ],
     "@typescript-eslint/prefer-as-const": [
+      2,
+    ],
+    "@typescript-eslint/prefer-find": [
       2,
     ],
     "@typescript-eslint/prefer-for-of": [
@@ -25225,6 +25342,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       1,
     ],
     "@typescript-eslint/prefer-reduce-type-parameter": [
+      2,
+    ],
+    "@typescript-eslint/prefer-regexp-exec": [
       2,
     ],
     "@typescript-eslint/prefer-return-this-type": [
@@ -25368,9 +25488,6 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
     "no-case-declarations": [
       2,
     ],
-    "no-class-assign": [
-      2,
-    ],
     "no-compare-neg-zero": [
       2,
     ],
@@ -25453,6 +25570,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       2,
     ],
     "no-lonely-if": [
+      2,
+    ],
+    "no-loss-of-precision": [
       2,
     ],
     "no-misleading-character-class": [
