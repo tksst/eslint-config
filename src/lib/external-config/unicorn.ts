@@ -67,6 +67,6 @@ const x = {
         // Disallow using await in Promise method parameters
         "unicorn/no-await-in-promise-methods": "error",
     },
-} satisfies Linter.FlatConfig;
+} satisfies Linter.Config;
 
 export default x;

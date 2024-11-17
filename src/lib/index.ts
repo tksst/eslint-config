@@ -150,7 +150,7 @@ const javaScript = [
             "no-undef-init": "error",
         },
     },
-] satisfies Linter.FlatConfig[];
+] satisfies Linter.Config[];
 
 const typeScriptOnly = [
     ...typescriptEslint,
@@ -201,9 +201,9 @@ const typeScriptOnly = [
             "@typescript-eslint/restrict-template-expressions": "off",
         },
     },
-] satisfies Linter.FlatConfig[];
+] satisfies Linter.Config[];
 
-function addFilesToConfigs(config: Linter.FlatConfig[], something: string[], append = false) {
+function addFilesToConfigs(config: Linter.Config[], something: string[], append = false) {
     // console.assert(Array.isArray(something));
 
     return config.map((it) => {
@@ -227,7 +227,7 @@ const vitest = [
             "jest/no-deprecated-functions": "off",
         },
     },
-] satisfies Linter.FlatConfig[];
+] satisfies Linter.Config[];
 
 export const config = {
     javaScript,
@@ -243,7 +243,7 @@ export const util = {
 const PRESET_TYPESCRIPT = `${PKG_NAME}/preset/typeScript`;
 
 export const preset = {
-    typeScript: (option?: { jsIsCjs?: boolean; jest?: boolean; vitest?: boolean }): Linter.FlatConfig[] => [
+    typeScript: (option?: { jsIsCjs?: boolean; jest?: boolean; vitest?: boolean }): Linter.Config[] => [
         {
             ignores: ["dist/", "coverage/"],
         },

@@ -15,7 +15,7 @@ function removeVersionFromPlugins(conf: { plugins: string[] }): void {
     conf.plugins = conf.plugins.map((plugin) => plugin.replace(/(?<!^)@[^@]+$/, ""));
 }
 
-function removeDisabledRules(conf: Linter.FlatConfig): void {
+function removeDisabledRules(conf: Linter.Config): void {
     if (conf.rules === undefined) {
         return;
     }

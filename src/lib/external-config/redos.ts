@@ -12,6 +12,6 @@ const x = {
     rules: {
         "redos/no-vulnerable": "error",
     },
-} satisfies Linter.FlatConfig;
+} satisfies Linter.Config;
 
 export default x;

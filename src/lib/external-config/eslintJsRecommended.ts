@@ -7,6 +7,6 @@ export default function eslintJsRecommended() {
     return {
         name: `${EXTERNAL}/@eslint/js/recommended`,
 
-        ...(js.configs.recommended as Linter.FlatConfig),
-    } satisfies Linter.FlatConfig;
+        ...(js.configs.recommended as Linter.Config),
+    } satisfies Linter.Config;
 }

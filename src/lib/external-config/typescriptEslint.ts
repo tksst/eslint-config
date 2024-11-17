@@ -26,8 +26,8 @@ const x = [
             },
         },
     },
-    ...(strictTypeCheckedRules as Linter.FlatConfig[]),
-    ...(stylisticTypeCheckedRules as Linter.FlatConfig[]),
-] satisfies Linter.FlatConfig[];
+    ...(strictTypeCheckedRules as Linter.Config[]),
+    ...(stylisticTypeCheckedRules as Linter.Config[]),
+] satisfies Linter.Config[];
 
 export default x;

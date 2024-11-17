@@ -3,7 +3,7 @@ import { describe, expect, it } from "vitest";
 
 import * as config from "./index.js";
 
-function removePlugin(c: Linter.FlatConfig[]) {
+function removePlugin(c: Linter.Config[]) {
     return c.map((x) => {
         if (x.plugins !== undefined) {
             delete x.plugins;
@@ -12,7 +12,7 @@ function removePlugin(c: Linter.FlatConfig[]) {
     });
 }
 
-function removeParser(c: Linter.FlatConfig[]) {
+function removeParser(c: Linter.Config[]) {
     return c.map((x) => {
         if (x.languageOptions?.parser !== undefined) {
             delete x.languageOptions.parser;

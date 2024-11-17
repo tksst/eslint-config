@@ -7,5 +7,5 @@ export default function prettier() {
     return {
         name: `${EXTERNAL}/eslint-config-prettier`,
         rules: configPrettier.rules,
-    } satisfies Linter.FlatConfig;
+    } satisfies Linter.Config;
 }

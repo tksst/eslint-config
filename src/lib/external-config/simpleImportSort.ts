@@ -14,6 +14,6 @@ const x = {
         "simple-import-sort/exports": "warn",
         "sort-imports": "off",
     },
-} satisfies Linter.FlatConfig;
+} satisfies Linter.Config;
 
 export default x;

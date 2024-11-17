@@ -16,6 +16,6 @@ const x = {
         // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
         ...pluginJest.configs.recommended.rules,
     },
-} satisfies Linter.FlatConfig;
+} satisfies Linter.Config;
 
 export default x;

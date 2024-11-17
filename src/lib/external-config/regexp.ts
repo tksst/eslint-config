@@ -5,7 +5,7 @@ import { EXTERNAL } from "../name.js";
 
 const x = {
     name: `${EXTERNAL}/eslint-plugin-regexp`,
-    ...(pluginRegexp.configs["flat/recommended"] as Linter.FlatConfig),
+    ...(pluginRegexp.configs["flat/recommended"] as Linter.Config),
 };
 
 export default x;
