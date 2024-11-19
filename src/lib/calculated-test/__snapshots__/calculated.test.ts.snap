@@ -2450,6 +2450,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
     "@typescript-eslint/prefer-string-starts-ends-with": [
       2,
     ],
+    "@typescript-eslint/related-getter-setter-pairs": [
+      2,
+    ],
     "@typescript-eslint/require-await": [
       2,
     ],
@@ -5696,6 +5699,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p false 
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
+      2,
+    ],
+    "@typescript-eslint/related-getter-setter-pairs": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -9016,6 +9022,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
+      2,
+    ],
+    "@typescript-eslint/related-getter-setter-pairs": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -12341,6 +12350,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p false > jest: %p true >
     "@typescript-eslint/prefer-string-starts-ends-with": [
       2,
     ],
+    "@typescript-eslint/related-getter-setter-pairs": [
+      2,
+    ],
     "@typescript-eslint/require-await": [
       2,
     ],
@@ -15460,6 +15472,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
+      2,
+    ],
+    "@typescript-eslint/related-getter-setter-pairs": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -18708,6 +18723,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p false >
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
+      2,
+    ],
+    "@typescript-eslint/related-getter-setter-pairs": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -22028,6 +22046,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
+      2,
+    ],
+    "@typescript-eslint/related-getter-setter-pairs": [
       2,
     ],
     "@typescript-eslint/require-await": [
@@ -25351,6 +25372,9 @@ exports[`ESLint calculated config Snapshot > jsIsCjs: %p true > jest: %p true > 
       2,
     ],
     "@typescript-eslint/prefer-string-starts-ends-with": [
+      2,
+    ],
+    "@typescript-eslint/related-getter-setter-pairs": [
       2,
     ],
     "@typescript-eslint/require-await": [
