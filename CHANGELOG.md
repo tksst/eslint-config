@@ -1,5 +1,24 @@
 # @tksst/eslint-config
 
+## 14.0.0
+
+### Major Changes
+
+- dd2da62: Major upgrade typescript-eslint@8.15.0 from 7.17.0.
+  This introduce some major breaking changes.
+  See their blog: [Announcing typescript-eslint v8](https://main--typescript-eslint.netlify.app/blog/announcing-typescript-eslint-v8/)
+
+### Minor Changes
+
+- 7910e08: update dependencies:
+
+  - update [@eslint/js@9.15.0](https://github.com/eslint/eslint/releases/tag/v9.15.0) from 9.8.0
+  - update [eslint-plugin-jest@28.9.0](https://github.com/jest-community/eslint-plugin-jest/releases/tag/v28.9.0) from 28.6.0
+  - update [eslint-plugin-regexp@2.7.0](https://github.com/ota-meshi/eslint-plugin-regexp/releases/tag/v2.7.0) from 2.7.0
+  - update [globals@15.12.0](https://github.com/sindresorhus/globals/releases/tag/v15.12.0) from 15.8.0
+
+- 86d02f1: update [eslint-plugin-unicorn@56.0.0](https://github.com/sindresorhus/eslint-plugin-unicorn/releases/tag/v56.0.0) from 55.0.0, which is a major upgrade but not to break anything for me
+
 ## 13.9.0
 
 ### Minor Changes
