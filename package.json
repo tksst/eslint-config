@@ -41,8 +41,8 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@eslint/js": "9.15.0",
-    "eslint-config-prettier": "9.1.0",
+    "@eslint/js": "10.0.1",
+    "eslint-config-prettier": "10.1.8",
     "eslint-plugin-jest": "28.9.0",
     "eslint-plugin-redos": "4.4.5",
     "eslint-plugin-regexp": "2.7.0",
